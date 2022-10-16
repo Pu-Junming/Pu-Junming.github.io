@@ -25,7 +25,7 @@ hr:before {
     position: absolute;
     color: #f47466;
     /* 回形针 */
-    content: '\f863';  
+    content: '\f0c1';
     line-height: 1;
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
