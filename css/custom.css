@@ -182,3 +182,18 @@ img {
 ::-webkit-scrollbar-corner {
     background-color: transparent
 }
+
+
+/* 字体 */
+@font-face {
+    font-family: 'tzy';
+    /* 字体名自定义即可 */
+    src: url('https://fastly.jsdelivr.net/gh/tzy13755126023/BLOG_SOURCE/font/ZhuZiAWan.woff2');
+    /* 字体文件路径 */
+    font-display: swap;
+}
+
+body,
+.gitcalendar {
+    font-family: tzy !important;
+}
