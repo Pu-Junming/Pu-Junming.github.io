@@ -146,9 +146,9 @@ hr:before {
     padding-left: 1.2rem
 }
 
-/* 鼠标样式 */
+/* 鼠标样式*/
 body {
-    cursor: url(https://bu.dusays.com/2022/05/17/6283c365d20dd.png), auto;
+    cursor: url(https://cos.cdn.azpay.cn/uploads/2021/11/28/arrow.cur), auto;
 }
 
 .hide-block>.hide-button.open,
@@ -159,8 +159,11 @@ body {
 a,
 button,
 img {
-    cursor: url(https://bu.dusays.com/2022/05/17/6283c376afcfc.png), auto
-}
+    cursor: url(https://cos.cdn.azpay.cn/uploads/2021/11/28/btn.cur), auto
+} 
+
+
+
 
 /* 滚动条 */
 ::-webkit-scrollbar {
@@ -170,7 +173,7 @@ img {
 
 ::-webkit-scrollbar-track {
     border-radius: 2em;
-    /* background-color: rgba(73, 177, 245, .2); */
+    background-color: rgba(73, 177, 245, .2);
 }
 
 ::-webkit-scrollbar-thumb {
