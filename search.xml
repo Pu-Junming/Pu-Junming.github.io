@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>上课笔记22-10-18(Java面向对象程序设计)</title>
+      <link href="/post/18c18e70.html"/>
+      <url>/post/18c18e70.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一-JAVA基础"><a href="#一-JAVA基础" class="headerlink" title="一. JAVA基础"></a>一. JAVA基础</h2><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote><h2 id="二-面向对象的特征"><a href="#二-面向对象的特征" class="headerlink" title="二.面向对象的特征"></a>二.面向对象的特征</h2><ol><li>面向过程就是分析出解决问题所需要的步骤，然后用函数吧这个步骤一一实现，使用的时候依次调用就可以了。</li><li>面向对象是吧构成问题的事物按照一定规划分为多个独立的对象，然后通过调用对象的方法来解决问题。<ol><li>如果出现问题只需要修改个别的对象就可以了</li></ol></li><li>SP和OOP对比<ol><li><img src="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/image-20221018161848267.png"></li></ol></li><li>面向对象的特征主要可以概括为封装、继承、多态<ol><li>封装<ol><li>是面向对象的核心思想，将对象的属性和行为封装起来，不需要让外界知道具体的实现细节，就是封装思想</li></ol></li><li>继承<ol><li>主要描述的是类与类之间的关系，通过继承，可以在无需要新编写原有类的情况下，对原有类的功能进行扩展。他是多态实现的前提</li></ol></li><li>多态<ol><li>指的是不同的类进行同一操作可以有不同的行为。即在一个类中定义的属性和方法被其它类继承后，它们可以具有不同的数据类型或表现出不同的行为，这使得同一个属性和方法在不同的类中具有不同的语义。</li></ol></li></ol></li><li>00程序的标准<ol><li>易复用</li><li>易扩展</li><li>易维护</li></ol></li></ol><h2 id="二-一类与对象的概念"><a href="#二-一类与对象的概念" class="headerlink" title="二.一类与对象的概念"></a>二.一类与对象的概念</h2><ol><li><p>类</p><ol><li>一组具有相同数据结构和相同操作对象的模板。是现实世界中所有相同性质的对象的抽象，为同类对象规范通用的状态和行为</li></ol></li><li><p>对象：</p><ol><li>类的具体表现形式。是满足类规范的具体实例，是真正执行功能的主体。</li></ol></li><li><p>类与对象的关系</p><ol><li>抽象与具体</li></ol></li><li><p>在面向对象的思想中最核心的就是对象，为了在程序中创建对象，首先需要定义一个类，用于描述一组对象的共同特征和行为。</p></li><li><p>类中可以定义成员变量(成员数据）和成员方法(成员函数),其中成员变量用于描述对象的特征，也被称作属性，成员方法用于描述对象的行为，可简称为方法。</p></li><li><p><img src="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/10.18.002.png" alt="类举例"></p></li><li><p>类的定义</p><ol><li><p><img src="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/image-20221018165550001.png"></p></li><li><p>定义类的基本结构</p><ol><li><p>权限修饰符 class 类名 [extends 父类名 | implements 接口类 ]</p><ol><li>权限修饰符:为public或者缺省。public用来声明该类为公有类,可以被别的对象访问。定义为公有的类存储的文件名为类名。</li><li>类名:用户自定义的标识符，用来标志这个类的引用。</li></ol></li><li><p>定义成员变量</p><ol><li>有public、 private、 protected和默认权限四种<ol><li>public:公共权限，可以被所有类访问</li><li>private：私有权限，只允许在类定义自身范围内使用，若从外部访问，必须通过构造方法间接进行访问</li><li>protected:受保护权限，可以被类本身、其子类访问，或者被与类定义同在一个包中的其他类访问</li><li>默认权限:也称package访问限，无修饰符，可以被类自身或类同包的其他类访问</li></ol></li><li>数据类型:包括基本类型以及用户自定义的扩展类型</li></ol></li><li><p>特定修饰符</p><ol><li>static:静态的，所有对象共享的类成员。</li><li>final:表示常量，不能修改。</li><li>transient:表示暂时性变量，与对象的序列化技术相关。</li><li>volatile:表示不稳定的，与多线程并发控制相关。</li></ol></li></ol></li></ol></li></ol><h3 id="上个课数据线摔坏了，干！！！谢谢我的女朋友送我一个充电头（我有原装数据线，摔坏的是USB接口的线！！！）么么！！"><a href="#上个课数据线摔坏了，干！！！谢谢我的女朋友送我一个充电头（我有原装数据线，摔坏的是USB接口的线！！！）么么！！" class="headerlink" title="上个课数据线摔坏了，干！！！谢谢我的女朋友送我一个充电头（我有原装数据线，摔坏的是USB接口的线！！！）么么！！"></a>上个课数据线摔坏了，干！！！谢谢我的女朋友送我一个充电头（我有原装数据线，摔坏的是USB接口的线！！！）么么！！</h3><p><img src="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/312c1f4ef40f18a400be8433ab8ff4e.jpg" alt="312c1f4ef40f18a400be8433ab8ff4e"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> 成都东软学院（CNU） </tag>
+            
+            <tag> 上课笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/post/4a17b156.html"/>
       <url>/post/4a17b156.html</url>
