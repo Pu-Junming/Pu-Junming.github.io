@@ -147,7 +147,7 @@ hr:before {
 }
 
 /* 鼠标样式*/
-/* body {
+body {
     cursor: url(https://cos.cdn.azpay.cn/uploads/2021/11/28/arrow.cur), auto;
 }
 
@@ -160,18 +160,7 @@ a,
 button,
 img {
     cursor: url(https://cos.cdn.azpay.cn/uploads/2021/11/28/btn.cur), auto
-}  */
-
-body {
-    cursor: url(https://cos.cdn.azpay.cn/uploads/2021/11/28/arrow.cur),
-    default;
-}
-
-a,
-img {
-    cursor: url(https://cos.cdn.azpay.cn/uploads/2021/11/28/btn.cur),
-    default;
-}
+} 
 
 
 
