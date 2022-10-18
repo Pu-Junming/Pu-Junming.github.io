@@ -1,4 +1,4 @@
-var rm = {};
+let rm = {};
 rm.showRightMenu = function (isTrue, x = 0, y = 0) {
     let $rightMenu = $('#rightMenu');
     $rightMenu.css('top', x + 'px').css('left', y + 'px');
@@ -10,8 +10,8 @@ rm.showRightMenu = function (isTrue, x = 0, y = 0) {
         $rightMenu.hide();
     }
 };
-// let rmWidth = $('#rightMenu').width();
-// let rmHeight = $('#rightMenu').height();
+let rmWidth = $('#rightMenu').width();
+let rmHeight = $('#rightMenu').height();
 rm.reloadrmSize = function () {
     rmWidth = $("#rightMenu").width();
     rmHeight = $("#rightMenu").height()
