@@ -4,6 +4,62 @@
   
     
     <entry>
+      <title>课堂笔记22-10-21(Web应用开发)</title>
+      <link href="/post/ad858a85.html"/>
+      <url>/post/ad858a85.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Web应用开发"><a href="#Web应用开发" class="headerlink" title="Web应用开发"></a>Web应用开发</h1><h2 id="Bootstrap网络系统"><a href="#Bootstrap网络系统" class="headerlink" title="Bootstrap网络系统"></a>Bootstrap网络系统</h2><ol><li><p>网络编码规范</p><ol><li>视同行快来创建列的水平组</li><li>在行块中创建列块，内容应该放置在每行的列块内，且只有列可以是行的直接元素</li><li>预定义的栅格类,比如.row和.col-xs-4，可用于快速创建栅格布局。</li><li>网格,即列块必须放在行块中,而行块又必须放置在容器块(即DIV的class值为container）中,以便获得适当的对齐和内边距。</li></ol></li><li><p>字体图标</p><ol><li><p>在HTML网页的制作过程中为了追求用户体验经常会用到很多小图标，如果每个小图标都用图片来实现，会发送很多请求小图标图片请求，严重拖慢网页加载速度。为了解决小图标的加载问题，出现了字体图标。</p></li><li><p>字体图标运行结果是图标，但是源代码是一种字体，而且Bootstrap将图标字体封装在了一个个CSS类样式中，这些图标字体CSS类样式被放在Bootstrap总样式文件bootstrap.min.css中。如需使用Bootstrap字体图标，只需要简单地使用<span>并指定<span>的class属性值为某个图标CSS类样式名即可，</p><ol><li><pre><code class="web-idl">列如&lt;span class=&quot;glyphion glyphion-search&quot;&gt;&lt;/span&gt;就引入了查询图标</code></pre></li></ol></li></ol></li><li><p>如果要用界面需要将需求展现清楚，用户界面必须有一下要求：</p><ol><li>如果系统按照子系统，子模块，子功能三级结构划分，那么每个功能都对应一个或多个HTML界面</li><li>展现每个功能HTML页面必须要将处理的数据的内容和展现形式表示清楚</li><li>每个功能HTML页面不能孤零零存在，要将子模块下的所有功能HTML页面用超链接或按钮结合在一起，痛样子系统下所有模块的HTML页面也要整合在一起，最终整合成系统的一个完整的静态网站</li></ol></li></ol><h3 id="素材：解压第四章-html原型UI-—-gt-把文件里的内容复制到STS软件我们项目的WebContent文件夹里面并全部覆盖源文件-—-gt-同步并部署-—-gt-http-localhost-8080-infoSubSys-pages-login-jsp-打开网页"><a href="#素材：解压第四章-html原型UI-—-gt-把文件里的内容复制到STS软件我们项目的WebContent文件夹里面并全部覆盖源文件-—-gt-同步并部署-—-gt-http-localhost-8080-infoSubSys-pages-login-jsp-打开网页" class="headerlink" title="素材：解压第四章 html原型UI —-&gt; 把文件里的内容复制到STS软件我们项目的WebContent文件夹里面并全部覆盖源文件 —-&gt;同步并部署  —-&gt;http://localhost:8080/infoSubSys/pages/login.jsp 打开网页"></a>素材：解压第四章 html原型UI —-&gt; 把文件里的内容复制到STS软件我们项目的WebContent文件夹里面并全部覆盖源文件 —-&gt;同步并部署  —-&gt;<a href="http://localhost:8080/infoSubSys/pages/login.jsp">http://localhost:8080/infoSubSys/pages/login.jsp</a> 打开网页</h3><h4 id="以上步骤是在前几次课程的基础上使用"><a href="#以上步骤是在前几次课程的基础上使用" class="headerlink" title="以上步骤是在前几次课程的基础上使用"></a>以上步骤是在前几次课程的基础上使用</h4><ol><li><img src="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/image-20221021114917233.png" alt="image-20221021114917233"></li></ol><h2 id="数据库-MySql"><a href="#数据库-MySql" class="headerlink" title="数据库(MySql)"></a>数据库(MySql)</h2><ol><li><p><img src="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/image-20221021115317245.png" alt="image-20221021115317245"></p><ol><li>在数据库技术中，数据还是以文件的形式存放到外部存储设备上，被称为数据库(Data Base),简称DB</li><li>数据库技术在数据之上还可以一个队数据进行管理的系统，即数据库管理系统，( Database management system)，简称DBMS。</li><li>DBMS是位于用户与数据库(OS)之间的一层数据管理软件，它为用户或应用程序提供访问数据库的方法，包括数据库的创建、查询、更新及各种数据控制，它被称为数据库系统的和兴</li><li>目前比较流行的DBMS有Oracle、MySQL、SQLServer、PostgreSQL等，本课程采用MySQL</li></ol></li><li><p>MySQL简介</p><ol><li>MySQL是一款安全、跨平台，高效的、并与PHP、Java等主流语言紧密结合的数据库系统</li><li>等等等等…………………..</li></ol></li><li><p>数据模型的要素</p><ol><li><p>数据模型所描述的内容包括三个部分：数据结构、数据操作、数据约束</p><ol><li>数据结构:数据模型中的数据结构主要描述数据的类型、内容、性质以及数据间的联系等。数据结杓是数据模型的基础，数据操作和约束都建立在数据结构上。不同的数据结构具有不同的操作和约束。</li><li>数据操作:数据模型中数据操作主要描述在相应的数据结构上的操作类型和操作方式。</li><li>数据约束:数据模型中的数据约束主要描述数据结构内数据间的语法、词义联系、它们之间的制约和依存关系，以及数据动态变化的规则，以保证数据的正确、有效和相容。</li></ol></li><li><p>数据模型的分类</p><ol><li>在数据库发展的历程中，根据数据模型的数据结构可以分为三种主要的模型，分别是层次模型、网状模型和关系模型</li></ol></li></ol></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 课堂笔记 </tag>
+            
+            <tag> STS </tag>
+            
+            <tag> tomcat </tag>
+            
+            <tag> JavaWeb </tag>
+            
+            <tag> 成都东软学院(CNU) </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>22-10-20(选修课Python)</title>
+      <link href="/post/279ff13a.html"/>
+      <url>/post/279ff13a.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="Python-大数据与量化"><a href="#Python-大数据与量化" class="headerlink" title="Python 大数据与量化"></a>Python 大数据与量化</h2><h2 id="上课开飞机去了，我只知道讲了金融方面的知识！！嘿嘿！！woc这飞机这分钟开着不香了！！！！"><a href="#上课开飞机去了，我只知道讲了金融方面的知识！！嘿嘿！！woc这飞机这分钟开着不香了！！！！" class="headerlink" title="上课开飞机去了，我只知道讲了金融方面的知识！！嘿嘿！！woc这飞机这分钟开着不香了！！！！"></a>上课开飞机去了，我只知道讲了金融方面的知识！！嘿嘿！！woc这飞机这分钟开着不香了！！！！</h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 课堂笔记 </tag>
+            
+            <tag> 选修课 </tag>
+            
+            <tag> 成都东软学院 </tag>
+            
+            <tag> 大数据 </tag>
+            
+            <tag> 量化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>课堂笔记22-10-20(Java面向对象程序设计)</title>
       <link href="/post/5012e640.html"/>
       <url>/post/5012e640.html</url>
@@ -14,11 +70,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院（CNU） </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -62,11 +118,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院（CNU） </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -85,11 +141,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院（CNU） </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
