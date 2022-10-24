@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>课堂笔记22-10-24(Python程序设计)</title>
+      <link href="/post/be4e991e.html"/>
+      <url>/post/be4e991e.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><ol><li><p>时间模块</p><ol><li><p>time模块</p><ol><li>时间戳</li><li>时间戳表示的是格林威治时间从1970年1月1日（00:00：00 GMT) 开始，到当前时间的总秒数（安秒计算的偏移量）</li></ol></li><li><p>时间元组</p><ol><li>时间元组是time模块中的一个重要的类，可以看做是一个包含9整数元素的序列</li></ol></li><li><p>格式化时间日期</p><ol><li>可以使用time模块的strftime函数个化石日期格式为<ol><li>time.strftime(format[,tuple])</li></ol></li></ol></li><li><p>time.sleep(sece):推迟调用线程的运行，sece为秒数</p><ol><li><p>例：文本进度条</p><ol><li><pre><code class="python">import timefor i in range(100):    print(&quot;\r&quot; + &quot;*&quot; * i, sep=&quot;&quot;, end=&quot;&quot;)    time.sleep(0.2)print(&quot;\nDone&quot;)    </code></pre></li></ol></li></ol></li><li><p>datetime模块</p><ol><li>datatime模块python处理日期和时间的标准模块，与time想比，datetime接口更直接更简易</li><li>一般通过from datetime import datetime 引入模块</li></ol></li></ol></li></ol><h4 id="省略一大部分，累了"><a href="#省略一大部分，累了" class="headerlink" title="省略一大部分，累了~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"></a>省略一大部分，累了~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h4><h4 id="课后作业"><a href="#课后作业" class="headerlink" title="课后作业"></a>课后作业</h4><p><img src="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/8b97f4714267da8eb27bd6b4b48fb9d.png" alt="8b97f4714267da8eb27bd6b4b48fb9d"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 成都东软学院(CNU) </tag>
+            
+            <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>课堂笔记22-10-24(HTML页面设计)</title>
       <link href="/post/2d8f5be.html"/>
       <url>/post/2d8f5be.html</url>
