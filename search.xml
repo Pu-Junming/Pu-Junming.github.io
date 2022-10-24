@@ -8,7 +8,7 @@
       <link href="/post/2d8f5be.html"/>
       <url>/post/2d8f5be.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="HTML页面设计"><a href="#HTML页面设计" class="headerlink" title="HTML页面设计"></a>HTML页面设计</h1><ol><li>复习任务<ol><li>盒子模式三个重要属性<br>浮动布局  float属性  clear: both;清楚我左右浮动元素 ，要清除浮动效果呢</li></ol></li><li>Position定位<ol><li>浮动虽然灵活，但无法对HTML5标签精确的控制，需要使用定位属性：postiion：static、relative、absolute、fixed、stick</li><li>static：默认定位方式</li><li>relative：相对定位，相对于自己原本的位置</li><li>absolute： 绝对定位，相对于已定位的父级，否则以浏览器窗口定位</li><li>fixed： 股东定位。，以浏览器窗口为参照物</li><li>position仅定义定位方式，还需要使用偏移属性top、bottom、left、right的组合来精确定义位置.</li></ol></li></ol>]]></content>
       
       
       
