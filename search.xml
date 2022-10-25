@@ -4,6 +4,52 @@
   
     
     <entry>
+      <title>课堂笔记22-10-25（Java面向对象编程设计）</title>
+      <link href="/post/98b732ef.html"/>
+      <url>/post/98b732ef.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Java面向对象程序设计"><a href="#Java面向对象程序设计" class="headerlink" title="Java面向对象程序设计"></a>Java面向对象程序设计</h1><h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><h3 id="方法重载"><a href="#方法重载" class="headerlink" title="方法重载"></a>方法重载</h3><ol><li><p>方法重载</p><ol><li>定义一组方法，这些方法具有相同的名称梦之星类似的操作，但是却使用不同的参数列表</li><li>编译器会根据调用时传递的实际参数自动判断具体调用的是哪个重载方法</li></ol></li><li><p>方法重载的三大原则</p><ol><li><p>方法相同</p></li><li><p>参数不同（可以有三方面的不同）</p><ol><li><p>类型不同</p></li><li><p>数量不同</p></li><li><p>顺序不同</p><ol><li><pre><code class="java">int test(int x,float y)&#123;.....&#125;int test(float y,int x)&#123;.....&#125; //构成重载</code></pre></li></ol></li></ol></li><li><p>同一作用域</p></li></ol></li><li><p>重载不考虑方法的返回值类型。若只有返回值类型不同，则不能构成方法重载。否则会出现编译错误（重复定义)。</p></li></ol><h3 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h3><ol><li><p>构造方法</p><ol><li><blockquote><p>从前面所学的知识发现，实例化一个类的对象后，如果要为这个对象中的属性赋值，则必须要通过直接访问对象的属性或调用setXxx方法的方式来实现。</p></blockquote></li><li><blockquote><p>为对象中的属性赋值:可以通过实例化对象后，通过访问对象的属性或调用setXxx方法来实现。</p></blockquote></li><li><blockquote><p>为对象中的属性赋值:也可以通过构造方法来实现,即在实例化对象的同时就为这个对象的属性进行赋值。</p></blockquote></li></ol></li><li><p>构造方法的一般形式</p><ol><li><blockquote><p>访问权限  方法名 （形参列表）{</p><p>方法体</p><p>}</p></blockquote></li><li><p>实例化对象的同时会自动调用构造方法，所以构造方法一般用来给数据成员分配资源或初始化数据成员;</p></li><li><p>因为是由虚拟机来调用构造方法，所以构造方法一般应定义成public。</p></li></ol></li><li><p>在一个类中定义的方法如果同时满足以下三个条件，该方法称为构造方法，具体如下:</p><ol><li>方法名与类名相同</li><li>在方法名的前面没有返回值类型的声明</li><li>在方法体中不能使用return语句放回一个值</li></ol></li><li><p>在没有定义构造方法的情况下,类会自动产生一个无参数的默认构造方法，这个默认的构造方法什么都不做;</p></li><li><p>一旦显式地定义了构造方法，默认构造方法将自动消失</p></li><li><p>每个对象在实例化时都必须执行构造方法，而且只能执行一次</p></li><li><p>如果构造方法调用失败，那么对象也无法创建</p></li><li><p>在一个类中除了定义无参的构造方法，还可以定义有参的构造方法，通过有参的构造方法就可以实现对属性的赋值。</p><ol><li><blockquote><p>例如:对于封装的数据，当我们想要操作这些域变量时，可以通过两种方法:第一种即通过有参的构造方法，在对象实例化时就对变量赋值;第二种就是通过前面提到的setXxx ()和getXxx()方法对变量进行赋值。</p></blockquote></li></ol></li><li><p>构造方法的重载</p><ol><li><blockquote><p>与普通方法一样，构造方法也可以重载，在一个类中可以定义多个构造方法，只要每个构造方法的参数类型或参数个数不同即可。</p></blockquote></li><li><blockquote><p>在创建对象时，可以通过调用不同的构造方法来为不同的属性进行赋值。</p></blockquote></li></ol></li></ol><h3 id="this关键字"><a href="#this关键字" class="headerlink" title="this关键字"></a>this关键字</h3><ol><li>当成员变量和局部变量的名称发生冲突时，在方法中将无法访问成员变量。为了解决这个问题，Java中提供了一个关键字this来指代当前对象，用于在方法中访问对象的成员。<ol><li>可以访问当前对象的成员变量</li><li>可以访问当前对象的成员变量</li><li>当有重载的构造方法时，用以在一个构造方法中使用this([参数1,参数2,…..])应用同类的其他构造方法.</li></ol></li></ol><h4 id="课后练习"><a href="#课后练习" class="headerlink" title="课后练习"></a>课后练习</h4><ol><li>定义一个除法类，类中定义两个int类型的私有成员变量被除数和除数，默认值都为1。在setXxx()方法中对传入的参数进行检查，如果传入值为零，则打印“除数不能为零”，如果不为零，才将其设置为除数属性的值。</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> 成都东软学院(CNU) </tag>
+            
+            <tag> 课堂笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>课堂笔记22-10-25(软件工程)</title>
+      <link href="/post/62fff22f.html"/>
+      <url>/post/62fff22f.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="软件工程"><a href="#软件工程" class="headerlink" title="软件工程"></a>软件工程</h1><h2 id="需求确认-用例图"><a href="#需求确认-用例图" class="headerlink" title="需求确认-用例图"></a>需求确认-用例图</h2><ol><li>参与者可分为三类<ol><li>具体的系统用户</li><li>其他系统</li><li>可运行的进度</li></ol></li><li>用例的重要特征<ol><li>一个用例是一个自包含的单元<ol><li>一个业务过程，而不是一项操作或活动（有一些列）</li></ol></li><li>一个用例必须有参与者发起</li><li>用例必须完后才能一个特定的目标</li><li>一个用例必须终于参与者，是系统保持在稳定的状态</li></ol></li><li>用例就是外部可见的系统功能</li><li></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 成都东软学院(CNU) </tag>
+            
+            <tag> 课堂笔记 </tag>
+            
+            <tag> 软件工程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>课堂笔记22-10-24(Python程序设计)</title>
       <link href="/post/be4e991e.html"/>
       <url>/post/be4e991e.html</url>
