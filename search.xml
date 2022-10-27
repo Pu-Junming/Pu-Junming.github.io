@@ -14,11 +14,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -31,7 +31,7 @@
       <link href="/post/a18e7317.html"/>
       <url>/post/a18e7317.html</url>
       
-        <content type="html"><![CDATA[<h1 id="HTML页面设计"><a href="#HTML页面设计" class="headerlink" title="HTML页面设计"></a>HTML页面设计</h1><h2 id="复习回顾"><a href="#复习回顾" class="headerlink" title="复习回顾"></a>复习回顾</h2><ol><li><p>position定位 </p><ol><li>Relative: 相对自己本来要出现的位置偏移  原来的位置仍保留</li><li>Absolute：相对的是已经定位过的父级偏移。如果没有，一直向上就是浏览器。 原来的位置不保留</li></ol></li><li><p>父元素 relative + 子元素 absoulute 常用用法<br>      1. fixed：相对的是浏览器。常用效果<br>            1. sticky：粘性定位，在屏幕里表现为relative定位，超出屏幕表现为fixed定位。</p></li><li><p>问题？ z-index属性可以控制定位元素重叠属性，在上面的z越大？注意前提是元素已经定位过</p></li><li><p>行内元素块元素的特征 display属性用法</p></li><li><p>作业为例 ：二级菜单的定位属性</p><ol><li>响应式概念回顾 解决屏幕适配</li><li>PC设备 vs手机设备 dpr的概念 以iphone6为例，物理分辨率750<em>1334，逻辑分辨率375</em>667，dpr&#x3D;2 ，那么我们设定一个元素的尺寸是100<em>100 到iphone6上实际是200</em>200</li></ol></li></ol><h2 id="响应式布局"><a href="#响应式布局" class="headerlink" title="响应式布局"></a>响应式布局</h2><ol><li><p>设置viewport属性</p><ol><li><blockquote><p>style &#x3D; “width:375px;height:200px; backgrouna- coLor: arav: s</p></blockquote></li></ol></li><li><p>使用viewport</p><ol><li><p>在开发应用于移动设备的网站时，第一件事是在<head>标签中加入</p></li><li><blockquote><meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no"/></blockquote></li><li><p>content中的属性含义:</p><ol><li>width :设置内容的宽度，为一个正整数或”device-width”</li><li>initial-scale :初始放大比例，为1个数字，可用小数</li><li>minimum-scale :最小缩放值,可用小数</li><li>maximum-scale :最大缩放值，可用小数</li><li>user-scalable :是否允许用户进行缩放，值为”no”或”yes”</li></ol></li></ol></li><li><p>百分比布局</p><ol><li>由于网页会根据屏幕宽度调整布局，所以不能使用绝对宽度的布局，也不能使用具有绝对宽度的元素<ol><li>不要使用: width:xxpx;</li><li>要使用: width:xx%;或width:auto;</li><li>百分比布局可以实现简单的页面适配。</li><li><img src="https://s3.ananas.chaoxing.com/doc/f6/1c/bf/a042d7843dd71091f0aa5b8e3048e244/thumb/10.png"></li></ol></li></ol></li><li><p>VW和VH</p><ol><li><img src="https://s3.ananas.chaoxing.com/doc/f6/1c/bf/a042d7843dd71091f0aa5b8e3048e244/thumb/11.png"></li></ol></li><li><p>1</p></li><li><p><img src="https://s3.ananas.chaoxing.com/doc/f6/1c/bf/a042d7843dd71091f0aa5b8e3048e244/thumb/12.png"></p></li><li><p><img src="https://s3.ananas.chaoxing.com/doc/f6/1c/bf/a042d7843dd71091f0aa5b8e3048e244/thumb/13.png"></p></li><li><p><img src="https://s3.ananas.chaoxing.com/doc/f6/1c/bf/a042d7843dd71091f0aa5b8e3048e244/thumb/14.png"></p></li><li></li></ol>]]></content>
+        <content type="html"><![CDATA[<h1 id="HTML页面设计"><a href="#HTML页面设计" class="headerlink" title="HTML页面设计"></a>HTML页面设计</h1><h2 id="复习回顾"><a href="#复习回顾" class="headerlink" title="复习回顾"></a>复习回顾</h2><ol><li><p>position定位 </p><ol><li>Relative: 相对自己本来要出现的位置偏移  原来的位置仍保留</li><li>Absolute：相对的是已经定位过的父级偏移。如果没有，一直向上就是浏览器。 原来的位置不保留</li></ol></li><li><p>父元素 relative + 子元素 absoulute 常用用法<br>      1. fixed：相对的是浏览器。常用效果<br>            1. sticky：粘性定位，在屏幕里表现为relative定位，超出屏幕表现为fixed定位。</p></li><li><p>问题？ z-index属性可以控制定位元素重叠属性，在上面的z越大？注意前提是元素已经定位过</p></li><li><p>行内元素块元素的特征 display属性用法</p></li><li><p>作业为例 ：二级菜单的定位属性</p><ol><li>响应式概念回顾 解决屏幕适配</li><li>PC设备 vs手机设备 dpr的概念 以iphone6为例，物理分辨率750<em>1334，逻辑分辨率375</em>667，dpr&#x3D;2 ，那么我们设定一个元素的尺寸是100<em>100 到iphone6上实际是200</em>200</li></ol></li></ol><h2 id="响应式布局"><a href="#响应式布局" class="headerlink" title="响应式布局"></a>响应式布局</h2><ol><li>设置viewport属性</li></ol><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">style</span> = <span class="string">&quot;width:375px;height:200px; backgrouna- coLor: arav: s /&gt;</span></span></span><br></pre></td></tr></table></figure><ol><li><p>使用viewport</p><ol><li>在开发应用于移动设备的网站时，第一件事是在<head>标签中加入</li></ol><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure><ol><li><p>content中的属性含义:</p><ol><li>width :设置内容的宽度，为一个正整数或”device-width”</li><li>initial-scale :初始放大比例，为1个数字，可用小数</li><li>minimum-scale :最小缩放值,可用小数</li><li>maximum-scale :最大缩放值，可用小数</li><li>user-scalable :是否允许用户进行缩放，值为”no”或”yes”</li></ol></li></ol></li><li><p>百分比布局</p><ol><li>由于网页会根据屏幕宽度调整布局，所以不能使用绝对宽度的布局，也不能使用具有绝对宽度的元素<ol><li>不要使用: width:xxpx;</li><li>要使用: width:xx%;或width:auto;</li><li>百分比布局可以实现简单的页面适配。</li><li><img src="https://s3.ananas.chaoxing.com/doc/f6/1c/bf/a042d7843dd71091f0aa5b8e3048e244/thumb/10.png"></li></ol></li></ol></li><li><p>VW和VH</p><ol><li><img src="https://s3.ananas.chaoxing.com/doc/f6/1c/bf/a042d7843dd71091f0aa5b8e3048e244/thumb/11.png"></li></ol></li><li><p>1</p><ol><li><img src="https://s3.ananas.chaoxing.com/doc/f6/1c/bf/a042d7843dd71091f0aa5b8e3048e244/thumb/12.png"></li><li><img src="https://s3.ananas.chaoxing.com/doc/f6/1c/bf/a042d7843dd71091f0aa5b8e3048e244/thumb/13.png"></li><li><img src="https://s3.ananas.chaoxing.com/doc/f6/1c/bf/a042d7843dd71091f0aa5b8e3048e244/thumb/14.png"></li></ol><h4 id="建议自学"><a href="#建议自学" class="headerlink" title="建议自学"></a>建议自学</h4></li></ol>]]></content>
       
       
       
@@ -56,17 +56,17 @@
       <link href="/post/813ae6ec.html"/>
       <url>/post/813ae6ec.html</url>
       
-        <content type="html"><![CDATA[<h1 id="Python脚本语言开发"><a href="#Python脚本语言开发" class="headerlink" title="Python脚本语言开发"></a>Python脚本语言开发</h1><h2 id="函数的调用"><a href="#函数的调用" class="headerlink" title="函数的调用"></a>函数的调用</h2><ol><li><blockquote><p>调用函数的一般形式：</p><p>​函数名（实际参数）</p></blockquote><ol><li><p>练习：计算器</p><ol><li><blockquote><pre><code># 计算器def add(x , y):    return x + ydef sub(x , y):    return x - ydef mul(x , y):    return x * ydef div(x , y):    return x / y# 条件语句if __name__ == &quot;__main__&quot;:    print(add(3,5))<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">   </span><br><span class="line">2. 练习：圆的面积</span><br><span class="line"></span><br><span class="line">   1. &gt;```</span><br><span class="line">      &gt;# 圆的面积</span><br><span class="line">      &gt;def mian(r):</span><br><span class="line"> return 3.14 * int(r) ** 2</span><br><span class="line"></span><br><span class="line">      &gt;if __name__ == &quot;__main__&quot;:</span><br><span class="line"> print(mian(2))</span><br></pre></td></tr></table></figure></code></pre></blockquote></li><li><blockquote><pre><code># 阶乘import mathdef fac(n):    return math.factorial(n)if __name__ == &quot;__main__&quot;:    print(fac(10))</code></pre></blockquote></li></ol></li></ol></li><li><p>关于函数</p><ol><li>具有特定功能.可复用</li><li>黑盒原理<ol><li>输入：函数的参数</li><li>输出：函数的返回值</li></ol></li><li>函数名要求准确，有意义，提高可读性</li><li>在Python中函数也是一种变量，无论有无参数，调用函数必须有括号！</li></ol></li><li><p>函数的参数</p><ol><li>定义函数时，圆括号内的内容是形参</li><li>调用函数时，圆括号内的内容是实参</li><li>定义函数时不需要声明函数类型，Python解释器会根据实参的类型自动推断形参的类型</li></ol></li><li><p>位置参数</p><ol><li>位置参数时常用的形式，调用函数时实参和形参的顺序必须严格一致，并且实参和形参的数量必须相同</li></ol></li><li><p>默认参数&#x2F;默认值参数</p><ol><li><p>形参可以设置默认值：</p><ol><li>调用时直接使用默认值</li><li>也可以通过显示赋值来替换其默认值</li></ol></li><li><p>函数调用时，默认值参数是否传递实参是可选的</p></li><li><p>注：带有默认值的参数必须位于参数列表的最后位置</p><ol><li><blockquote><p>def 函数名（…..，形参名&#x3D;默认值）：</p><p>​函数体</p></blockquote></li></ol></li></ol></li></ol>]]></content>
+        <content type="html"><![CDATA[<h1 id="Python脚本语言开发"><a href="#Python脚本语言开发" class="headerlink" title="Python脚本语言开发"></a>Python脚本语言开发</h1><h2 id="函数的调用"><a href="#函数的调用" class="headerlink" title="函数的调用"></a>函数的调用</h2><ol><li><blockquote><p>调用函数的一般形式：</p><p>​函数名（实际参数）</p></blockquote><ol><li>练习：计算器</li></ol></li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 计算器</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">x , y</span>):</span><br><span class="line"> <span class="keyword">return</span> x + y</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">sub</span>(<span class="params">x , y</span>):</span><br><span class="line"> <span class="keyword">return</span> x - y</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">mul</span>(<span class="params">x , y</span>):</span><br><span class="line"> <span class="keyword">return</span> x * y</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">div</span>(<span class="params">x , y</span>):</span><br><span class="line"> <span class="keyword">return</span> x / y</span><br><span class="line"></span><br><span class="line"><span class="comment"># 条件语句</span></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line"> <span class="built_in">print</span>(add(<span class="number">3</span>,<span class="number">5</span>))</span><br></pre></td></tr></table></figure><ol start="2"><li>练习：圆的面积<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 圆的面积</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">mian</span>(<span class="params">r</span>):</span><br><span class="line"><span class="keyword">return</span> <span class="number">3.14</span> * <span class="built_in">int</span>(r) ** <span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line"><span class="built_in">print</span>(mian(<span class="number">2</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure></li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 阶乘</span></span><br><span class="line">      </span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line">  </span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fac</span>(<span class="params">n</span>):</span><br><span class="line">    <span class="keyword">return</span> math.factorial(n)</span><br><span class="line">      </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line"><span class="built_in">print</span>(fac(<span class="number">10</span>))</span><br><span class="line">   </span><br></pre></td></tr></table></figure><ol start="2"><li><p>关于函数</p><ol><li>具有特定功能.可复用</li><li>黑盒原理<ol><li>输入：函数的参数</li><li>输出：函数的返回值</li></ol></li><li>函数名要求准确，有意义，提高可读性</li><li>在Python中函数也是一种变量，无论有无参数，调用函数必须有括号！</li></ol></li><li><p>函数的参数</p><ol><li>定义函数时，圆括号内的内容是形参</li><li>调用函数时，圆括号内的内容是实参</li><li>定义函数时不需要声明函数类型，Python解释器会根据实参的类型自动推断形参的类型</li></ol></li><li><p>位置参数</p><ol><li>位置参数时常用的形式，调用函数时实参和形参的顺序必须严格一致，并且实参和形参的数量必须相同</li></ol></li><li><p>默认参数&#x2F;默认值参数</p><ol><li><p>形参可以设置默认值：</p><ol><li>调用时直接使用默认值</li><li>也可以通过显示赋值来替换其默认值</li></ol></li><li><p>函数调用时，默认值参数是否传递实参是可选的</p></li><li><p>注：带有默认值的参数必须位于参数列表的最后位置</p></li></ol></li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">函数名</span>(<span class="params">.....，形参名=默认值</span>):</span><br><span class="line"></span><br><span class="line">函数体</span><br></pre></td></tr></table></figure><p>​      </p>]]></content>
       
       
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -85,11 +85,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -131,11 +131,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -258,11 +258,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
             <tag> 大数据与量化 </tag>
             
@@ -283,11 +283,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -331,11 +331,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -354,11 +354,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
