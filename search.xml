@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>课堂笔记22-10-31(Python脚本语言开发)</title>
+      <link href="/post/525a5d77.html"/>
+      <url>/post/525a5d77.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Python脚本语言开发"><a href="#Python脚本语言开发" class="headerlink" title="Python脚本语言开发"></a>Python脚本语言开发</h1><h2 id="函数的调用"><a href="#函数的调用" class="headerlink" title="函数的调用"></a>函数的调用</h2><ol><li>课前提神</li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 画笔</span></span><br><span class="line"><span class="keyword">import</span> turtle <span class="keyword">as</span> t</span><br><span class="line"></span><br><span class="line"><span class="comment"># t.pencolor(&quot;pink&quot;)   # 改变颜色</span></span><br><span class="line"><span class="comment"># t.fd(100)</span></span><br><span class="line"><span class="comment"># t.left(90)</span></span><br><span class="line"><span class="comment"># t.fd(100)</span></span><br><span class="line"><span class="comment"># t.left(90)</span></span><br><span class="line"><span class="comment"># t.fd(100)</span></span><br><span class="line"><span class="comment"># t.left(90)</span></span><br><span class="line"><span class="comment"># t.fd(100)</span></span><br><span class="line"><span class="comment"># t.goto(-100, 100)</span></span><br><span class="line"><span class="comment"># t.pu()    # 提笔</span></span><br><span class="line"><span class="comment"># t.goto(100, -220)</span></span><br><span class="line"><span class="comment"># t.pd()      #放下笔</span></span><br><span class="line"><span class="comment"># t.left(90)</span></span><br><span class="line"><span class="comment"># t.circle(80)    # 圆</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> t.pencolor(<span class="string">&quot;pink&quot;</span>)</span><br><span class="line"> t.fillcolor(<span class="string">&quot;yellow&quot;</span>)  <span class="comment"># 填充颜色</span></span><br><span class="line"> t.begin_fill()</span><br><span class="line"></span><br><span class="line"> <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">4</span>):</span><br><span class="line">     t.fd(<span class="number">100</span>)</span><br><span class="line">     t.left(<span class="number">90</span>)</span><br><span class="line">     t.end_fill()</span><br><span class="line"></span><br></pre></td></tr></table></figure><ol start="2"><li><p>不定长参数&#x2F;可边长度参数</p><ol><li><p>不定长参数主要有两种形式：在参数名前面1个或2个*</p></li><li><blockquote><p>def 函数名([formal_arge,]*arge,**kwargs):</p><p>函数体                       # *args一定在前面</p></blockquote></li><li><p>当传入的参数个数比形参个数多时：</p><ol><li>如果传入的参数没有指定名称，则由*args以元组的形式存放多出的参数;如果传入的参数指定了名称，则由**kwargs以字典的形式存放多出的参数。</li></ol></li></ol></li><li><p>传递参数的序列解包</p><ol><li>传递参数时，可以通过在实参序列前面加上一个星号将其解包，然后传递多个变量形参。<ol><li>如果函数实参是字典,可以在前面加两个星号进行解包，等价于关键参数。</li></ol></li></ol></li></ol><h2 id="函数的返回值"><a href="#函数的返回值" class="headerlink" title="函数的返回值"></a>函数的返回值</h2><ol><li>返回值：函数调用后求值的结果；用return语句来指定</li><li>不带表达式的return，或没有return语句,相当于返回None</li><li>函数执行到return语句时就将结束，且return可以返回多个值</li><li>四种类型<ol><li>函数无参数,无返回值  #如打印一个菜单</li><li>函数无参数,有返回值  #如回去温度.湿度</li><li>函数有参数,无返回值</li><li>函数有参数,有返回值</li></ol></li></ol><h2 id="变量作用域"><a href="#变量作用域" class="headerlink" title="变量作用域"></a>变量作用域</h2><ol><li>变量的作用域：变量起作用的代码范围<ol><li>局部变量：在函数内定义的变量</li><li>全局变量：在所有函数外定义的变量</li></ol></li><li>LEGB（四种作用域）：<ol><li>L(Local):函数内的区域，局部变量;</li><li>E(Enclosing):外层嵌套函数的区域;</li><li>E(Enclosing):外层嵌套函数的区域;</li><li>B(Built-in):内置作用域，系统内置模块中的变量。Python搜索变量的优先级:L→E&gt;G&gt;B</li></ol></li><li>全局作用域中不能使用局部变量。<ol><li>函数返回(结束)时，其局部变量就会自动丢弃。局部作用域内可以访问全局变量。</li></ol></li><li>局部作用域不能使用其他局部作用域内的变量。</li><li>不同作用域中可以使用相同的变量名，但应尽量避免这种情况。<ol><li>如果局部变量与全局变量具有相同的名字，那么该局部变量会在自己的作用域内隐藏同名的全局变量。</li></ol></li><li>减少全局变量的使用可缩小变量赋值错误导致的缺陷作用范围，并方便追踪赋值错误发生的位置。</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 成都东软学院(CNU) </tag>
+            
+            <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>小小的故事</title>
       <link href="/post/8a78f35d.html"/>
       <url>/post/8a78f35d.html</url>
