@@ -1,4 +1,4 @@
-let rm = {};
+var rm = {};
 rm.showRightMenu = function (isTrue, x = 0, y = 0) {
     let $rightMenu = $('#rightMenu');
     $rightMenu.css('top', x + 'px').css('left', y + 'px');
