@@ -109,7 +109,7 @@ if (document.body.clientWidth > 992) {
                 btf.scrollToDest(0, 500)
             });
             $("#" + setting.nekoname)
-                .click(function () {F
+                .click(function () {
                     btf.scrollToDest(0, 500)
                 });
             return this;
