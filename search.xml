@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>课堂笔记22-11-1(Java面向对象程序设计)</title>
+      <link href="/post/16022881.html"/>
+      <url>/post/16022881.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Java面向对象程序设计"><a href="#Java面向对象程序设计" class="headerlink" title="Java面向对象程序设计"></a>Java面向对象程序设计</h1><h2 id="类的继承"><a href="#类的继承" class="headerlink" title="类的继承"></a>类的继承</h2><ol><li><h4 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h4><ol><li>在继承中<ol><li>-子类可以得到父类可继承的属性和方法。</li><li>-子类可以添加新的属性和方法。</li><li>-子类可以重新定义父类的属性和方法。</li></ol></li></ol></li><li><p>在类的继承中，需要注意的一些问题</p><ol><li><p>在Java中，类只支持单继承，不允许多重继承，也就是说—个米口能右—个直接父类</p></li><li><p>多个类可以继承一个父类。</p></li><li><p>在Java中，多层继承是可以的,即一个类的父类可以再去继承另外的父类，例如C类继承自B类，而B类又可以去继承A类，这时，C类也可称作A类的子类。</p></li><li><h4 id="注意-在Java中，子类和父类是一种相对概念，也就是说一个类是某个类父类的同时-也可以是另一个类的子类。例如上面的示例中，B类是A类的子类，同时又是C类的父类。"><a href="#注意-在Java中，子类和父类是一种相对概念，也就是说一个类是某个类父类的同时-也可以是另一个类的子类。例如上面的示例中，B类是A类的子类，同时又是C类的父类。" class="headerlink" title="注意:在Java中，子类和父类是一种相对概念，也就是说一个类是某个类父类的同时,也可以是另一个类的子类。例如上面的示例中，B类是A类的子类，同时又是C类的父类。"></a>注意:在Java中，子类和父类是一种相对概念，也就是说一个类是某个类父类的同时,也可以是另一个类的子类。例如上面的示例中，B类是A类的子类，同时又是C类的父类。</h4></li></ol></li><li><h4 id="要点·子类只能继承父类中可访问的属性"><a href="#要点·子类只能继承父类中可访问的属性" class="headerlink" title="要点·子类只能继承父类中可访问的属性:"></a>要点·子类只能继承父类中可访问的属性:</h4><ol><li>父子类在同一个包中，子类可以继承父类中的非私有属性。</li><li>父子类不在同一个包中，子类可以继承public类中的public属性和protected属性。</li></ol></li></ol><h3 id="属性的隐藏"><a href="#属性的隐藏" class="headerlink" title="属性的隐藏"></a>属性的隐藏</h3><ol><li><h4 id="要点-1"><a href="#要点-1" class="headerlink" title="要点"></a>要点</h4><ol><li>子类可以重新定义与父类同名的属性，称为属性隐藏。</li></ol></li></ol><h3 id="重写父类方法"><a href="#重写父类方法" class="headerlink" title="重写父类方法"></a>重写父类方法</h3><ol><li><blockquote><p>在继承关系中，子类会自动继承父类中定义的方法，但有时在子类中需要对继承的方法进行一些修改，即对父类的方法进行重写。</p></blockquote></li><li><blockquote><p>需要注意的是，在子类中重写的方法需要和父类被重写的方法具有相同的方法名、参数列表以及返回值类型。</p></blockquote></li></ol><h3 id="super关键字-注意事项"><a href="#super关键字-注意事项" class="headerlink" title="super关键字 注意事项"></a>super关键字 注意事项</h3><ol><li>super关键字使用<ol><li>-通过super调用父类构造方法的代码必须位于子类构造方法的第一行，并且只能出现一次。</li><li>-在子类的构造方法中通过super指定调用父类的某个构造方法，如果没有指定，在实例化子类对象时，会自动调用父类无参的构造方法。</li><li>-被调用的父类构造方法,必须是非private的。</li></ol></li></ol><h3 id="final关键字"><a href="#final关键字" class="headerlink" title="final关键字"></a>final关键字</h3><ol><li><blockquote><p>final关键字可用于修饰类、变量和方法，它有“无法改变”或者“最终”的含义，因此被final修饰的类、变量和方法将具有以下特性:</p><ol><li>final修饰的类不能被继承，也就是不能够派生子类。</li><li>final修饰的方法不能被子类重写。</li><li>final修饰的变量（成员变量和局部变量)是常量，只能赋值一次。</li></ol></blockquote></li></ol><h3 id="Object类"><a href="#Object类" class="headerlink" title="Object类"></a>Object类</h3><ol><li><blockquote><p>在JDK中提供了一个0bject类，它是类层次结构的根类，每个类都直接或间接继承自该类。如果一个类没有显式地指明其父类，那么它的父类就是0bject。所有对象（包括数组）都实现了这个类的方法。</p></blockquote></li><li><p>Object类中常用方法</p><ol><li><table><thead><tr><th>方法名称</th><th>方法说明</th></tr></thead><tbody><tr><td>equals()</td><td>指示其他某个对象是否与此对象“相等”</td></tr><tr><td>getClass()</td><td>返回此Object的运行时类</td></tr><tr><td>hashCode()</td><td>返回该对象的哈希码值</td></tr><tr><td>toString()</td><td>返回该对象的字符串表示</td></tr></tbody></table></li></ol></li><li></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> 成都东软学院(CNU) </tag>
+            
+            <tag> 课堂笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>课堂笔记22-11-1(面向对象软件工程)</title>
       <link href="/post/f0f69f0f.html"/>
       <url>/post/f0f69f0f.html</url>
@@ -111,9 +140,9 @@
             
             <tag> 课堂笔记 </tag>
             
-            <tag> MySQL </tag>
-            
             <tag> JavaWeb </tag>
+            
+            <tag> MySQL </tag>
             
             <tag> Web应用开发 </tag>
             
@@ -361,9 +390,9 @@
             
             <tag> 课堂笔记 </tag>
             
-            <tag> MySQL </tag>
-            
             <tag> JavaWeb </tag>
+            
+            <tag> MySQL </tag>
             
             <tag> Navicat Premium </tag>
             
@@ -429,11 +458,11 @@
             
             <tag> 课堂笔记 </tag>
             
-            <tag> JavaWeb </tag>
-            
             <tag> STS </tag>
             
             <tag> tomcat </tag>
+            
+            <tag> JavaWeb </tag>
             
         </tags>
       
