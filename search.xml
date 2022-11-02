@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>课堂笔记22-11-12(Python脚本语言开发)</title>
+      <link href="/post/dec56986.html"/>
+      <url>/post/dec56986.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Python脚本语言开发"><a href="#Python脚本语言开发" class="headerlink" title="Python脚本语言开发"></a>Python脚本语言开发</h1><h3 id="课堂预热"><a href="#课堂预热" class="headerlink" title="课堂预热"></a>课堂预热</h3><ol><li>绘制气短数码管形式的日期信息</li><li>判断回文数</li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 判断回文数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">is_palin</span>(<span class="params">n</span>):</span><br><span class="line">    original = <span class="built_in">str</span>(n)</span><br><span class="line">    reverse = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> original:</span><br><span class="line">        reverse = i + reverse</span><br><span class="line">    <span class="keyword">return</span> original == reverse</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">is_palin(<span class="number">12321</span>)</span><br></pre></td></tr></table></figure><h3 id="global和nonlocal关键字"><a href="#global和nonlocal关键字" class="headerlink" title="global和nonlocal关键字"></a>global和nonlocal关键字</h3><ol><li>global<ol><li>需要在函数或其他局部作用域中修改全局变量时，使用global关键字<ol><li>在全局作用域中使用变量就是全局变量</li><li>在函数中，前面有关键字global的变量就是全局变量</li><li>在函数中，使用赋值语句的变量，就是局部变量，反之，则为全局边变量</li></ol></li></ol></li><li>nonlocal<ol><li>nonlocal关键字可以在一个嵌套函数中，修改嵌套作用域中变量</li></ol></li></ol><h5 id="注：global修饰的变量在之前可以不存在：nonlocal修饰的变量在嵌套作用域中必须已经存在"><a href="#注：global修饰的变量在之前可以不存在：nonlocal修饰的变量在嵌套作用域中必须已经存在" class="headerlink" title="注：global修饰的变量在之前可以不存在：nonlocal修饰的变量在嵌套作用域中必须已经存在"></a>注：global修饰的变量在之前可以不存在：nonlocal修饰的变量在嵌套作用域中必须已经存在</h5><h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><ol><li>函数<ol><li>函数是组织好的，可重复使用的,用来实现单一或相关联功能的代码段。</li></ol></li><li>内置函数<ol><li>Python自带函数，可直接调用;可用dir(  builtins)列举,用help()查看描述。</li></ol></li><li>模块中的函数<ol><li>用import语句导入相应模块后可调用;根据导入形式,调用时加或不加前缀。</li></ol></li><li>自定义函数<ol><li>用def语句定义,注意参数传递、变量作用域、返回值指定;用函数名0调用。</li></ol></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 成都东软学院(CNU) </tag>
+            
+            <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>课堂笔记22-11-1(Java面向对象程序设计)</title>
       <link href="/post/16022881.html"/>
       <url>/post/16022881.html</url>
