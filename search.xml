@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>课堂笔记22-11-3(Java面向对象程序设计)</title>
+      <link href="/post/bcdf923.html"/>
+      <url>/post/bcdf923.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Java面向对象程序设计"><a href="#Java面向对象程序设计" class="headerlink" title="Java面向对象程序设计"></a>Java面向对象程序设计</h1><h2 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h2><h3 id="多态的概念"><a href="#多态的概念" class="headerlink" title="多态的概念"></a>多态的概念</h3><ol><li><blockquote><p>多态指同一个实体同时具有多种形式。它是面向对象程序设计(0OP)的一个重要特征。</p></blockquote></li><li><blockquote><p>多态:分为两种,即编译时多态和运行时多态。</p></blockquote></li><li><blockquote><p>编译时多态:通过方法的重载来实现的。</p></blockquote></li><li><blockquote><p>运行时多态:通过方法的覆盖(重写)来实现的。</p></blockquote></li><li><blockquote><p>Java中实现运行时多态的基础是动态方法调用,它是一种在运行时而不是在编译期调用覆盖方法的机制。</p></blockquote></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> 成都东软学院(CNU) </tag>
+            
+            <tag> 课堂笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>课堂笔记22-11-3(HTML页面设计)</title>
       <link href="/post/8e70cd7b.html"/>
       <url>/post/8e70cd7b.html</url>
@@ -189,9 +218,9 @@
       
       <categories>
           
-          <category> MySQL </category>
-          
           <category> JavaWeb </category>
+          
+          <category> MySQL </category>
           
       </categories>
       
@@ -435,13 +464,11 @@
       
       <categories>
           
-          <category> MySQL </category>
-          
           <category> JavaWeb </category>
           
-          <category> Navicat Premium </category>
+          <category> MySQL </category>
           
-          <category> Web应用开发 </category>
+          <category> Navicat Premium </category>
           
       </categories>
       
@@ -505,11 +532,11 @@
       
       <categories>
           
+          <category> JavaWeb </category>
+          
           <category> STS </category>
           
           <category> tomcat </category>
-          
-          <category> JavaWeb </category>
           
       </categories>
       
