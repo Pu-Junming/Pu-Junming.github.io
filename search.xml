@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>课堂笔记22-11-3(HTML页面设计)</title>
+      <link href="/post/8e70cd7b.html"/>
+      <url>/post/8e70cd7b.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="HTML页面设计"><a href="#HTML页面设计" class="headerlink" title="HTML页面设计"></a>HTML页面设计</h1><h3 id="回温上节课内容"><a href="#回温上节课内容" class="headerlink" title="回温上节课内容"></a>回温上节课内容</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>flex弹性布局<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="selector-class">.container</span> &#123;</span></span><br><span class="line"><span class="language-css"><span class="attribute">background-color</span>: black;</span></span><br><span class="line"><span class="language-css"><span class="attribute">width</span>: <span class="number">660px</span>;</span></span><br><span class="line"><span class="language-css"><span class="attribute">width</span>: <span class="number">300px</span>;</span></span><br><span class="line"><span class="language-css"><span class="attribute">height</span>: <span class="number">400px</span>;</span></span><br><span class="line"><span class="language-css"><span class="attribute">display</span>: flex;</span></span><br><span class="line"><span class="language-css"><span class="comment">/*属性0 display: -webkit-flex;*/</span></span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="comment">/*属性1:规定主轴方向,按行还是按列显示*/</span></span></span><br><span class="line"><span class="language-css"><span class="comment">/*flex-direction: row;</span></span></span><br><span class="line"><span class="comment"><span class="language-css">flex-direction: column;</span></span></span><br><span class="line"><span class="comment"><span class="language-css">flex-direction: column-reverse;</span></span></span><br><span class="line"><span class="comment"><span class="language-css">flex-direction: row-reverse;</span></span></span><br><span class="line"><span class="comment"><span class="language-css">flex-direction: row;*/</span></span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="comment">/*属性2:规定空间不够时,如何换行;*/</span></span></span><br><span class="line"><span class="language-css"><span class="comment">/*flex-wrap: nowrap;</span></span></span><br><span class="line"><span class="comment"><span class="language-css">flex-wrap: wrap;</span></span></span><br><span class="line"><span class="comment"><span class="language-css">flex-wrap: wrap-reverse;*/</span></span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="comment">/*属性3=1+2*/</span></span></span><br><span class="line"><span class="language-css"><span class="comment">/*flex-flow: row wrap;*/</span></span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="comment">/*属性4.定义了项目在主轴上的对齐方式*/</span></span></span><br><span class="line"><span class="language-css"><span class="comment">/*justify-content: flex-start;</span></span></span><br><span class="line"><span class="comment"><span class="language-css">justify-content: flex-end;</span></span></span><br><span class="line"><span class="comment"><span class="language-css">justify-content: center;</span></span></span><br><span class="line"><span class="comment"><span class="language-css">justify-content: space-between;</span></span></span><br><span class="line"><span class="comment"><span class="language-css">justify-content: space-around;*/</span></span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="comment">/*属性5.定义项目在交叉轴上如何对齐</span></span></span><br><span class="line"><span class="comment"><span class="language-css"> 针对一行项目*/</span></span></span><br><span class="line"><span class="language-css"><span class="comment">/*align-items: flex-end;</span></span></span><br><span class="line"><span class="comment"><span class="language-css">align-items: center;</span></span></span><br><span class="line"><span class="comment"><span class="language-css">align-items: baseline;*/</span></span></span><br><span class="line"><span class="language-css"><span class="comment">/*基准线对齐,以内容文字对齐*/</span></span></span><br><span class="line"><span class="language-css"><span class="comment">/*align-items: stretch;*/</span><span class="comment">/*拉伸,把item注释才能看到效果*/</span></span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="comment">/*属性6.定义项目在交叉轴上如何对齐</span></span></span><br><span class="line"><span class="comment"><span class="language-css"> 针对多行项目*/</span></span></span><br><span class="line"><span class="language-css"><span class="comment">/*align-content: flex-start;/*item3不会被挤下去*/</span></span></span><br><span class="line"><span class="language-css"><span class="comment">/*align-content: flex-end;</span></span></span><br><span class="line"><span class="comment"><span class="language-css">align-content: center;</span></span></span><br><span class="line"><span class="comment"><span class="language-css">align-content: space-between;</span></span></span><br><span class="line"><span class="comment"><span class="language-css">align-content: space-around;*/</span></span></span><br><span class="line"><span class="language-css">&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="selector-class">.item</span> &#123;</span></span><br><span class="line"><span class="language-css"><span class="attribute">background-color</span>: gold;</span></span><br><span class="line"><span class="language-css"><span class="attribute">width</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css"><span class="attribute">height</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css"><span class="attribute">margin</span>: <span class="number">10px</span>;</span></span><br><span class="line"><span class="language-css"><span class="attribute">flex-grow</span>: <span class="number">1</span>;</span></span><br><span class="line"><span class="language-css"><span class="comment">/*属性8定义项目的放大比例，默认为0即如果存在剩余空间，也不放大*/</span></span></span><br><span class="line"><span class="language-css"><span class="attribute">flex-shrink</span>: <span class="number">1</span>;</span></span><br><span class="line"><span class="language-css"><span class="comment">/*属性9定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小*/</span></span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">&#125;</span></span><br><span class="line"><span class="language-css"><span class="selector-id">#item3</span>&#123;</span></span><br><span class="line"><span class="language-css"><span class="attribute">line-height</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css"><span class="comment">/*属性7定义项目的排列顺序。数值越小，排列越靠前，默认为0*/</span></span></span><br><span class="line"><span class="language-css"><span class="comment">/*order: -1;*/</span></span></span><br><span class="line"><span class="language-css"><span class="comment">/*flex-grow: 2;*/</span></span></span><br><span class="line"><span class="language-css"><span class="comment">/*flex-shrink: 2;*/</span></span></span><br><span class="line"><span class="language-css"><span class="comment">/*属性10：理想宽高 ，优先级高于设定的宽高*/</span></span></span><br><span class="line"><span class="language-css"><span class="comment">/*flex-basis: 200px;*/</span></span></span><br><span class="line"><span class="language-css"><span class="comment">/*属性11:8+9+10*/</span></span></span><br><span class="line"><span class="language-css"><span class="attribute">flex</span>: auto;</span></span><br><span class="line"><span class="language-css">&#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span> <span class="attr">id</span>=<span class="string">&quot;item3&quot;</span>&gt;</span>3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> HTML </category>
+          
+          <category> CSS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 成都东软学院(CNU) </tag>
+            
+            <tag> 课堂笔记 </tag>
+            
+            <tag> HTML </tag>
+            
+            <tag> CSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>课堂笔记22-11-12(Python脚本语言开发)</title>
       <link href="/post/dec56986.html"/>
       <url>/post/dec56986.html</url>
@@ -20,11 +53,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -49,11 +82,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -107,11 +140,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -198,11 +231,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -260,11 +293,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -289,11 +322,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -347,11 +380,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -516,11 +549,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
             <tag> 大数据与量化 </tag>
             
@@ -547,11 +580,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -609,11 +642,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -638,11 +671,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
