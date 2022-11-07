@@ -4,11 +4,40 @@
   
     
     <entry>
+      <title>课堂笔记22-11-7(Python脚本语言开发)</title>
+      <link href="/post/15f0d75d.html"/>
+      <url>/post/15f0d75d.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="python脚本语言开发"><a href="#python脚本语言开发" class="headerlink" title="python脚本语言开发"></a>python脚本语言开发</h1><h3 id="切分符"><a href="#切分符" class="headerlink" title="切分符"></a>切分符</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">my_str = <span class="string">&#x27;Python is awesome!&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(my_str[<span class="number">8</span>: <span class="number">30</span>])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出省份证年月日</span></span><br><span class="line"><span class="built_in">id</span> = <span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;出生日期:<span class="subst">&#123;<span class="built_in">id</span>[<span class="number">6</span>:<span class="number">10</span>]&#125;</span>年<span class="subst">&#123;<span class="built_in">id</span>[<span class="number">10</span>:<span class="number">12</span>]&#125;</span>月<span class="subst">&#123;<span class="built_in">id</span>[<span class="number">12</span>:<span class="number">14</span>]&#125;</span>日&quot;</span>)</span><br><span class="line"><span class="comment"># 出生日期:2000年10月07日</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出手机号前三位后四位</span></span><br><span class="line">phone = <span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(phone[:<span class="number">3</span>]+<span class="string">&quot;****&quot;</span>+phone[-<span class="number">4</span>:])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#练习： s = &#x27;a1b2c3&#x27;,获取其中全部字符串</span></span><br><span class="line">s = <span class="string">&#x27;a1b2c3&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s[<span class="number">1</span>::<span class="number">2</span>])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 练习 输入一个字符串，输出字符串的正，反拼接</span></span><br><span class="line"><span class="built_in">str</span> = <span class="built_in">input</span>(<span class="string">&quot;输入字符串&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">str</span>[:]+<span class="built_in">str</span>[::-<span class="number">1</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 凯撒加密 输入abc输出</span></span><br><span class="line">ori = <span class="built_in">input</span>()</span><br><span class="line">offset = <span class="number">2</span></span><br><span class="line">new = <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> ori:</span><br><span class="line">    new += <span class="built_in">chr</span>(<span class="built_in">ord</span>(i) + offset)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(new)</span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 成都东软学院(CNU) </tag>
+            
+            <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>课堂笔记22-11-7（Web应用开发）</title>
       <link href="/post/a193c4f6.html"/>
       <url>/post/a193c4f6.html</url>
       
-        <content type="html"><![CDATA[<h1 id="Web应用开发"><a href="#Web应用开发" class="headerlink" title="Web应用开发"></a>Web应用开发</h1><h2 id="数据库可行性分析"><a href="#数据库可行性分析" class="headerlink" title="数据库可行性分析"></a>数据库可行性分析</h2><ol><li>数据库可行性分析的评判标准是：设计的数据库能完成所有功能中的所有数据操作，但是又如何进行数据库可行性分析呢？<ol><li>可以通过运行实现DB操作的SQL语句来达到数据库可行性分析的目的。具体来说<ol><li>如果一个功能中的所有DB操作都能用SQL模拟实现，那么此数据库对此功能可行。</li><li>如果一个模块下的所有功能都能用SQL模拟实现则此模块可行。</li><li>同理如果一个子系统下的所有模块都能用SQL模拟实现则此子系统可行。</li><li>如果系统中的所有子系统都能用SQL模拟实现那么整个系统就可行。</li></ol></li><li>总而言之，数据库的可行性分析就是编写每个功能的所有DB操作的SQL语句。</li></ol></li></ol><h3 id="JDBC技术编码"><a href="#JDBC技术编码" class="headerlink" title="JDBC技术编码"></a>JDBC技术编码</h3><ol><li>JDBC（Java Database Connectivity，Java数据库连接）是Java语言中用来规范客户端程序如何来访问数据库的应用程序接口，提供了诸如查询和更新数据库中数据的方法。<ol><li>JDBC技术的跨平台</li><li>JDBC技术的跨平台实现<ol><li>JDBC技术采用“委托”方式实现跨数据库服务器平台。</li><li>在JDBC API的类中，JDBC API中存在大量的Java抽象类和Java接口，这些Java抽象类和Java接口中包含大量的没有实现代码的抽象方法。</li><li>JDBC技术会“委托”各大数据库厂家给出JDBC API中所有抽象方法的实现代码。即数据库厂家会用一些具体子类实现JDBC API中的接口或继承JDBC API中的抽象类，而在这些具体子类中给出继承得到的抽象方法的实现代码。</li><li>数据库厂家会将这些具体子类放到一个个Java包中，并压缩成一个Jar文件，此Jar文件我们通常称为此数据库的JDBC驱动。</li></ol></li><li>数据库JDBC驱动<ol><li>数据库的JDBC驱动简单理解就是，由数据库厂家提供的一个Jar压缩文件，此Jar压缩文件中包含很多Java具体类，这些Java具体类实现了JDBC API中的所有未实现的抽象方法。</li></ol></li></ol></li></ol><h3 id="课后作业"><a href="#课后作业" class="headerlink" title="课后作业"></a>课后作业</h3><ol><li>单元测验1</li><li>实验报告1~3</li><li>提交Demo数据库设计文档，文件名为:学号姓名.rar</li><li>案例项目数据库可行性分析</li></ol>]]></content>
+        <content type="html"><![CDATA[<h1 id="Web应用开发"><a href="#Web应用开发" class="headerlink" title="Web应用开发"></a>Web应用开发</h1><h2 id="数据库可行性分析"><a href="#数据库可行性分析" class="headerlink" title="数据库可行性分析"></a>数据库可行性分析</h2><ol><li>数据库可行性分析的评判标准是：设计的数据库能完成所有功能中的所有数据操作，但是又如何进行数据库可行性分析呢？<ol><li>可以通过运行实现DB操作的SQL语句来达到数据库可行性分析的目的。具体来说<ol><li>如果一个功能中的所有DB操作都能用SQL模拟实现，那么此数据库对此功能可行。</li><li>如果一个模块下的所有功能都能用SQL模拟实现则此模块可行。</li><li>同理如果一个子系统下的所有模块都能用SQL模拟实现则此子系统可行。</li><li>如果系统中的所有子系统都能用SQL模拟实现那么整个系统就可行。</li></ol></li><li>总而言之，数据库的可行性分析就是编写每个功能的所有DB操作的SQL语句。</li></ol></li></ol><h3 id="JDBC技术编码"><a href="#JDBC技术编码" class="headerlink" title="JDBC技术编码"></a>JDBC技术编码</h3><ol><li>JDBC（Java Database Connectivity，Java数据库连接）是Java语言中用来规范客户端程序如何来访问数据库的应用程序接口，提供了诸如查询和更新数据库中数据的方法。<ol><li>JDBC技术的跨平台</li><li>JDBC技术的跨平台实现<ol><li>JDBC技术采用“委托”方式实现跨数据库服务器平台。</li><li>在JDBC API的类中，JDBC API中存在大量的Java抽象类和Java接口，这些Java抽象类和Java接口中包含大量的没有实现代码的抽象方法。</li><li>JDBC技术会“委托”各大数据库厂家给出JDBC API中所有抽象方法的实现代码。即数据库厂家会用一些具体子类实现JDBC API中的接口或继承JDBC API中的抽象类，而在这些具体子类中给出继承得到的抽象方法的实现代码。</li><li>数据库厂家会将这些具体子类放到一个个Java包中，并压缩成一个Jar文件，此Jar文件我们通常称为此数据库的JDBC驱动。</li></ol></li><li>数据库JDBC驱动<ol><li>数据库的JDBC驱动简单理解就是，由数据库厂家提供的一个Jar压缩文件，此Jar压缩文件中包含很多Java具体类，这些Java具体类实现了JDBC API中的所有未实现的抽象方法。</li></ol></li></ol></li></ol><h3 id="课后作业"><a href="#课后作业" class="headerlink" title="课后作业"></a>课后作业</h3><ol><li>单元测验1，在学习通上在线做</li><li>实验报告1~3，提交到钉钉群文件“&#x2F;实验报告”对应目录中</li><li>提交Demo数据库设计文档，文件名为：学号_姓名.rar。提交到钉钉群文件“&#x2F;作业”对应目录中</li><li>案例项目数据库可行性分析。提交到钉钉群文件“&#x2F;作业”对应目录中、</li></ol>]]></content>
       
       
       <categories>
@@ -59,11 +88,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -121,11 +150,11 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -150,11 +179,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -208,11 +237,11 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -299,11 +328,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -361,11 +390,11 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -390,11 +419,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -448,11 +477,11 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -615,11 +644,11 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
             
             <tag> 大数据与量化 </tag>
             
@@ -646,11 +675,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -708,11 +737,11 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -737,11 +766,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
