@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>课堂笔记22-11-8（面向对象软件工程）</title>
+      <link href="/post/74975884.html"/>
+      <url>/post/74975884.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="软件工程"><a href="#软件工程" class="headerlink" title="软件工程"></a>软件工程</h1><h3 id="系统分析"><a href="#系统分析" class="headerlink" title="系统分析"></a>系统分析</h3><ol><li>系统分析目的<ol><li>初步以面向对象视角理解业务</li><li>对系统内部组成进行初步的抽取</li><li>获取系统的初步设计</li></ol></li><li>系统分析技术<ol><li>领域模型</li><li>健壮性分析</li><li>顺序图</li></ol></li></ol><h3 id="领域模型概念"><a href="#领域模型概念" class="headerlink" title="领域模型概念"></a>领域模型概念</h3><ol><li>定义<ol><li>是对领域内的概念类或现实世界中对象的可视化表示。领域模型也被称为概念模型、领域对象模型和分析对象模型。</li></ol></li><li>表现形式<ol><li>领域模型可以被描述成一组没有定义操作的类图（UML表示法）。它提供了概念透视图。<ol><li>领域对象或概念类（大量—对象的共性，共性进一步预测未知）</li><li>概念类之间的关联</li><li>概念类的属性</li></ol></li></ol></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件工程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 成都东软学院(CNU) </tag>
+            
+            <tag> 课堂笔记 </tag>
+            
+            <tag> 面向对象软件工程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>课堂笔记22-11-7(Python脚本语言开发)</title>
       <link href="/post/15f0d75d.html"/>
       <url>/post/15f0d75d.html</url>
@@ -20,11 +49,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -88,11 +117,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -150,11 +179,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -179,11 +208,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -237,11 +266,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -328,11 +357,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -390,11 +419,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -419,11 +448,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -477,11 +506,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -644,11 +673,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
             <tag> 大数据与量化 </tag>
             
@@ -675,11 +704,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -737,11 +766,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -766,11 +795,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
