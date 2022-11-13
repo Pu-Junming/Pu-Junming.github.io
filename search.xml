@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>课堂笔记22-11-11（Web应用开发）</title>
+      <link href="/post/3d23ca03.html"/>
+      <url>/post/3d23ca03.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Web应用开发"><a href="#Web应用开发" class="headerlink" title="Web应用开发"></a>Web应用开发</h1><h2 id="JDBC技术编码"><a href="#JDBC技术编码" class="headerlink" title="JDBC技术编码"></a>JDBC技术编码</h2><ol><li>JDBC实现原理<ol><li>JDBC（Java Database Connectivity，Java数据库连接）是Java语言中用来规范客户端程序如何来访问数据库的应用程序接口，提供了诸如查询和更新数据库中数据的方法。</li><li>JDBC技术的跨平台<ol><li>跨平台<ol><li>跨硬件平台</li><li>跨软件平台<ol><li>跨操作系统平台<ol><li>如：Windows、Linux、macOS</li></ol></li><li>跨软件服务器平台<ol><li>如：数据库服务器、Web服务器</li></ol></li></ol></li></ol></li></ol></li><li>JDBC技术的跨平台实现<ol><li>JDBC技术采用“委托”方式实现跨数据库服务器平台。</li><li>在JDBC API的类中，JDBC API中存在大量的Java抽象类和Java接口，这些Java抽象类和Java接口中包含大量的没有实现代码的抽象方法。</li><li>JDBC技术会“委托”各大数据库厂家给出JDBC API中所有抽象方法的实现代码。即数据库厂家会用一些具体子类实现JDBC API中的接口或继承JDBC API中的抽象类，而在这些具体子类中给出继承得到的抽象方法的实现代码。</li><li>数据库厂家会将这些具体子类放到一个个Java包中，并压缩成一个Jar文件，此Jar文件我们通常称为此数据库的JDBC驱动。</li></ol></li><li>数据库JDBC驱动<ol><li>数据库的JDBC驱动简单理解就是，由数据库厂家提供的一个Jar压缩文件，此Jar压缩文件中包含很多Java具体类，这些Java具体类实现了JDBC API中的所有未实现的抽象方法。</li></ol></li><li></li></ol></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> 成都东软学院(CNU) </tag>
+            
+            <tag> 课堂笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>课堂笔记22-11-10（Java面向对象程序设计）</title>
       <link href="/post/a9a4c6a5.html"/>
       <url>/post/a9a4c6a5.html</url>
@@ -20,11 +49,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -49,11 +78,11 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -107,11 +136,11 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -175,11 +204,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -237,11 +266,11 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -266,11 +295,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -324,11 +353,11 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -415,11 +444,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -477,11 +506,11 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -506,11 +535,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -564,11 +593,11 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -731,11 +760,11 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
             
             <tag> 大数据与量化 </tag>
             
@@ -762,11 +791,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -824,11 +853,11 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -853,11 +882,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
