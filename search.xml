@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>课堂笔记22-11-14(Python脚本语言开发)</title>
+      <link href="/post/629c3441.html"/>
+      <url>/post/629c3441.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Python-脚本语言开发"><a href="#Python-脚本语言开发" class="headerlink" title="Python 脚本语言开发"></a>Python 脚本语言开发</h1><h2 id="列表与元祖"><a href="#列表与元祖" class="headerlink" title="列表与元祖"></a>列表与元祖</h2><h3 id="组合数据类型"><a href="#组合数据类型" class="headerlink" title="组合数据类型"></a>组合数据类型</h3><ol><li>序列类型：<ol><li>字符串-str</li><li>列表-list</li><li>元祖-tuple</li></ol></li><li>映射类型<ol><li>字典-dict</li></ol></li><li>集合类型<ol><li>集合-set</li></ol></li></ol><h3 id="序列类型特点"><a href="#序列类型特点" class="headerlink" title="序列类型特点"></a>序列类型特点</h3><ol><li>有序、可重复、可枚举、可嵌套</li><li>通用操作<ol><li>获取元素个数：len（）</li><li>索引访问</li><li>切片</li><li>成员运算： in、 not in</li><li>链接： + 复制 *</li><li>查询操作： count（）.index（）</li><li>比较运算</li></ol></li></ol><h3 id="什么是列表"><a href="#什么是列表" class="headerlink" title="什么是列表?"></a>什么是列表?</h3><ol><li><p><strong>列表是包含若干数据项（称为元素）的Python对象，是</strong></p><p><strong>基本的序列类型和组合数据类型之一，是一种存储一组</strong></p><p><strong>值的容器(container)。</strong></p></li><li></li></ol><p>​</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 成都东软学院(CNU) </tag>
+            
+            <tag> 课堂笔记 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>课堂笔记22-11-11（Web应用开发）</title>
       <link href="/post/3d23ca03.html"/>
       <url>/post/3d23ca03.html</url>
