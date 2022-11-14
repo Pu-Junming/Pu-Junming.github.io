@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Golang</title>
+      <link href="/post/a8b02095.html"/>
+      <url>/post/a8b02095.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="GOlang"><a href="#GOlang" class="headerlink" title="GOlang"></a>GOlang</h1><h2 id="Golang的概念"><a href="#Golang的概念" class="headerlink" title="Golang的概念"></a>Golang的概念</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><ol><li><p>Go语言保证了既能达到静态编译语言的安全和性能，又能达到动态语言开发维护的高效率，使用一个表达形式来形容Go语言，Go &#x3D; C + Python，说明Go语言既有C金泰语言程序的运算熟读，又能达到Python动态语言的快速开发。</p></li><li><p>从C语言中继承了很多历练，包括表法师语法，控制结构、基础数据类型、调用参数传值、指针等，也保留了C语言一样的编译执行方式及弱化的指针</p><ol><li><p>几个例子</p><ol><li><pre><code class="go">func testPtr(num *int)&#123;    *num = 20&#125;</code></pre></li></ol></li><li><p>引用包的概念，用于组织程序结构，Go语言的一个文件都要归属于一个包，不能独立存在，必须以一个包的形式存在</p></li><li><p>引用了垃圾回收机制，内存自动回收，不需要开发人员管理</p></li><li><p>天然并发（重要特点）</p><ol><li>​冲语言层面支持并发，实现简单</li><li>goroutino，轻量级线程，课实现大并发处理，高效利用多核</li><li>基于CPS并发模型实现</li></ol></li><li><p>吸收了管道通信机制</p></li><li><p>函数可以返回多个值</p></li><li><p>新创新，切片、延迟执行</p></li></ol></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> GO 语言 </category>
+          
+          <category> Golang </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> GO 语言 </tag>
+            
+            <tag> Golang </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>课堂笔记22-11-14(Python脚本语言开发)</title>
       <link href="/post/629c3441.html"/>
       <url>/post/629c3441.html</url>
