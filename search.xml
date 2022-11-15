@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Python爬虫</title>
+      <link href="/post/c386cf1b.html"/>
+      <url>/post/c386cf1b.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Python爬虫"><a href="#Python爬虫" class="headerlink" title="Python爬虫"></a>Python爬虫</h1><h3 id="第一个小测试，认识爬虫"><a href="#第一个小测试，认识爬虫" class="headerlink" title="第一个小测试，认识爬虫"></a>第一个小测试，认识爬虫</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 爬虫：通过编写程序来获取到互联网上的资源</span></span><br><span class="line"><span class="comment"># 百度</span></span><br><span class="line"><span class="comment"># 需求：用哪个程序模拟浏览器，输入一个网址，从中获取资源或者内容</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> urllib.request <span class="keyword">import</span> urlopen</span><br><span class="line"></span><br><span class="line">url = <span class="string">&quot;http://www.baidu.com&quot;</span></span><br><span class="line">resp = urlopen(url)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;mybaidu.html&quot;</span>, mode=<span class="string">&quot;w&quot;</span>, encoding= <span class="string">&quot;utf-8&quot;</span>)<span class="keyword">as</span> f:</span><br><span class="line">    f.write(resp.read().decode(<span class="string">&quot;utf-8&quot;</span>))</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;over&quot;</span>)</span><br><span class="line">    resp.close()  <span class="comment"># 关闭resp</span></span><br></pre></td></tr></table></figure><h2 id="Web请求剖析"><a href="#Web请求剖析" class="headerlink" title="Web请求剖析"></a>Web请求剖析</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 服务器渲染：在服务器那边直接把数据和html整合在一起，同意返回给浏览器</span></span><br><span class="line"><span class="comment">#     在页面源代码代码中可以看到数据</span></span><br><span class="line"><span class="comment"># 2. 客户端渲染：第一次请求只要html骨架，第二次请求拿到数据进行数据展示，</span></span><br><span class="line"><span class="comment">#      在页面源码中，看不到数据</span></span><br><span class="line"><span class="comment">#      熟悉页面抓包</span></span><br></pre></td></tr></table></figure><h2 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h2><ol><li>User-Agent:请求载体的身份标识用啥发送的请求</li><li>Referer防盗捱(这次请求是从哪个页面来的?反爬会用到3. cookie:本地字符串数据信息(用户登录信息，反爬的token)</li><li>响应头中一些重要的内容:<ol><li>cockie:本地字符串数据信忌(用户登录信忌，反贬的token</li><li>各种神奇的莫名其妙的字符串{这个需要经验了.一般都是token字样.防止各种攻击和反吗)</li></ol></li><li>请求方式：<ol><li>get</li><li>post</li></ol></li></ol><h1 id="requests-模块"><a href="#requests-模块" class="headerlink" title="requests 模块"></a>requests 模块</h1><h4 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装requests</span></span><br><span class="line"><span class="comment"># pip install requests</span></span><br><span class="line"><span class="comment"># 国内原</span></span><br><span class="line"><span class="comment"># 清华源 阿里源等</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">query = <span class="built_in">input</span>(<span class="string">&quot;输入一个人名&quot;</span>)</span><br><span class="line"></span><br><span class="line">url = <span class="string">f&#x27;https://cn.bing.com/search?q=<span class="subst">&#123;query&#125;</span>&#x27;</span></span><br><span class="line"></span><br><span class="line">rep=requests.get(url)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(rep)</span><br><span class="line"><span class="built_in">print</span>(rep.text)</span><br><span class="line">resp.close()  <span class="comment"># 关闭resp</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">url = <span class="string">&#x27;https://fanyi.baidu.com/sug&#x27;</span></span><br><span class="line"></span><br><span class="line">s = <span class="built_in">input</span>(<span class="string">&quot;输入你需要翻译的英文&quot;</span>)</span><br><span class="line"></span><br><span class="line">dat = &#123;</span><br><span class="line">    <span class="string">&quot;kw&quot;</span>:s</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 发送post请求 ，发送的数据放在字典中，通过data参数进行传递</span></span><br><span class="line">resp = requests.post(url,data=dat)</span><br><span class="line"><span class="built_in">print</span>(resp.json()) <span class="comment">#讲服务器的内容直接处理成字典</span></span><br><span class="line">resp.close()  <span class="comment"># 关闭resp</span></span><br></pre></td></tr></table></figure><h4 id="抓取豆瓣-某些数据"><a href="#抓取豆瓣-某些数据" class="headerlink" title="抓取豆瓣,某些数据"></a>抓取豆瓣,某些数据</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">url = <span class="string">&#x27;https://movie.douban.com/j/chart/top_list&#x27;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">headers = &#123;</span><br><span class="line">        <span class="string">&quot;User-Agent&quot;</span>: <span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.177.400 QQBrowser/11.3.5194.400&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment"># 重新封装</span></span><br><span class="line">palam = &#123;</span><br><span class="line">        <span class="string">&quot;type&quot;</span>: <span class="string">&quot;13&quot;</span>,</span><br><span class="line">        <span class="string">&quot;interval_id&quot;</span>: <span class="string">&quot;100:90&quot;</span>,</span><br><span class="line">        <span class="string">&quot;action&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;start&quot;</span>: <span class="string">&quot;0&quot;</span>,</span><br><span class="line">        <span class="string">&quot;limit&quot;</span>: <span class="string">&quot;20&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">resp = requests.get(url= url, params=palam, headers=headers)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(resp.text)</span><br><span class="line">resp.close()  <span class="comment"># 关闭resp</span></span><br></pre></td></tr></table></figure><h2 id="数据解析"><a href="#数据解析" class="headerlink" title="数据解析"></a>数据解析</h2><ol><li>re解析 </li><li>bs4解析</li><li>xpath解析</li></ol><h3 id="re模块"><a href="#re模块" class="headerlink" title="re模块"></a>re模块</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># re模块</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"><span class="comment"># findall 匹配字符串中所有符合正则的内容</span></span><br><span class="line"><span class="comment"># finditer 匹配字符串中所有内容【返回的是迭代器】</span></span><br><span class="line">lst= re.findall(<span class="string">r&quot;\d+&quot;</span>, <span class="string">&quot;我的电话是10010，你的电话是10086&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(lst)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">it = re.finditer(<span class="string">r&quot;\d+&quot;</span>, <span class="string">&quot;我的电话是10010，你的电话是10086&quot;</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> it:</span><br><span class="line">    <span class="built_in">print</span>(i.group())</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># search返回结果是match对象，找到一个结果只返回第一个结果</span></span><br><span class="line">s = re.search(<span class="string">r&quot;\d+&quot;</span>, <span class="string">&quot;我的电话是10010，你的电话是10086&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(s.group())</span><br><span class="line"></span><br><span class="line"><span class="comment"># match从头开始匹配</span></span><br><span class="line">m = re.<span class="keyword">match</span>(<span class="string">r&quot;\d+&quot;</span>, <span class="string">&quot;我的电话是10010，你的电话是10086&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(m.group())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 预加载正则表达式</span></span><br><span class="line">obj = re.<span class="built_in">compile</span>(<span class="string">r&quot;\d+&quot;</span>)</span><br><span class="line"></span><br><span class="line">ret = obj.finditer(<span class="string">&quot;我的电话是10010，你的电话是10086&quot;</span>)</span><br><span class="line"><span class="keyword">for</span> it <span class="keyword">in</span> ret:</span><br><span class="line">    <span class="built_in">print</span>(it.group())</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+          <category> Python爬虫 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> Python爬虫 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Golang</title>
       <link href="/post/a8b02095.html"/>
       <url>/post/a8b02095.html</url>
@@ -49,11 +78,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -136,11 +165,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -194,11 +223,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -324,11 +353,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -411,11 +440,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -564,11 +593,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -651,11 +680,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
@@ -818,11 +847,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
             <tag> 大数据与量化 </tag>
             
@@ -911,11 +940,11 @@
       
         <tags>
             
+            <tag> Python </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Python </tag>
             
         </tags>
       
