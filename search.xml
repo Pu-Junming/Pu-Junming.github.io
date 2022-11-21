@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>课堂笔记22-11-21（Python脚本语言开发）</title>
+      <link href="/post/8be3a895.html"/>
+      <url>/post/8be3a895.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Python脚本语言开发"><a href="#Python脚本语言开发" class="headerlink" title="Python脚本语言开发"></a>Python脚本语言开发</h1><h2 id="字典与集合"><a href="#字典与集合" class="headerlink" title="字典与集合"></a>字典与集合</h2><h3 id="字典基础"><a href="#字典基础" class="headerlink" title="字典基础"></a>字典基础</h3><p><img src="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/22-11-21-001.png" alt="可变不可变"></p><ol><li><p>什么是字典（dict）？</p><ol><li>字典是包含若干“<strong>键-值对</strong>”元素的无序可变对象，字典的每一个元素(项)由两部分组成，分别是用<strong>冒号分隔</strong>开的“键”和“值”。</li><li>在形式上，字典的所有元素放在一对花括号0内，并以逗号分隔，如:<ol><li>aDict &#x3D; {‘name’:’张三’， ‘post’: “班长’,’dorm’: ‘1203’}</li></ol></li><li>字典中的“键”必须是Python中的不可变类型数据，“值”没有这个限制。</li><li>字典中的“<strong>键</strong>”不允许重复(唯一)，“<strong>值</strong>”可以重复。</li></ol></li><li><p>字典与列表对比</p><ol><li>相同点<ol><li>都是可变数据类型</li><li>袁术分隔符是逗号</li><li>都支持嵌套</li><li>都可以用for语句遍历元素</li><li>都致辞len（）函数</li><li>都支持成员运算符in和not in</li><li>.clear()、.copy()、copy.copy()和copy.deepcopy()</li><li>……..</li></ol></li><li>不同点<ol><li><strong>字典是无序的，列表是有序的</strong>:字典的元素是不排序的，即“键-值对”的顺序不重要;而列表的元素顺序很重要。</li><li><strong>字典不能像列表那样进行切片等操作</strong>。</li><li>访问列表不存在的序号，会导致IndexError错误;访问字典不存在的键名，会导致KeyError错误。</li></ol></li></ol></li><li><p>如何创建字典？</p><ol><li><p>除采用“”及“键:值”对的形式直接创建字典外,还可以使用内置函数dict()以不同形式创建字典:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dict() # 创建空字典</span><br></pre></td></tr></table></figure></li></ol></li><li><p>如何使用字典？</p><ol><li><p>访问字典中的元素</p><ol><li><blockquote><p>根据“键”访问“值”∶<br>根据提供的“键”作为索引（下标),可以访问对应的“值”如果字典中不存在这个“键”,会抛出异常。</p></blockquote></li></ol></li><li><p>修改或添加元素</p><pre><code>1. 若该“键”存在，则表示修改该“键&quot;对应的值;2. 若该“键”不存在，则表示添加一个新的“键值对”。</code></pre></li><li><p>删除元素</p><pre><code>1. 可以使用del语句删除字典中指定的元素或者整个字典</code></pre></li><li><p>其他操作</p><pre><code>1. 成员运算:in和not in</code></pre></li></ol></li></ol><h3 id="字典方法"><a href="#字典方法" class="headerlink" title="字典方法"></a>字典方法</h3><ol><li><p><strong>get()与setdefault()方法</strong></p><ol><li><p>dict.get(key,default&#x3D;None，&#x2F;)返回指定”键”对应的“值”，并且允许设置该键不存在时返回的默认值。</p></li><li><p>dict.setdefault(key，default&#x3D;None，&#x2F;)的第一个参数是要检查的键,第二个是如果该键不存在时指定的值。若指定键不存在，则以该键和第二个参数值添加键值对;若键存在,则返回该键的值。</p></li></ol></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 成都东软学院(CNU) </tag>
+            
+            <tag> 课堂笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>课堂笔记22-11-18（Web应用开发）</title>
       <link href="/post/934888c3.html"/>
       <url>/post/934888c3.html</url>
@@ -20,11 +49,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -49,11 +78,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -194,11 +223,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -223,11 +252,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -378,11 +407,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -469,11 +498,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -618,11 +647,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -709,11 +738,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -965,11 +994,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -1056,11 +1085,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
