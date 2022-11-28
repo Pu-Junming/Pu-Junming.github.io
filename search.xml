@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>课堂笔记22-11-28（Python脚本语言开发）</title>
+      <link href="/post/f23b06cc.html"/>
+      <url>/post/f23b06cc.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Python脚本语言开发"><a href="#Python脚本语言开发" class="headerlink" title="Python脚本语言开发"></a>Python脚本语言开发</h1><h2 id="面向对象程序设计"><a href="#面向对象程序设计" class="headerlink" title="面向对象程序设计"></a>面向对象程序设计</h2><h3 id="对比面向过程编程、面向对象编程"><a href="#对比面向过程编程、面向对象编程" class="headerlink" title="对比面向过程编程、面向对象编程"></a>对比面向过程编程、面向对象编程</h3><blockquote><p><strong>面向过程编程（Process Oriented Programming, POP）：</strong></p><p><strong>以执行过程为中心的编程思想，核心单元是函数。</strong></p><p><strong>面向对象编程（Object Oriented Programming，OOP）：</strong></p><p><strong>以事物为中心的编程思想，核心单元是类与对象。</strong></p><p><strong>思考：如何组织一次班集体出游？</strong></p><p><strong>面向过程 vs 面向对象</strong></p><p><strong>Python中一切皆为对象！</strong></p></blockquote><h3 id="类与对象"><a href="#类与对象" class="headerlink" title="类与对象"></a>类与对象</h3><ol><li><p>对象</p><ol><li><p><strong>对象(object)是指现实世界中客观存在的事物。每个对象都具有各自的特征和行为</strong></p></li><li><p><strong>面向对象程序设计中的对象是现实世界的客观事物在程序设计中的具体体现，同样具有自己的特征和行为。</strong></p></li><li><p><strong>特征 —&gt; 属性(property)；行为 —&gt; 方法(method)。</strong></p></li><li><p><strong>由属性和方法相同的一组对象抽象出的集合，即为类。</strong></p></li></ol></li><li><p>类</p><ol><li><p><strong>类（class）是用来描述具有相同属性和方法的对象的集</strong></p><p><strong>合。它定义了该集合中每个对象所共有的属性和方法。</strong></p></li><li><p><strong>类是抽象出的对象模板，对象是根据类（模板）创建出</strong></p><p><strong>的实例（instance）。</strong></p></li><li><p><strong>相似事物抽象出的类只有一个，而由某个类创建出的对</strong></p><p><strong>象可以有多个，同类的不同对象之间属性也可能会不同。</strong></p></li><li><p><strong>面向对象编程先定义类、后创建对象。</strong></p></li></ol></li><li><p>定义类</p><ol><li><strong>类名：类的名称，首字母大写（大驼峰式）；</strong></li><li><strong>属性：用于描述这类事物的特征，通常表现为数据；</strong></li><li><strong>方法：用于描述这类事物的行为，通常表现为函数。</strong></li></ol></li><li><p>创建对象</p><ol><li><strong>定义了类之后，就可以用来实例化对象，创建对象的基本语法：</strong><ol><li><strong>对象名 &#x3D; 类名()</strong></li></ol></li><li><strong>可以用对象来访问类中定义的属性和方法：</strong><ol><li><strong>对象名.方法名(&lt;参数&gt;)&#x2F;属性名</strong></li></ol></li></ol></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+          <category> Python面向对象编程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 成都东软学院(CNU) </tag>
+            
+            <tag> 课堂笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>课堂笔记22-11-28(Python脚本语言开发)</title>
       <link href="/post/c3818ea9.html"/>
       <url>/post/c3818ea9.html</url>
