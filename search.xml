@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>课堂笔记22-11-28(Python脚本语言开发)</title>
+      <link href="/post/c3818ea9.html"/>
+      <url>/post/c3818ea9.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Python脚本语言开发"><a href="#Python脚本语言开发" class="headerlink" title="Python脚本语言开发"></a>Python脚本语言开发</h1><h2 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h2><ol><li><p>概念：函数定义中调用函数自身 的方式称为递归 （recursion），即在运行过程中自己调用自己。</p></li><li><p>每次函数调用时，函数参数会临 时存储， 相互没有影响 ；</p></li><li><p>达到终止条件时，各函数逐层结束运算，返回计算结果；</p></li><li><p>要注意终止条件的构建，否则递归无法正常返回结果</p></li></ol><h2 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h2><ol><li><p>匿名函数适用于调用次数少且能够在一行内表达的简单函数情况，使代码看起来更为“优雅” ，还可以避免函数名冲突的问题；常常与其他函数联用，作为函数的参数进行传递</p></li><li><p>lambda与def的比较</p><ol><li>lambda创建函数无须函数名，def创建函数必须有函数名；</li></ol></li><li><p>lambda返回一个函数对象，而不是返回表达式的值，赋值给变量时相当于起名，而def定义的函数可将返回值赋值给变量；</p><ol start="3"><li>lambda只适用于单行的表达式函数体，而def可以定义复杂的复合语句函数体；</li></ol></li><li><p>lambda函数不能共享给别的程序调用，而def定义的函数可以。</p></li></ol><h2 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h2><ol><li><p>变量可以指向函数 —&gt; 函数名其实是指向函数的变量 —&gt; 函数本身可以赋值给变量 —&gt; 函数的参数能接收变量 —&gt;一个函数可以接收另一个函数作为参数</p></li><li><p>知识了解：高阶函数是函数式编程的体现；函数式编程是一种高抽象度的编程范式，其特点就包括允许把函数本身作为参数传入另一个函数，并允许返回一个函数</p></li><li><p><strong>内置高阶函数——map(func, *iterables)</strong> </p><ol><li><p>根据提供的函数对指定的序列做映射。第一个参数</p><p>接收一个函数名，后面的参数接收一个或多个序列、支持迭代</p><p>的容器或迭代器。调用map函数时，函数func会作用于</p><p>iterables中的每一个元素，最后返回一个map对象</p></li></ol></li><li><p><strong>内置高阶函数——filter(function or None, iterable)</strong></p><ol><li>对指定序列执行过滤筛选操作。第一个参数可以是函数名或None，第二个参数类似map()规则但只能有一个。filter()会将传入的函数依次作用于iterable中的每一个元素，然后根据返回值是True或False决定保留与否，最后返回一个filter对象。如果第一个参数是None，则返回为真的项。</li></ol></li><li><p><strong>内置高阶函数——sorted(iterable, key&#x3D;None, reverse&#x3D;False)</strong></p><ol><li>对可迭代对象进行排序（默认为升序）操作，返回一个排序后的新列表。可以传入key函数来实现自定义排序，reverse设置为True表示降序。</li></ol></li><li><p><strong>内置高阶函数——unctools.reduce(function, sequence[, initial])</strong></p><ol><li>对参数序列中的元素进行累积，返回为一个值。第一个参数是有两个参数的函数，第二个参数是指定的可迭代对象，第三个参数为可选参数，表示初始值。工作过 程：首先把 sequence中的前两个元素传给函数function，经函数处理后，再把计算所得结果与sequence的第三个元素作为新的参数传给函数，以此类推，最后返回一个值。</li></ol></li></ol><h2 id="闭包与修饰器"><a href="#闭包与修饰器" class="headerlink" title="闭包与修饰器"></a>闭包与修饰器</h2><ol><li><p>在嵌套函数中，如果内部函数引用了外部作用域</p><p>（非全局作用域）的变量，则这个内部函数就称为闭包，</p><p>又称闭包函数。形成闭包有三个条件：</p><ol><li><strong>存在于嵌套关系的函数中</strong></li><li><strong>内部函数引用了外部函数的变量</strong></li><li><strong>外部函数将内部函数名作为返回值</strong></li></ol></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 成都东软学院(CNU) </tag>
+            
+            <tag> 课堂笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>今天的中国，绝对不是&quot;五四运动&quot;时的中国</title>
       <link href="/post/e1087205.html"/>
       <url>/post/e1087205.html</url>
