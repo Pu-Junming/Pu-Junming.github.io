@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>2022-2023上学期HTML期末复习题库</title>
+      <link href="/post/9631463f.html"/>
+      <url>/post/9631463f.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="2022-2023上学期HTML期末复习题库"><a href="#2022-2023上学期HTML期末复习题库" class="headerlink" title="2022-2023上学期HTML期末复习题库"></a>2022-2023上学期HTML期末复习题库</h1><h2 id="HTML1-2部分"><a href="#HTML1-2部分" class="headerlink" title="HTML1~2部分"></a>HTML1~2部分</h2><h3 id="单选题改编为填空"><a href="#单选题改编为填空" class="headerlink" title="单选题改编为填空"></a>单选题改编为填空</h3><ol><li><p>标签中用于设置页面标题的是**<u>title</u>**。</p></li><li><p>产生超链接的标签是</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;xxx.xxx.xxx&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></li><li><p>属于HTML5标准的新特性的有<strong>WebGL、canvas、Geo Location</strong>。</p></li><li><p>换行符标签**<u>br</u>**。</p></li><li><p>标签使用<u><strong>action</strong></u>属性指明表单数据要发送到的页面或API URL</p></li><li><p>用于标记HTML文档的开始和结束的HTML结构标记为</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></li><li><p>在使用<form>表单上传文件时，它的enctype属性必须设置**<u>multipart&#x2F;form-data</u>**.</p></li><li><p>经常被当做“容器”来放置其他元素的标签是**<u>div</u>**.</p></li><li><p>在指定单选框时，只有将**<u>name</u>**属性的值指定为相同，才能使选项成为一组。</p></li><li><p>在<input>标签中将type属性设置**<u>radio</u>**即可定义单选按钮.</p></li><li><p>在HTML5页面中插入半角的大于号”&gt;”,应使用的标记符应该是**<u>&gt;</u>**.</p></li><li><p>如果要在表单里创建一个单行文本输入框</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure></li><li><p>有关列表的说法正确的：**<u>定嵌套列表时，也可以具体指定项目符号或编号样式；有序列表和无序列表可以互相嵌套；无序列表应使用ul和li标签进行创建。</u>**</p></li><li><p>HTML5页面的DTD定义是</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br></pre></td></tr></table></figure></li><li><p>用来实现超链接的元素标签**<u>a</u>**.</p></li><li><p>页面中有段文字”taobao“,需要使用超链接链接到淘宝网站首页，它的HTML写法为  </p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://www.taobao.com&quot;</span>&gt;</span>taobao<span class="tag">&lt;/<span class="name">a</span>&gt;</span>;<span class="tag">&lt;<span class="name">a</span></span></span><br><span class="line"><span class="tag"><span class="attr">href</span>=<span class="string">&quot;https://www.taobao.com&quot;</span>&gt;</span>taobao<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></li><li><p>图像标签<img>使用 <strong><u>src</u></strong> 属性定义要显示的图片路径。</p></li><li><p>在页面中常常会用到一些包含特殊字符的文本，可以使用特殊字符标记表示，其中空格“”对应的特殊字符标记是 <strong><u>&amp;4</u></strong>.</p></li><li><p>在HTML中经常使用 <strong><u><table>;table</u></strong> 标签实现表格。</p></li><li><p>表单<form>标签使用 <strong><u>action</u></strong> 属性指明表单数据要发送到的页面或API URL.</p></li><li><p>在<input>标签中，指定控件的类型的属性为  <strong><u>type</u></strong>.</p></li><li><p>下拉框<select>标签中使用 <strong><u>option;<option></u></strong> 标签定义列表中要显示的文字。</p></li><li><p><input>标签使用 <strong><u>placeholder</u></strong> 属性为输入框提供相关提示信息，它在输入信息为空时以灰色显示出来，而输入框获得焦点时自</p><p>动消失.</p></li><li><p>HTML中的的注释格式为 <strong><u><!--注释语句--></u></strong> 。</p></li><li><p>使用input标签实现密码输入框，**<u><input type="password"/></u>**写出该语句  。</p></li><li><p>表单<form>标签使用method属性用于规定如何发送表单的数据，分为 <strong><u>post</u></strong>  和 <strong><u>get</u></strong> 两种方式。</p></li><li><p>HTML中提供了6个等级的标题<h1>~<h6>,标题文字最大的是 <strong><u>h1</u></strong>  。</p></li><li><p><input>标签使用 <strong><u>required</u></strong> 属性在form表单提交数据前，规定必须填入数据，如果未输入，则有错误信息提示。</p></li><li><p>用于定义HTML文档的标题要使用标签 <strong><u><title>;title</u></strong> 。</p></li><li></li></ol><h3 id="判断题"><a href="#判断题" class="headerlink" title="判断题"></a>判断题</h3><ol><li><p>在使用<form>表单提交数据时，需要提交数据的<input>或<select>标签必须有name属性（对）</p></li><li><p>HTML5还未成熟，到现在都没有制定相应的标准。（错）</p></li><li><p>使用<img>标签显示的图片在网页上可以直接使用鼠标复制（对）</p></li><li><p>HTML语言中可以使用form标签定义表单（对）</p></li><li><p>HTML的<table>表格标签在默认情况下有边框。（错）</p></li><li><p>使用a标签链接到Baidu 网站的代码为： (错)</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使用a标签链接到Baidu 网站的代码为： <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;www.baidu.com&quot;</span>&gt;</span>Baidu<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></li><li><p>HTML5能独立于各种操作系统平台，是一种跨平台的技术。（对）</p></li><li><p>input标签中的required属性可以用于在表单提交数据时不能为空。（对）</p></li><li><p>div默认的宽度是由其里面的内容决定的。（错）</p></li><li><p>上传文件时，表单form 的enctype属性设置为multipart&#x2F;form-data 。（对）</p></li><li><p><img>标签使用src定义图片路径时，只能使用绝对路径。（错）</p></li><li><p>在<input>标签中将type属性设置为check即可定义单选按钮。（错）</p></li><li><p>HTML书写错误时，浏览器会弹出报错信息。（错）</p></li><li><p>html文件的扩展名为js。（错）</p></li><li><p>所有的HTML标签都有开始标签和结束标签。（错）</p></li><li><p>div标签默认没有宽度，宽度会随着内容自动适应，高度会自动设置为父容器的高度 （错）</p></li><li><p>div标签默认没有高度，高度会随着内容自动适应，宽度会自动设置为父容器的宽度。（对）</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> HTML期末复习题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 成都东软学院 </tag>
+            
+            <tag> CNU </tag>
+            
+            <tag> HTML </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2022-2023上学期马原期末复习题库</title>
       <link href="/post/2b395545.html"/>
       <url>/post/2b395545.html</url>
@@ -49,11 +78,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -120,11 +149,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -246,11 +275,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -333,11 +362,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -362,11 +391,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -507,11 +536,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -536,11 +565,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -691,11 +720,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -722,11 +751,11 @@
       
         <tags>
             
+            <tag> HTML </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> HTML </tag>
             
             <tag> CSS </tag>
             
@@ -782,11 +811,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -931,11 +960,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -962,11 +991,11 @@
       
         <tags>
             
+            <tag> HTML </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> HTML </tag>
             
             <tag> CSS </tag>
             
@@ -1022,11 +1051,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -1111,11 +1140,11 @@
       
         <tags>
             
+            <tag> HTML </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> HTML </tag>
             
             <tag> CSS </tag>
             
@@ -1278,11 +1307,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -1309,11 +1338,11 @@
       
         <tags>
             
+            <tag> HTML </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> HTML </tag>
             
             <tag> CSS </tag>
             
@@ -1369,11 +1398,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
