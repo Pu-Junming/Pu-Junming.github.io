@@ -50,7 +50,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2022-12-17 15:46:42'
+  postUpdate: '2022-12-17 15:50:17'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -121,8 +121,27 @@
       }
       const t = saveToLocal.get('theme')
     
-          if (t === 'dark') activateDarkMode()
-          else if (t === 'light') activateLightMode()
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
         
       const asideStatus = saveToLocal.get('aside-status')
       if (asideStatus !== undefined) {
@@ -261,7 +280,7 @@ document.addEventListener('pjax:error', (e) => {
 })</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && location.pathname =='/'){
     
     var parent = document.getElementById('recent-posts');
-    var child = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/index_img006.jpg" alt="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/index_img006.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-10-29</span><a class="blog-slider__title" href="post/8a78f35d.html">小小的故事</a><div class="blog-slider__text">感人小故事</div><a class="blog-slider__button" href="post/8a78f35d.html">详情</a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    var child = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/index_img007.jpg" alt="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/index_img007.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-10-29</span><a class="blog-slider__title" href="post/8a78f35d.html">小小的故事</a><div class="blog-slider__text">感人小故事</div><a class="blog-slider__button" href="post/8a78f35d.html">详情</a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
     console.log('已挂载swiper')
     parent.insertAdjacentHTML("afterbegin",child)}
      </script>
