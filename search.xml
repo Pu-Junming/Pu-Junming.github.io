@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Vue3.0监视器属性</title>
+      <link href="/post/eb35d7a1.html"/>
+      <url>/post/eb35d7a1.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="VUE3-0"><a href="#VUE3-0" class="headerlink" title="VUE3.0"></a>VUE3.0</h1><h2 id="注：在vue2-6中data可作为一个对象-，在VUE3-0中data只能作为一个函数"><a href="#注：在vue2-6中data可作为一个对象-，在VUE3-0中data只能作为一个函数" class="headerlink" title="注：在vue2.6中data可作为一个对象 ，在VUE3.0中data只能作为一个函数"></a>注：在vue2.6中data可作为一个对象 ，在VUE3.0中data只能作为一个函数</h2><h2 id="watch监视器事件"><a href="#watch监视器事件" class="headerlink" title="watch监视器事件"></a>watch监视器事件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">     &lt;script src=&quot;https://cdn.bootcdn.net/ajax/libs/vue/3.2.47/vue.global.prod.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">     &lt;style&gt;</span><br><span class="line">       #app div,h1&#123;</span><br><span class="line">         margin: 40px auto;</span><br><span class="line">         text-align: center;</span><br><span class="line">       &#125;</span><br><span class="line">     &lt;/style&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;app&quot;&gt;</span><br><span class="line">       &lt;h1&gt;watch监听简单数据类型&lt;/h1&gt;</span><br><span class="line">       &lt;div class=&quot;example1&quot;&gt;</span><br><span class="line">         千米:&lt;input type=&quot;text&quot; v-model.number.lazy=&quot;kilo&quot;/&gt;</span><br><span class="line">         &lt;=&gt;</span><br><span class="line">         米:&lt;input type=&quot;text&quot; v-model.number.lazy=&quot;meter&quot;/&gt;</span><br><span class="line">         &lt;p&gt;左输入框修改前为:&#123;&#123;oldKilo&#125;&#125; ,修改后为:&#123;&#123;newKilo&#125;&#125;&lt;/p&gt;</span><br><span class="line">         &lt;p&gt;右输入框修改前为:&#123;&#123;oldMeter&#125;&#125;,修改后为:&#123;&#123;newMeter&#125;&#125;&lt;/p&gt;</span><br><span class="line">       &lt;/div&gt;</span><br><span class="line">       &lt;h1&gt;watch深度监听&lt;/h1&gt;</span><br><span class="line">       &lt;div class=&quot;example2&quot;&gt;</span><br><span class="line">           用户名:&lt;input type=&quot;text&quot; v-model.lazy=&quot;user.name&quot;/&gt;</span><br><span class="line">           年龄:&lt;input type=&quot;text&quot; v-model.lazy=&quot;user.age&quot;/&gt;</span><br><span class="line">       &lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">      const app=Vue.createApp(&#123;</span><br><span class="line">        data()&#123;</span><br><span class="line">          return &#123;</span><br><span class="line">              kilo:0,</span><br><span class="line">              meter:0,</span><br><span class="line">              oldKilo:0,</span><br><span class="line">              newKilo:0,</span><br><span class="line">              oldMeter:0,</span><br><span class="line">              newMeter:0,</span><br><span class="line">              user:&#123;</span><br><span class="line">                  name:&quot;PuJunming&quot;,</span><br><span class="line">                  age:22</span><br><span class="line">              &#125;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        watch:&#123;</span><br><span class="line">            kilo(newVal,oldVal)&#123;</span><br><span class="line">                this.oldKilo = oldVal;</span><br><span class="line">                this.newKilo = newVal;</span><br><span class="line">                this.meter = newVal*1000;</span><br><span class="line">            &#125;,</span><br><span class="line">            meter(newVal,oldVal)&#123;</span><br><span class="line">                this.oldMeter = oldVal;</span><br><span class="line">                this.newMeter = newVal;</span><br><span class="line">                this.kilo = newVal/1000;</span><br><span class="line">            &#125;,</span><br><span class="line">            // 无法对对象进行深度监听 无法监听到对象的属性变化 无法监听到数组的变化</span><br><span class="line">            // user(newVal,oldVal)&#123;</span><br><span class="line">            //     console.log(&quot;newVal:&quot;,newVal);</span><br><span class="line">            //     console.log(&quot;oldVal:&quot;,oldVal);</span><br><span class="line">            // &#125;</span><br><span class="line"></span><br><span class="line">            // &quot;user.age&quot;(newVal,oldVal)&#123;</span><br><span class="line">            //     console.log(&quot;新user.age变化了&quot;+newVal);</span><br><span class="line">            //     console.log(&quot;旧user.age变化了&quot;+oldVal);</span><br><span class="line">            // &#125;,</span><br><span class="line">            // &quot;user.name&quot;(newVal,oldVal)&#123;</span><br><span class="line">            //     console.log(&quot;新user.name变化了&quot;+newVal);</span><br><span class="line">            //     console.log(&quot;旧user.name变化了&quot;+oldVal);</span><br><span class="line">            // &#125;</span><br><span class="line"></span><br><span class="line">            user:&#123;</span><br><span class="line">                // handler 监听的回调函数 </span><br><span class="line">                handler(newVal,oldVal)&#123;</span><br><span class="line">                    console.log(&quot;new newVal:&quot;,newVal);</span><br><span class="line">                    console.log(&quot;old oldVal:&quot;,oldVal);</span><br><span class="line">                &#125;,</span><br><span class="line">                // deep:true 深度监听 默认false 只能监听到一层</span><br><span class="line">                deep:true,</span><br><span class="line">                // immediate:true 立即执行一次 默认false 只有在值发生变化时才会执行</span><br><span class="line">                immediate:true</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">          computed:&#123;</span><br><span class="line"></span><br><span class="line">          &#125;,</span><br><span class="line">      &#125;).mount(&quot;#app&quot;);</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue3.0 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Html </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2022-2023上学期HTML期末复习题库</title>
       <link href="/post/9631463f.html"/>
       <url>/post/9631463f.html</url>
@@ -244,13 +269,13 @@
       
         <tags>
             
-            <tag> 疫情 </tag>
-            
             <tag> 大学生 </tag>
             
             <tag> 防疫 </tag>
             
             <tag> 抗议 </tag>
+            
+            <tag> 疫情 </tag>
             
         </tags>
       
@@ -898,9 +923,9 @@
       
         <tags>
             
-            <tag> 感动 </tag>
-            
             <tag> 疫情 </tag>
+            
+            <tag> 感动 </tag>
             
         </tags>
       
