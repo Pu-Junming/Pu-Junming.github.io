@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>VUE3.0课后作业（简易购物满减活动案例）</title>
+      <link href="/post/fff96603.html"/>
+      <url>/post/fff96603.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="VUE3-0"><a href="#VUE3-0" class="headerlink" title="VUE3.0"></a>VUE3.0</h1><h2 id="简易购物满减活动案例"><a href="#简易购物满减活动案例" class="headerlink" title="简易购物满减活动案例"></a>简易购物满减活动案例</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;超市满减活动案例&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">  &lt;div&gt;&lt;h2&gt;香蕉10元/斤，折扣7折,本店参与满100元减10元活动&lt;/h2&gt;&lt;/div&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    请输入你要购买的斤数：&lt;input v-model.lazy=&quot;infoNum&quot;&gt;&lt;br&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;h3&gt;结账单：总价&#123;&#123;totalPrice&#125;&#125;￥元 折后价&#123;&#123;discountPrice&#125;&#125;元 省了&#123;&#123;saveMoney&#125;&#125;元&lt;/h3&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.bootcdn.net/ajax/libs/vue/3.2.47/vue.global.prod.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var app=Vue.createApp(&#123;</span><br><span class="line">        data()&#123;</span><br><span class="line">            return &#123;</span><br><span class="line">              infoNum:0,</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">      //计算属性</span><br><span class="line">      computed: &#123;</span><br><span class="line">        //总价</span><br><span class="line">        totalPrice() &#123;</span><br><span class="line">          return this.infoNum * 10;</span><br><span class="line">        &#125;,</span><br><span class="line">        //折后价</span><br><span class="line">        discountPrice() &#123;</span><br><span class="line">          if (this.totalPrice &gt;= 100) &#123;</span><br><span class="line">            return this.totalPrice * 0.7 - 10;</span><br><span class="line">          &#125; else &#123;</span><br><span class="line">            return this.totalPrice * 0.7;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        //节省的钱</span><br><span class="line">        saveMoney() &#123;</span><br><span class="line">          if (this.discountPrice &gt;= 100) &#123;</span><br><span class="line">            return 10 + this.totalPrice - this.discountPrice;</span><br><span class="line">          &#125; else &#123;</span><br><span class="line">            return this.totalPrice - this.discountPrice;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        methods: &#123;&#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;).mount(&quot;#app&quot;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><p><img src="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/image-20230329160056026.png" alt="演示"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue3.0 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Html </tag>
+            
+            <tag> 课后作业 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>VUE3.0计算属性</title>
       <link href="/post/4393840f.html"/>
       <url>/post/4393840f.html</url>
@@ -1233,9 +1260,9 @@
             
             <tag> MySQL </tag>
             
-            <tag> Web应用开发 </tag>
-            
             <tag> Navicat Premium </tag>
+            
+            <tag> Web应用开发 </tag>
             
         </tags>
       
