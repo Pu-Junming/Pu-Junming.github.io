@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>VUE3.0计算属性</title>
+      <link href="/post/4393840f.html"/>
+      <url>/post/4393840f.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="VUE3-0"><a href="#VUE3-0" class="headerlink" title="VUE3.0"></a>VUE3.0</h1><h2 id="简易购物车案例"><a href="#简易购物车案例" class="headerlink" title="简易购物车案例"></a>简易购物车案例</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;简易购物车&lt;/title&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">      .booklist &#123;</span><br><span class="line">        margin: 0 auto;</span><br><span class="line">        width: 680px;</span><br><span class="line">        display: flex;</span><br><span class="line">        flex-direction: row;</span><br><span class="line">        flex-wrap: wrap;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      .book &#123;</span><br><span class="line">        flex: 40%;</span><br><span class="line">        margin: 10px;</span><br><span class="line">        display: flex;</span><br><span class="line">        flex-direction: row;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      .buy &#123;</span><br><span class="line">        background-color: #df3033;</span><br><span class="line">        font-size: 12px;</span><br><span class="line">        color: white;</span><br><span class="line">        height: 26px;</span><br><span class="line">        line-height: 26px;</span><br><span class="line">        text-align: center;</span><br><span class="line">        border-radius: 10px;</span><br><span class="line">        cursor: pointer;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      .bpic &#123;</span><br><span class="line">        width: 90px;</span><br><span class="line">        height: 90px;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      .right_container &#123;</span><br><span class="line">        display: flex;</span><br><span class="line">        flex-direction: column;</span><br><span class="line">        justify-content: space-between;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      .bname &#123;</span><br><span class="line">        color: #666;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      .sym &#123;</span><br><span class="line">        color: #e4393c;</span><br><span class="line">        font-size: 16px;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      .bprice &#123;</span><br><span class="line">        color: #e4393c;</span><br><span class="line">        font-size: 20px;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      table &#123;</span><br><span class="line">        width: 620px;</span><br><span class="line">        border: 1px solid red;</span><br><span class="line">        text-align: center;</span><br><span class="line">        margin: 20px auto;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      thead &#123;</span><br><span class="line">        background-color: #e4393c;</span><br><span class="line">        color: white;</span><br><span class="line"></span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      .total &#123;</span><br><span class="line">        width: 620px;</span><br><span class="line">        margin: 0 auto;</span><br><span class="line">        color: #e4393c;</span><br><span class="line">        font-size: 18px;</span><br><span class="line">        font-weight: bold;</span><br><span class="line">        text-align: right;</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">    &lt;script src=&quot;https://cdn.bootcdn.net/ajax/libs/vue/3.2.47/vue.global.prod.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;app&quot;&gt;</span><br><span class="line">      &lt;div class=&quot;booklist&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;book&quot; v-for=&quot;(item,index) in books&quot; :key=&quot;item.item&quot;&gt;</span><br><span class="line">          &lt;img :src=&quot;item.bookpic&quot;</span><br><span class="line">            class=&quot;bpic&quot; /&gt;</span><br><span class="line">          &lt;div class=&quot;right_container&quot;&gt;</span><br><span class="line">            &lt;div class=&quot;binfo&quot;&gt;</span><br><span class="line">              &lt;span class=&quot;bname&quot; &gt;&#123;&#123;item.bookname&#125;&#125;&lt;/span&gt;</span><br><span class="line">              &lt;span class=&quot;sym&quot;&gt;￥&lt;/span&gt;</span><br><span class="line">              &lt;span class=&quot;bprice&quot;&gt;&#123;&#123;item.bookprice&#125;&#125;&lt;/span&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">            &lt;div class=&quot;buy&quot; @click=&quot;addCart(item)&quot;&gt;购买&lt;/div&gt;</span><br><span class="line">          &lt;/div&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">      &lt;table&gt;</span><br><span class="line">        &lt;thead&gt;</span><br><span class="line">          &lt;tr&gt;</span><br><span class="line">            &lt;td&gt;序号&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;书名&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;单价&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;数量&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;小计&lt;/td&gt;</span><br><span class="line">          &lt;/tr&gt;</span><br><span class="line">        &lt;/thead&gt;</span><br><span class="line">        &lt;tbody&gt;</span><br><span class="line">          &lt;tr v-for=&quot;(item,index) in carts&quot; :key=&quot;item.isbn&quot;&gt;</span><br><span class="line">            &lt;td&gt;&#123;&#123;index+1&#125;&#125;&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;&#123;&#123;item.bname&#125;&#125;&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;&#123;&#123;item.bprice&#125;&#125;&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;&#123;&#123;item.count&#125;&#125;&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;&#123;&#123;item.bprice*item.count&#125;&#125;&lt;/td&gt;</span><br><span class="line">          &lt;/tr&gt;</span><br><span class="line">        &lt;/tbody&gt;</span><br><span class="line">      &lt;/table&gt;</span><br><span class="line">      &lt;div class=&quot;total&quot;&gt;总计金额:￥&#123;&#123;total&#125;&#125;&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">      var app = Vue.createApp(&#123;</span><br><span class="line">        data() &#123;</span><br><span class="line">          return &#123;</span><br><span class="line">            carts: [],</span><br><span class="line">            books: [&#123;</span><br><span class="line">                isbn: &quot;9787538768220&quot;,</span><br><span class="line">                bookpic: &quot;https://img11.360buyimg.com/n1/jfs/t1/181260/37/10632/173914/60d2a125Eec024832/2cb9b585dbe76989.jpg&quot;,</span><br><span class="line">                bookname: &quot;西游记&quot;,</span><br><span class="line">                bookprice: 25</span><br><span class="line">              &#125;,</span><br><span class="line">              &#123;</span><br><span class="line">                isbn: &quot;9787538768305&quot;,</span><br><span class="line">                bookpic: &quot;https://img12.360buyimg.com/n1/jfs/t1/189589/12/9673/170923/60d2a261E65ed179f/edcbb59131fad3f4.jpg&quot;,</span><br><span class="line">                bookname: &quot;水浒传&quot;,</span><br><span class="line">                bookprice: 26</span><br><span class="line">              &#125;,</span><br><span class="line">              &#123;</span><br><span class="line">                isbn: &quot;9787538768213&quot;,</span><br><span class="line">                bookpic: &quot;https://img10.360buyimg.com/n1/jfs/t1/184694/10/10690/121306/60d29a22Ead452f88/d0748feb0fef2124.jpg&quot;,</span><br><span class="line">                bookname: &quot;红楼梦&quot;,</span><br><span class="line">                bookprice: 20</span><br><span class="line">              &#125;,</span><br><span class="line">              &#123;</span><br><span class="line">                isbn: &quot;9787538768251&quot;,</span><br><span class="line">                bookpic: &quot;https://img13.360buyimg.com/n1/jfs/t1/203465/19/22453/135370/62a9723aE8f6fdf39/b6b46353c8173819.jpg&quot;,</span><br><span class="line">                bookname: &quot;三国演义&quot;,</span><br><span class="line">                bookprice: 28</span><br><span class="line">              &#125;</span><br><span class="line">            ]</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">      //计算属性</span><br><span class="line">        computed: &#123;</span><br><span class="line">          total()&#123;</span><br><span class="line">            let rs = 0;</span><br><span class="line">            for (let i = 0; i &lt; this.carts.length; i++) &#123;</span><br><span class="line">              rs += this.carts[i].bprice * this.carts[i].count</span><br><span class="line">            &#125;</span><br><span class="line">            return rs;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">      methods: &#123;</span><br><span class="line">            addCart(info)&#123;</span><br><span class="line">              // 是否添加过，是则加一，否者生成一条</span><br><span class="line">              let book = this.carts.find(m=&gt;m.isbn==info.isbn)</span><br><span class="line">              // 没有添加过</span><br><span class="line">              if (!book)&#123;</span><br><span class="line">                this.carts.push(&#123;</span><br><span class="line">                  isbn: info.isbn,</span><br><span class="line">                  bname:info.bookname,</span><br><span class="line">                  bprice:info.bookprice,</span><br><span class="line">                  count:1</span><br><span class="line">                &#125;)</span><br><span class="line">              &#125;else &#123;</span><br><span class="line">                book.count++</span><br><span class="line">              &#125;</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;).mount(&quot;#app&quot;);</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure><p><img src="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/image-20230329145907645.png" alt="演示"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue3.0 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Html </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vue3.0监视器属性</title>
       <link href="/post/eb35d7a1.html"/>
       <url>/post/eb35d7a1.html</url>
       
-        <content type="html"><![CDATA[<h1 id="VUE3-0"><a href="#VUE3-0" class="headerlink" title="VUE3.0"></a>VUE3.0</h1><h2 id="注：在vue2-6中data可作为一个对象-，在VUE3-0中data只能作为一个函数"><a href="#注：在vue2-6中data可作为一个对象-，在VUE3-0中data只能作为一个函数" class="headerlink" title="注：在vue2.6中data可作为一个对象 ，在VUE3.0中data只能作为一个函数"></a>注：在vue2.6中data可作为一个对象 ，在VUE3.0中data只能作为一个函数</h2><h2 id="watch监视器事件"><a href="#watch监视器事件" class="headerlink" title="watch监视器事件"></a>watch监视器事件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">     &lt;script src=&quot;https://cdn.bootcdn.net/ajax/libs/vue/3.2.47/vue.global.prod.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">     &lt;style&gt;</span><br><span class="line">       #app div,h1&#123;</span><br><span class="line">         margin: 40px auto;</span><br><span class="line">         text-align: center;</span><br><span class="line">       &#125;</span><br><span class="line">     &lt;/style&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;app&quot;&gt;</span><br><span class="line">       &lt;h1&gt;watch监听简单数据类型&lt;/h1&gt;</span><br><span class="line">       &lt;div class=&quot;example1&quot;&gt;</span><br><span class="line">         千米:&lt;input type=&quot;text&quot; v-model.number.lazy=&quot;kilo&quot;/&gt;</span><br><span class="line">         &lt;=&gt;</span><br><span class="line">         米:&lt;input type=&quot;text&quot; v-model.number.lazy=&quot;meter&quot;/&gt;</span><br><span class="line">         &lt;p&gt;左输入框修改前为:&#123;&#123;oldKilo&#125;&#125; ,修改后为:&#123;&#123;newKilo&#125;&#125;&lt;/p&gt;</span><br><span class="line">         &lt;p&gt;右输入框修改前为:&#123;&#123;oldMeter&#125;&#125;,修改后为:&#123;&#123;newMeter&#125;&#125;&lt;/p&gt;</span><br><span class="line">       &lt;/div&gt;</span><br><span class="line">       &lt;h1&gt;watch深度监听&lt;/h1&gt;</span><br><span class="line">       &lt;div class=&quot;example2&quot;&gt;</span><br><span class="line">           用户名:&lt;input type=&quot;text&quot; v-model.lazy=&quot;user.name&quot;/&gt;</span><br><span class="line">           年龄:&lt;input type=&quot;text&quot; v-model.lazy=&quot;user.age&quot;/&gt;</span><br><span class="line">       &lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">      const app=Vue.createApp(&#123;</span><br><span class="line">        data()&#123;</span><br><span class="line">          return &#123;</span><br><span class="line">              kilo:0,</span><br><span class="line">              meter:0,</span><br><span class="line">              oldKilo:0,</span><br><span class="line">              newKilo:0,</span><br><span class="line">              oldMeter:0,</span><br><span class="line">              newMeter:0,</span><br><span class="line">              user:&#123;</span><br><span class="line">                  name:&quot;PuJunming&quot;,</span><br><span class="line">                  age:22</span><br><span class="line">              &#125;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        watch:&#123;</span><br><span class="line">            kilo(newVal,oldVal)&#123;</span><br><span class="line">                this.oldKilo = oldVal;</span><br><span class="line">                this.newKilo = newVal;</span><br><span class="line">                this.meter = newVal*1000;</span><br><span class="line">            &#125;,</span><br><span class="line">            meter(newVal,oldVal)&#123;</span><br><span class="line">                this.oldMeter = oldVal;</span><br><span class="line">                this.newMeter = newVal;</span><br><span class="line">                this.kilo = newVal/1000;</span><br><span class="line">            &#125;,</span><br><span class="line">            // 无法对对象进行深度监听 无法监听到对象的属性变化 无法监听到数组的变化</span><br><span class="line">            // user(newVal,oldVal)&#123;</span><br><span class="line">            //     console.log(&quot;newVal:&quot;,newVal);</span><br><span class="line">            //     console.log(&quot;oldVal:&quot;,oldVal);</span><br><span class="line">            // &#125;</span><br><span class="line"></span><br><span class="line">            // &quot;user.age&quot;(newVal,oldVal)&#123;</span><br><span class="line">            //     console.log(&quot;新user.age变化了&quot;+newVal);</span><br><span class="line">            //     console.log(&quot;旧user.age变化了&quot;+oldVal);</span><br><span class="line">            // &#125;,</span><br><span class="line">            // &quot;user.name&quot;(newVal,oldVal)&#123;</span><br><span class="line">            //     console.log(&quot;新user.name变化了&quot;+newVal);</span><br><span class="line">            //     console.log(&quot;旧user.name变化了&quot;+oldVal);</span><br><span class="line">            // &#125;</span><br><span class="line"></span><br><span class="line">            user:&#123;</span><br><span class="line">                // handler 监听的回调函数 </span><br><span class="line">                handler(newVal,oldVal)&#123;</span><br><span class="line">                    console.log(&quot;new newVal:&quot;,newVal);</span><br><span class="line">                    console.log(&quot;old oldVal:&quot;,oldVal);</span><br><span class="line">                &#125;,</span><br><span class="line">                // deep:true 深度监听 默认false 只能监听到一层</span><br><span class="line">                deep:true,</span><br><span class="line">                // immediate:true 立即执行一次 默认false 只有在值发生变化时才会执行</span><br><span class="line">                immediate:true</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">          computed:&#123;</span><br><span class="line"></span><br><span class="line">          &#125;,</span><br><span class="line">      &#125;).mount(&quot;#app&quot;);</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h1 id="VUE3-0"><a href="#VUE3-0" class="headerlink" title="VUE3.0"></a>VUE3.0</h1><h2 id="注：在vue2-6中data可作为一个对象-，在VUE3-0中data只能作为一个函数"><a href="#注：在vue2-6中data可作为一个对象-，在VUE3-0中data只能作为一个函数" class="headerlink" title="注：在vue2.6中data可作为一个对象 ，在VUE3.0中data只能作为一个函数"></a>注：在vue2.6中data可作为一个对象 ，在VUE3.0中data只能作为一个函数</h2><h2 id="watch监视器事件"><a href="#watch监视器事件" class="headerlink" title="watch监视器事件"></a>watch监视器事件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">     &lt;script src=&quot;https://cdn.bootcdn.net/ajax/libs/vue/3.2.47/vue.global.prod.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">     &lt;style&gt;</span><br><span class="line">       #app div,h1&#123;</span><br><span class="line">         margin: 40px auto;</span><br><span class="line">         text-align: center;</span><br><span class="line">       &#125;</span><br><span class="line">     &lt;/style&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;app&quot;&gt;</span><br><span class="line">       &lt;h1&gt;watch监听简单数据类型&lt;/h1&gt;</span><br><span class="line">       &lt;div class=&quot;example1&quot;&gt;</span><br><span class="line">         千米:&lt;input type=&quot;text&quot; v-model.number.lazy=&quot;kilo&quot;/&gt;</span><br><span class="line">         &lt;=&gt;</span><br><span class="line">         米:&lt;input type=&quot;text&quot; v-model.number.lazy=&quot;meter&quot;/&gt;</span><br><span class="line">         &lt;p&gt;左输入框修改前为:&#123;&#123;oldKilo&#125;&#125; ,修改后为:&#123;&#123;newKilo&#125;&#125;&lt;/p&gt;</span><br><span class="line">         &lt;p&gt;右输入框修改前为:&#123;&#123;oldMeter&#125;&#125;,修改后为:&#123;&#123;newMeter&#125;&#125;&lt;/p&gt;</span><br><span class="line">       &lt;/div&gt;</span><br><span class="line">       &lt;h1&gt;watch深度监听&lt;/h1&gt;</span><br><span class="line">       &lt;div class=&quot;example2&quot;&gt;</span><br><span class="line">           用户名:&lt;input type=&quot;text&quot; v-model.lazy=&quot;user.name&quot;/&gt;</span><br><span class="line">           年龄:&lt;input type=&quot;text&quot; v-model.lazy=&quot;user.age&quot;/&gt;</span><br><span class="line">       &lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">      const app=Vue.createApp(&#123;</span><br><span class="line">        data()&#123;</span><br><span class="line">          return &#123;</span><br><span class="line">              kilo:0,</span><br><span class="line">              meter:0,</span><br><span class="line">              oldKilo:0,</span><br><span class="line">              newKilo:0,</span><br><span class="line">              oldMeter:0,</span><br><span class="line">              newMeter:0,</span><br><span class="line">              user:&#123;</span><br><span class="line">                  name:&quot;PuJunming&quot;,</span><br><span class="line">                  age:22</span><br><span class="line">              &#125;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        watch:&#123;</span><br><span class="line">            kilo(newVal,oldVal)&#123;</span><br><span class="line">                this.oldKilo = oldVal;</span><br><span class="line">                this.newKilo = newVal;</span><br><span class="line">                this.meter = newVal*1000;</span><br><span class="line">            &#125;,</span><br><span class="line">            meter(newVal,oldVal)&#123;</span><br><span class="line">                this.oldMeter = oldVal;</span><br><span class="line">                this.newMeter = newVal;</span><br><span class="line">                this.kilo = newVal/1000;</span><br><span class="line">            &#125;,</span><br><span class="line">            // 无法对对象进行深度监听 无法监听到对象的属性变化 无法监听到数组的变化</span><br><span class="line">            // user(newVal,oldVal)&#123;</span><br><span class="line">            //     console.log(&quot;newVal:&quot;,newVal);</span><br><span class="line">            //     console.log(&quot;oldVal:&quot;,oldVal);</span><br><span class="line">            // &#125;</span><br><span class="line"></span><br><span class="line">            // &quot;user.age&quot;(newVal,oldVal)&#123;</span><br><span class="line">            //     console.log(&quot;新user.age变化了&quot;+newVal);</span><br><span class="line">            //     console.log(&quot;旧user.age变化了&quot;+oldVal);</span><br><span class="line">            // &#125;,</span><br><span class="line">            // &quot;user.name&quot;(newVal,oldVal)&#123;</span><br><span class="line">            //     console.log(&quot;新user.name变化了&quot;+newVal);</span><br><span class="line">            //     console.log(&quot;旧user.name变化了&quot;+oldVal);</span><br><span class="line">            // &#125;</span><br><span class="line"></span><br><span class="line">            user:&#123;</span><br><span class="line">                // handler 监听的回调函数</span><br><span class="line">                handler(newVal,oldVal)&#123;</span><br><span class="line">                    console.log(&quot;new newVal:&quot;,newVal);</span><br><span class="line">                    console.log(&quot;old oldVal:&quot;,oldVal);</span><br><span class="line">                &#125;,</span><br><span class="line">                // deep:true 深度监听 默认false 只能监听到一层</span><br><span class="line">                deep:true,</span><br><span class="line">                // immediate:true 立即执行一次 默认false 只有在值发生变化时才会执行</span><br><span class="line">                immediate:true</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">          computed:&#123;</span><br><span class="line">                newUser()&#123;</span><br><span class="line">                    return JSON.Parse(JSON.Stringify(this.user));</span><br><span class="line">                &#125;</span><br><span class="line">          &#125;,</span><br><span class="line">      &#125;).mount(&quot;#app&quot;);</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -103,11 +128,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -174,11 +199,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -300,11 +325,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -387,11 +412,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -416,11 +441,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -561,11 +586,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -590,11 +615,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -745,11 +770,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -836,11 +861,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -985,11 +1010,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -1076,11 +1101,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -1208,9 +1233,9 @@
             
             <tag> MySQL </tag>
             
-            <tag> Navicat Premium </tag>
-            
             <tag> Web应用开发 </tag>
+            
+            <tag> Navicat Premium </tag>
             
         </tags>
       
@@ -1332,11 +1357,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -1423,11 +1448,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
