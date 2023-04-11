@@ -586,13 +586,6 @@
   </url>
   
   <url>
-    <loc>http://mingorfang.top/tags/Html/</loc>
-    <lastmod>2023-04-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://mingorfang.top/tags/Python/</loc>
     <lastmod>2023-04-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -607,6 +600,13 @@
   </url>
   
   <url>
+    <loc>http://mingorfang.top/tags/Html/</loc>
+    <lastmod>2023-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://mingorfang.top/tags/%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/</loc>
     <lastmod>2023-04-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -615,6 +615,20 @@
   
   <url>
     <loc>http://mingorfang.top/tags/%E9%A9%AC%E5%8E%9F/</loc>
+    <lastmod>2023-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://mingorfang.top/tags/%E6%84%9F%E5%8A%A8/</loc>
+    <lastmod>2023-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://mingorfang.top/tags/%E7%96%AB%E6%83%85/</loc>
     <lastmod>2023-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -642,7 +656,7 @@
   </url>
   
   <url>
-    <loc>http://mingorfang.top/tags/%E7%96%AB%E6%83%85/</loc>
+    <loc>http://mingorfang.top/tags/Java/</loc>
     <lastmod>2023-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -657,20 +671,6 @@
   
   <url>
     <loc>http://mingorfang.top/tags/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-04-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://mingorfang.top/tags/%E6%84%9F%E5%8A%A8/</loc>
-    <lastmod>2023-04-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://mingorfang.top/tags/Java/</loc>
     <lastmod>2023-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -770,14 +770,14 @@
   </url>
   
   <url>
-    <loc>http://mingorfang.top/categories/Vue3-0/</loc>
+    <loc>http://mingorfang.top/categories/Python/</loc>
     <lastmod>2023-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://mingorfang.top/categories/Python/</loc>
+    <loc>http://mingorfang.top/categories/Vue3-0/</loc>
     <lastmod>2023-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -798,7 +798,7 @@
   </url>
   
   <url>
-    <loc>http://mingorfang.top/categories/%E9%98%B2%E7%96%AB/</loc>
+    <loc>http://mingorfang.top/categories/Python/Python%E7%88%AC%E8%99%AB/</loc>
     <lastmod>2023-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -812,7 +812,7 @@
   </url>
   
   <url>
-    <loc>http://mingorfang.top/categories/Python/Python%E7%88%AC%E8%99%AB/</loc>
+    <loc>http://mingorfang.top/categories/%E9%98%B2%E7%96%AB/</loc>
     <lastmod>2023-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
