@@ -701,6 +701,13 @@
   </url>
   
   <url>
+    <loc>http://mingorfang.top/tags/%E6%84%9F%E5%8A%A8/</loc>
+    <lastmod>2023-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://mingorfang.top/tags/Java/</loc>
     <lastmod>2023-05-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -716,13 +723,6 @@
   
   <url>
     <loc>http://mingorfang.top/tags/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-05-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://mingorfang.top/tags/%E6%84%9F%E5%8A%A8/</loc>
     <lastmod>2023-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -764,13 +764,6 @@
   </url>
   
   <url>
-    <loc>http://mingorfang.top/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</loc>
-    <lastmod>2023-05-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://mingorfang.top/tags/MySQL/</loc>
     <lastmod>2023-05-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -786,6 +779,13 @@
   
   <url>
     <loc>http://mingorfang.top/tags/Web%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2023-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://mingorfang.top/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</loc>
     <lastmod>2023-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -820,14 +820,14 @@
   </url>
   
   <url>
-    <loc>http://mingorfang.top/tags/%E5%9B%A0%E6%9E%9C%E5%9B%BE%E6%B3%95%EF%BC%88Cause-Effect-Graphics%EF%BC%89/</loc>
+    <loc>http://mingorfang.top/tags/%E5%86%B3%E7%AD%96%E8%A1%A8%EF%BC%88Decision-Table/</loc>
     <lastmod>2023-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://mingorfang.top/tags/%E5%86%B3%E7%AD%96%E8%A1%A8%EF%BC%88Decision-Table/</loc>
+    <loc>http://mingorfang.top/tags/%E5%9B%A0%E6%9E%9C%E5%9B%BE%E6%B3%95%EF%BC%88Cause-Effect-Graphics%EF%BC%89/</loc>
     <lastmod>2023-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -899,14 +899,14 @@
   </url>
   
   <url>
-    <loc>http://mingorfang.top/categories/Java/</loc>
+    <loc>http://mingorfang.top/categories/%E6%95%85%E4%BA%8B/</loc>
     <lastmod>2023-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://mingorfang.top/categories/%E6%95%85%E4%BA%8B/</loc>
+    <loc>http://mingorfang.top/categories/Java/</loc>
     <lastmod>2023-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -948,14 +948,14 @@
   </url>
   
   <url>
-    <loc>http://mingorfang.top/categories/Python/Python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/</loc>
+    <loc>http://mingorfang.top/categories/JavaWeb/STS/</loc>
     <lastmod>2023-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://mingorfang.top/categories/JavaWeb/STS/</loc>
+    <loc>http://mingorfang.top/categories/Python/Python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2023-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
