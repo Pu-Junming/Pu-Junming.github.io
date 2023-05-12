@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Vue中常用的鼠标移入移出事件</title>
+      <link href="/post/8c9a2575.html"/>
+      <url>/post/8c9a2575.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Vue中常用的鼠标移入移出事件"><a href="#Vue中常用的鼠标移入移出事件" class="headerlink" title="Vue中常用的鼠标移入移出事件"></a>Vue中常用的鼠标移入移出事件</h1><p>Vue中常用的鼠标移入移出事件有两种：<code>@mouseenter</code>和<code>@mouseleave</code>。</p><blockquote><p><code>@mouseenter</code>事件会在鼠标移入元素时触发，而<code>@mouseleave</code>事件会在鼠标移出元素时触发。这两个事件可以用于实现一些交互效果，例如鼠标移入时显示某些内容，鼠标移出时隐藏。</p></blockquote><p>在Vue模板中，可以使用这两个事件来绑定方法，例如：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> @<span class="attr">mouseenter</span>=<span class="string">&quot;handleMouseEnter&quot;</span> @<span class="attr">mouseleave</span>=<span class="string">&quot;handleMouseLeave&quot;</span>&gt;</span>鼠标移入移出<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure><p>在Vue组件的<code>methods</code>中定义对应的方法：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="attr">methods</span>: &#123;</span><br><span class="line">    <span class="title function_">handleMouseEnter</span>(<span class="params"></span>) &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;鼠标移入&#x27;</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">handleMouseLeave</span>(<span class="params"></span>) &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;鼠标移出&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这样当鼠标移入或移出该元素时，对应的方法就会被调用。</p><h3 id="mouseleave事件来代替mouseout事件"><a href="#mouseleave事件来代替mouseout事件" class="headerlink" title="@mouseleave事件来代替mouseout事件"></a><code>@mouseleave</code>事件来代替<code>mouseout</code>事件</h3><blockquote><p> <code>mouseout</code>是JavaScript原生的鼠标移出事件，与Vue中的<code>@mouseleave</code>事件类似，但有一些细微的差别。<br><code>mouseout</code>事件会在鼠标移出元素时触发，但如果鼠标移入该元素的子元素，也会触发一次<code>mouseout</code>事件。这样可能会导致一些意外的行为，例如当鼠标从元素上移入其子元素时，可能会触发元素的<code>mouseout</code>事件，从而导致一些不必要的操作。<br>因此在Vue中，建议使用<code>@mouseleave</code>事件来代替<code>mouseout</code>事件。</p></blockquote><h3 id="mouseenter事件来代替mouseover事件"><a href="#mouseenter事件来代替mouseover事件" class="headerlink" title="@mouseenter事件来代替mouseover事件"></a><code>@mouseenter</code>事件来代替<code>mouseover</code>事件</h3><blockquote><p><code>mouseover</code>是JavaScript原生的鼠标移入事件，与Vue中的<code>@mouseenter</code>事件类似，但有一些细微的差别。<br><code>mouseover</code>事件会在鼠标移入元素时触发，但如果鼠标移入该元素的子元素，不会触发一次<code>mouseover</code>事件。这样可以避免一些意外的行为，例如当鼠标从元素的子元素上移出时，不会触发元素的<code>mouseover</code>事件，从而避免一些不必要的操作。<br>因此在Vue中，建议使用<code>@mouseenter</code>事件来代替<code>mouseover</code>事件。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue3.X </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue3.X </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>学生成绩计算页面(Vue3.0)</title>
       <link href="/post/7a26b129.html"/>
       <url>/post/7a26b129.html</url>
