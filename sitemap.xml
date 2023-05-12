@@ -813,13 +813,6 @@
   </url>
   
   <url>
-    <loc>http://mingorfang.top/tags/NextData%E5%88%86%E6%9E%90/</loc>
-    <lastmod>2023-05-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://mingorfang.top/tags/%E5%86%B3%E7%AD%96%E8%A1%A8%EF%BC%88Decision-Table/</loc>
     <lastmod>2023-05-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -828,6 +821,13 @@
   
   <url>
     <loc>http://mingorfang.top/tags/%E5%9B%A0%E6%9E%9C%E5%9B%BE%E6%B3%95%EF%BC%88Cause-Effect-Graphics%EF%BC%89/</loc>
+    <lastmod>2023-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://mingorfang.top/tags/NextData%E5%88%86%E6%9E%90/</loc>
     <lastmod>2023-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
