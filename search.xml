@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>面向对象系统分析与设计复习资料</title>
+      <link href="/post/3acbc910.html"/>
+      <url>/post/3acbc910.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="面向对象程序分析与设计期末总复习"><a href="#面向对象程序分析与设计期末总复习" class="headerlink" title="面向对象程序分析与设计期末总复习"></a>面向对象程序分析与设计期末总复习</h1><h2 id="基本上全是重点（CNU）"><a href="#基本上全是重点（CNU）" class="headerlink" title="基本上全是重点（CNU）"></a><code>基本上全是重点（CNU）</code></h2><h2 id="第一章-面向对象建模基础"><a href="#第一章-面向对象建模基础" class="headerlink" title="第一章 面向对象建模基础"></a>第一章 面向对象建模基础</h2><h3 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h3><h4 id="1-面向对象程序设计将描述事物的-与对数据的操作封装在一起-作为一个相互依存、不可分割的整体来处理。"><a href="#1-面向对象程序设计将描述事物的-与对数据的操作封装在一起-作为一个相互依存、不可分割的整体来处理。" class="headerlink" title="1. 面向对象程序设计将描述事物的__________与对数据的操作封装在一起,作为一个相互依存、不可分割的整体来处理。"></a>1. 面向对象程序设计将描述事物的__________与对数据的操作封装在一起,作为一个相互依存、不可分割的整体来处理。</h4><p>A、 信息</p><p>B、 数据隐藏</p><p>C、 数据抽象</p><p><code>D、 数据</code></p><h4 id="2-是一种整体-部分关系-这种关系的语义为“有一个”关系。"><a href="#2-是一种整体-部分关系-这种关系的语义为“有一个”关系。" class="headerlink" title="2. ________是一种整体-部分关系,这种关系的语义为“有一个”关系。"></a>2. ________是一种整体-部分关系,这种关系的语义为“有一个”关系。</h4><p>A、 继承</p><p><code>B、 聚合</code></p><p>C、 依赖</p><p>D、 数据</p><h4 id="3-两个类之间存在着关联关系。而关联关系之间也存在一定的数量关系。每一个教师可以讲授多门课程-至少讲授一门课程。而一门课程也可以被多个教师讲授-至少被1个教师讲授。教师与课程之间的带量级的关联关系表示为"><a href="#3-两个类之间存在着关联关系。而关联关系之间也存在一定的数量关系。每一个教师可以讲授多门课程-至少讲授一门课程。而一门课程也可以被多个教师讲授-至少被1个教师讲授。教师与课程之间的带量级的关联关系表示为" class="headerlink" title="3. 两个类之间存在着关联关系。而关联关系之间也存在一定的数量关系。每一个教师可以讲授多门课程,至少讲授一门课程。而一门课程也可以被多个教师讲授,至少被1个教师讲授。教师与课程之间的带量级的关联关系表示为________."></a>3. 两个类之间存在着关联关系。而关联关系之间也存在一定的数量关系。每一个教师可以讲授多门课程,至少讲授一门课程。而一门课程也可以被多个教师讲授,至少被1个教师讲授。教师与课程之间的带量级的关联关系表示为________.</h4><p><code>A、 教师1..*————————1..*课程 </code></p><p>B、 教师1..*————————1课程 </p><p>C、 教师1————————1..*课程 </p><p>D、 教师0..*————————0..*课程 </p><h3 id="填空题"><a href="#填空题" class="headerlink" title="填空题"></a>填空题</h3><h4 id="4-建模就是采用-、-、-的方式-将系统的构成及其构成间的关系呈现给人们的一种技术方法。"><a href="#4-建模就是采用-、-、-的方式-将系统的构成及其构成间的关系呈现给人们的一种技术方法。" class="headerlink" title="4. 建模就是采用____、____、____的方式,将系统的构成及其构成间的关系呈现给人们的一种技术方法。"></a>4. 建模就是采用____、____、____的方式,将系统的构成及其构成间的关系呈现给人们的一种技术方法。</h4><blockquote><p><code>答案： 表格化； 图形化； 公式化；</code></p></blockquote><h4 id="5-车和轮胎是-关系-轮胎离开车仍然可以存在。"><a href="#5-车和轮胎是-关系-轮胎离开车仍然可以存在。" class="headerlink" title="5. 车和轮胎是____关系,轮胎离开车仍然可以存在。"></a>5. 车和轮胎是____关系,轮胎离开车仍然可以存在。</h4><blockquote><p><code>答案： 聚合；</code></p></blockquote><h3 id="判断题"><a href="#判断题" class="headerlink" title="判断题"></a>判断题</h3><h4 id="6-封装是指将现实世界中存在的某个客体的属性与行为绑定在一起-并放置在一个逻辑单元内。"><a href="#6-封装是指将现实世界中存在的某个客体的属性与行为绑定在一起-并放置在一个逻辑单元内。" class="headerlink" title="6. 封装是指将现实世界中存在的某个客体的属性与行为绑定在一起,并放置在一个逻辑单元内。"></a>6. 封装是指将现实世界中存在的某个客体的属性与行为绑定在一起,并放置在一个逻辑单元内。</h4><blockquote><p><code>答案： 正确 </code></p></blockquote><h3 id="简答题"><a href="#简答题" class="headerlink" title="简答题"></a>简答题</h3><h4 id="7-简述面向对象建模的过程"><a href="#7-简述面向对象建模的过程" class="headerlink" title="7. 简述面向对象建模的过程"></a>7. 简述面向对象建模的过程</h4><blockquote><p><code>答案:</code><br><code>发现对象、对象的类化、类的特征化、类的结构化</code></p><p>​发现对象(Find Objects)。这是面向对象建模的起点，可以从问题域中发现对象，也可以从实现域中发现对象。当然，发现对象是对客观事物或主观事物进行抽象的过程，只抽象出当前开发软件系统所需要的对象和对象的信息。</p><p>​对象的类化(Classification of Object)。有了对象之后，将对象分类，这是降低复杂性，提高复用的方法。也是为了更好地认识问题、解决问题。</p><p>​类的特征化(Characterization of Class)。即确定类的属性和方法。对象的属性大部分成为类的属性，而职责成为类的方法。<br>​类的结构化(To establish Relationships between Classes)。类的结构化就是确定类之间的关系。UML提供了类之间关系的表示。</p></blockquote><h2 id="第二章-愿景"><a href="#第二章-愿景" class="headerlink" title="第二章 愿景"></a>第二章 愿景</h2><h3 id="选择题-1"><a href="#选择题-1" class="headerlink" title="选择题"></a>选择题</h3><h4 id="1-《斗罗大陆-魂师对决》是海南智虎网络科技有限公司开发的游戏-目标组织就是海南智虎网络科技有限公司-这属于目标组织的哪种情况-（-）"><a href="#1-《斗罗大陆-魂师对决》是海南智虎网络科技有限公司开发的游戏-目标组织就是海南智虎网络科技有限公司-这属于目标组织的哪种情况-（-）" class="headerlink" title="1.《斗罗大陆:魂师对决》是海南智虎网络科技有限公司开发的游戏,目标组织就是海南智虎网络科技有限公司,这属于目标组织的哪种情况? （ ）"></a>1.《斗罗大陆:魂师对决》是海南智虎网络科技有限公司开发的游戏,目标组织就是海南智虎网络科技有限公司,这属于目标组织的哪种情况? （ ）</h4><p>A、 第一种 </p><p>B、 第二种 </p><p><code>C、 第三种 </code></p><p>D、 第四种 </p><h4 id="2-研发部要添加一名-Java程序员-由人力资源部负责出面招人-请问针对这名Java程序员-老大是（）"><a href="#2-研发部要添加一名-Java程序员-由人力资源部负责出面招人-请问针对这名Java程序员-老大是（）" class="headerlink" title="2. 研发部要添加一名 Java程序员,由人力资源部负责出面招人, 请问针对这名Java程序员,老大是（）"></a>2. 研发部要添加一名 Java程序员,由人力资源部负责出面招人, 请问针对这名Java程序员,老大是（）</h4><p>A、 人力资源部经理 </p><p><code>B、 研发部经理 </code></p><p>C、 公司总经理 </p><p>D、 Java程序员 </p><h3 id="填空题-1"><a href="#填空题-1" class="headerlink" title="填空题"></a>填空题</h3><h4 id="3-根据愿景的形式化定义-愿景可以用一句话来概括-在-老大-看来-软件系统应该给组织业务带来的-。"><a href="#3-根据愿景的形式化定义-愿景可以用一句话来概括-在-老大-看来-软件系统应该给组织业务带来的-。" class="headerlink" title="3. 根据愿景的形式化定义,愿景可以用一句话来概括:在_______(老大)看来,软件系统应该给组织业务带来的________。"></a>3. 根据愿景的形式化定义,愿景可以用一句话来概括:在_______(老大)看来,软件系统应该给组织业务带来的________。</h4><blockquote><p><code>答案： 目标组织代表；改进；</code></p></blockquote><h4 id="4-老大代表了目标组织-是最有“地位”的-是最优先照顾其利益的那个人。"><a href="#4-老大代表了目标组织-是最有“地位”的-是最优先照顾其利益的那个人。" class="headerlink" title="4. 老大代表了目标组织,是最有“地位”的_______,是最优先照顾其利益的那个人。"></a>4. 老大代表了目标组织,是最有“地位”的_______,是最优先照顾其利益的那个人。</h4><blockquote><p><code>答案： 涉众；</code></p></blockquote><h4 id="5-在确定老大的时候-有几个要点需要注意-要点一：-。要点二-老大是买方。要点三-老大不一定清楚系统好坏的度量指标。"><a href="#5-在确定老大的时候-有几个要点需要注意-要点一：-。要点二-老大是买方。要点三-老大不一定清楚系统好坏的度量指标。" class="headerlink" title="5. 在确定老大的时候,有几个要点需要注意:要点一：________。要点二:老大是买方。要点三 :老大不一定清楚系统好坏的度量指标。"></a>5. 在确定老大的时候,有几个要点需要注意:要点一：________。要点二:老大是买方。要点三 :老大不一定清楚系统好坏的度量指标。</h4><blockquote><p><code>答案： 老大是系统改进业务流程的那个组织的负责人；</code></p></blockquote><h3 id="判断题-1"><a href="#判断题-1" class="headerlink" title="判断题"></a>判断题</h3><h4 id="6-老大不是涉众。"><a href="#6-老大不是涉众。" class="headerlink" title="6. 老大不是涉众。 ( )"></a>6. 老大不是涉众。 ( )</h4><blockquote><p><code>答案： 错误 </code></p></blockquote><h4 id="7-老大是一个具体的人。"><a href="#7-老大是一个具体的人。" class="headerlink" title="7. 老大是一个具体的人。 ( )"></a>7. 老大是一个具体的人。 ( )</h4><blockquote><p><code>答案： 正确</code></p></blockquote><h4 id="8-涉众是受系统影响的人或系统。"><a href="#8-涉众是受系统影响的人或系统。" class="headerlink" title="8. 涉众是受系统影响的人或系统。 ( )"></a>8. 涉众是受系统影响的人或系统。 ( )</h4><blockquote><p><code>答案： 错误 </code></p></blockquote><h3 id="简答题-1"><a href="#简答题-1" class="headerlink" title="简答题"></a>简答题</h3><h4 id="9-目标组织有几种情况"><a href="#9-目标组织有几种情况" class="headerlink" title="9. 目标组织有几种情况?"></a>9. 目标组织有几种情况?</h4><blockquote><p><code>答案：（建议加上例子） </code></p><p>​目标组织的第一种情况是：目标组织是软件系统的所有者和消费者，软件系统为目标组织的业务服务，软件系统的使用者是目标组织或者是目标组织的客户。</p><p>​目标组织的第二种情况是：目标组织是软件系统的消费者和使用者，但不是软件系统的所有者，软件系统为目标组织的业务服务。</p><p>​目标组织的第三种情况是目标组织是软件系统的所有者和消费者，软件系统既为目标组织自身的业务服务</p><p>​目标组织的第四种情况是，软件工程师既是音乐软件的生产者、所有者和使用者，同时也是音乐软件的目标组织、消费者和服务提供者。他开发的音乐软件是为自己个人使用和享受服务的，但同时也可以被其他音乐爱好者使用。因此，这款音乐软件可以被看作是一种面向个人用户的业务服务，也可以被看作是一种面向音乐爱好者的服务产品。</p></blockquote><h4 id="10-如何确定组织的老大"><a href="#10-如何确定组织的老大" class="headerlink" title="10. 如何确定组织的老大?"></a>10. 如何确定组织的老大?</h4><blockquote><p><code>答案：</code></p><p>要点一 ：老大是系统改进业务流程的那个组织的负责人。</p><p>​判断老大最重要的一点是其所负责的组织的业务流程被软件系统改进，这是老大引进软件系统的目的。</p><p>要点二：老大是买方。</p><p>​一般来说，目标组织是软件的购买者，而老大是最终签字同意购买软件的那个人。这里的“买”是广义的“买” ，不仅是付出金钱，也可以是付出声誉、官职、时间等。</p><p>要点三 ：老大不一定清楚系统好坏的度量指标。</p></blockquote><h2 id="第三章-业务用例"><a href="#第三章-业务用例" class="headerlink" title="第三章 业务用例"></a>第三章 业务用例</h2><h3 id="选择题-2"><a href="#选择题-2" class="headerlink" title="选择题"></a>选择题</h3><h4 id="1-针对以下研究对象-财务人员最有可能是业务参与者的是（）-。"><a href="#1-针对以下研究对象-财务人员最有可能是业务参与者的是（）-。" class="headerlink" title="1. 针对以下研究对象,财务人员最有可能是业务参与者的是（） 。"></a>1. 针对以下研究对象,财务人员最有可能是业务参与者的是（） 。</h4><p><code>A、 某省注册会计师考试委员会 </code></p><p>B、 某市国税局 </p><p>C、 公司人力资源 </p><p>D、 公司财务部 </p><h4 id="2-以医院为研究对象-以下是正确的业务用例的是（）。"><a href="#2-以医院为研究对象-以下是正确的业务用例的是（）。" class="headerlink" title="2. 以医院为研究对象,以下是正确的业务用例的是（）。"></a>2. 以医院为研究对象,以下是正确的业务用例的是（）。</h4><p><code>A、 患者→看病 </code></p><p>B、 医生→诊治 </p><p>C、 患者→挂号 </p><p>D、 收费人员→收费 </p><h3 id="填空题-2"><a href="#填空题-2" class="headerlink" title="填空题"></a>填空题</h3><h4 id="3-业务流程的改进有三种-、-、-。"><a href="#3-业务流程的改进有三种-、-、-。" class="headerlink" title="3. 业务流程的改进有三种:____、____、____。"></a>3. 业务流程的改进有三种:____、____、____。</h4><blockquote><p><code>答案：物理流变信息流；改善信息流转；封装领域逻辑</code></p><p>答案： 用半自动化的业务流程替代纯手工的业务流程；用半自动化和自动化的业务流程替代半自动化的业务流程；用全自动化的业务流程替代半自动化和自动化的业务流程； </p></blockquote><h4 id="4-业务有三种类型-分别是-核心业务、-和-。"><a href="#4-业务有三种类型-分别是-核心业务、-和-。" class="headerlink" title="4. 业务有三种类型,分别是:核心业务、____和____。"></a>4. 业务有三种类型,分别是:核心业务、____和____。</h4><blockquote><p><code>答案： 支持型业务；管理型业务；</code></p></blockquote><h3 id="判断题-2"><a href="#判断题-2" class="headerlink" title="判断题"></a>判断题</h3><h4 id="5-业务实体是组织中的非人脑系统-例如银行的点钞机。"><a href="#5-业务实体是组织中的非人脑系统-例如银行的点钞机。" class="headerlink" title="5. 业务实体是组织中的非人脑系统,例如银行的点钞机。 ( )"></a>5. 业务实体是组织中的非人脑系统,例如银行的点钞机。 ( )</h4><blockquote><p><code>答案： 正确 </code></p></blockquote><h4 id="6-业务参与者在组织之内。"><a href="#6-业务参与者在组织之内。" class="headerlink" title="6. 业务参与者在组织之内。 ( )"></a>6. 业务参与者在组织之内。 ( )</h4><blockquote><p><code>答案： 错误</code></p></blockquote><h4 id="7-业务参与者在系统之外。"><a href="#7-业务参与者在系统之外。" class="headerlink" title="7. 业务参与者在系统之外。 ( )"></a>7. 业务参与者在系统之外。 ( )</h4><blockquote><p><code>答案： 错误 </code></p></blockquote><h4 id="8-消息代表责任分配而不是数据流动。"><a href="#8-消息代表责任分配而不是数据流动。" class="headerlink" title="8. 消息代表责任分配而不是数据流动。 ( )"></a>8. 消息代表责任分配而不是数据流动。 ( )</h4><blockquote><p><code>答案： 正确</code></p></blockquote><h2 id="第四章-需求"><a href="#第四章-需求" class="headerlink" title="第四章 需求"></a>第四章 需求</h2><h3 id="填空题-3"><a href="#填空题-3" class="headerlink" title="填空题"></a>填空题</h3><h4 id="1-系统用例规约的前置条件是用例开始前-系统需要满足的-。前置条件必须是系统能-到的。"><a href="#1-系统用例规约的前置条件是用例开始前-系统需要满足的-。前置条件必须是系统能-到的。" class="headerlink" title="1. 系统用例规约的前置条件是用例开始前,系统需要满足的____。前置条件必须是系统能____到的。"></a>1. 系统用例规约的前置条件是用例开始前,系统需要满足的____。前置条件必须是系统能____到的。</h4><blockquote><p><code>答案： 约束；检测；</code></p></blockquote><h4 id="2-用例的步骤和约束是-博弈的结果"><a href="#2-用例的步骤和约束是-博弈的结果" class="headerlink" title="2. 用例的步骤和约束是____博弈的结果."></a>2. 用例的步骤和约束是____博弈的结果.</h4><blockquote><p><code>答案： 涉众利益；</code></p></blockquote><h4 id="3-系统用例规约的后置条件是用例结束后-系统需要满足的-。后置条件必须是系统能-到的。"><a href="#3-系统用例规约的后置条件是用例结束后-系统需要满足的-。后置条件必须是系统能-到的。" class="headerlink" title="3. 系统用例规约的后置条件是用例结束后,系统需要满足的____。后置条件必须是系统能____到的。"></a>3. 系统用例规约的后置条件是用例结束后,系统需要满足的____。后置条件必须是系统能____到的。</h4><blockquote><p><code>答案： 约束；检测；</code></p></blockquote><h2 id="第五章-分析"><a href="#第五章-分析" class="headerlink" title="第五章 分析"></a>第五章 分析</h2><h3 id="选择题-3"><a href="#选择题-3" class="headerlink" title="选择题"></a>选择题</h3><h4 id="1-在四色原型中，PPT类用-表示。"><a href="#1-在四色原型中，PPT类用-表示。" class="headerlink" title="1. 在四色原型中，PPT类用______表示。"></a>1. 在四色原型中，PPT类用______表示。</h4><p>A、 灰色</p><p>B、 黑色 </p><p><code>C、 淡绿色 </code></p><p>D、 淡黄色 </p><h4 id="2-状态机可归纳为4个要素-即现态、条件、动作、次态。这样的归纳-主要是出于对状态机的内在因果关系的考虑。（）和（）是因-（）和（）是果。"><a href="#2-状态机可归纳为4个要素-即现态、条件、动作、次态。这样的归纳-主要是出于对状态机的内在因果关系的考虑。（）和（）是因-（）和（）是果。" class="headerlink" title="2. 状态机可归纳为4个要素,即现态、条件、动作、次态。这样的归纳,主要是出于对状态机的内在因果关系的考虑。（）和（）是因,（）和（）是果。"></a>2. 状态机可归纳为4个要素,即现态、条件、动作、次态。这样的归纳,主要是出于对状态机的内在因果关系的考虑。（）和（）是因,（）和（）是果。</h4><p>A、 现态,动作,条件,次态 </p><p>B、 现态,次态,条件,动作 </p><p>C、 条件,动作,现态,次态 </p><p><code>D、 现态,条件,动作,次态 </code></p><h4 id="3-四色法建模中-MI代表了（）。"><a href="#3-四色法建模中-MI代表了（）。" class="headerlink" title="3. 四色法建模中, MI代表了（）。"></a>3. 四色法建模中, MI代表了（）。</h4><p>A、 角色 </p><p>B、 PPT </p><p><code>C、 时刻-时段 </code></p><p>D、 分类描述</p><h4 id="4-在四色原型中-MI类用（）表示。"><a href="#4-在四色原型中-MI类用（）表示。" class="headerlink" title="4. 在四色原型中,MI类用（）表示。"></a>4. 在四色原型中,MI类用（）表示。</h4><p>A、 灰色 </p><p>B、 黑色 </p><p><code>C、 淡红色 </code></p><p>D、 淡黄色 </p><h3 id="填空题-4"><a href="#填空题-4" class="headerlink" title="填空题"></a>填空题</h3><h4 id="5-四色原型模式包括-、-、-、-。"><a href="#5-四色原型模式包括-、-、-、-。" class="headerlink" title="5. 四色原型模式包括:____、____、____、____。"></a>5. 四色原型模式包括:____、____、____、____。</h4><blockquote><p><code>答案： MI原型；Role原型；PPT原型；Description原型；</code></p></blockquote><h4 id="6-FURPS-需求模型中F是-U是-R是-P是-S是-是-。"><a href="#6-FURPS-需求模型中F是-U是-R是-P是-S是-是-。" class="headerlink" title="6. FURPS+需求模型中F是____,U是____,R是____,P是____,S是____,+是____。"></a>6. FURPS+需求模型中F是____,U是____,R是____,P是____,S是____,+是____。</h4><blockquote><p><code>答案： Function；Usability；Reliability；Performance；Supportability；辅助的和次要的因素；</code></p></blockquote><h4 id="7-类的命名应遵循以下几条原则-、-、-、-。"><a href="#7-类的命名应遵循以下几条原则-、-、-、-。" class="headerlink" title="7. 类的命名应遵循以下几条原则:____、____、____、____。"></a>7. 类的命名应遵循以下几条原则:____、____、____、____。</h4><blockquote><p><code>答案： 应恰好符合这个类所包含的全部对象；应该反映每个对象个体而不是整个群体；使用规范的名词而不是俚语；使用英文描述；</code></p></blockquote><h4 id="8-BCE模式包含三个部分-、-、-。"><a href="#8-BCE模式包含三个部分-、-、-。" class="headerlink" title="8. BCE模式包含三个部分:____、____、____。"></a>8. BCE模式包含三个部分:____、____、____。</h4><blockquote><p><code>答案： 边界；控制；实体； </code></p></blockquote><h3 id="判断题-3"><a href="#判断题-3" class="headerlink" title="判断题"></a>判断题</h3><h4 id="9-事物从一个状态到另外一个状态的转化通常是即时的。"><a href="#9-事物从一个状态到另外一个状态的转化通常是即时的。" class="headerlink" title="9. 事物从一个状态到另外一个状态的转化通常是即时的。 ( )"></a>9. 事物从一个状态到另外一个状态的转化通常是即时的。 ( )</h4><blockquote><p><code>答案： 正确</code></p></blockquote><h3 id="解答题"><a href="#解答题" class="headerlink" title="解答题"></a>解答题</h3><h4 id="10-请简述四色原型模式"><a href="#10-请简述四色原型模式" class="headerlink" title="10. 请简述四色原型模式"></a>10. 请简述四色原型模式</h4><blockquote><p><code>答案:</code></p><p>MI archetype，moment-interval,时标性对象，粉红颜色</p><p><img src="https://docimg9.docs.qq.com/image/AgAABS7DEZewuNdWCBJB85GW56HrqYxV.png?imageMogr2/thumbnail/1600x%3E/ignore-error/1" alt="img"></p><p>Role archetype,角色原型，淡黄颜色</p><p><img src="https://docimg9.docs.qq.com/image/AgAABS7DEZePIDnY9u9NBKNJZYnHEYut.png?imageMogr2/thumbnail/1600x%3E/ignore-error/1" alt="img"></p><p>PPT archetype，party、place或thing的缩写，淡绿色，Party表示有自己正常的状态并且能够自主控制自己的一些行为。Place or thing表示不会说话没有行为的东西。</p><p><img src="https://docimg9.docs.qq.com/image/AgAABS7DEZdmiUJWUftOv7zoqXD0Vpyo.png?imageMogr2/thumbnail/1600x%3E/ignore-error/1" alt="img"></p><p>Description，灰色</p><p><img src="https://docimg9.docs.qq.com/image/AgAABS7DEZf-aR8t7BJFPrBkaGYXZ2M9.png?imageMogr2/thumbnail/1600x%3E/ignore-error/1" alt="img"></p></blockquote><h4 id="11-类的命名的原则是什么"><a href="#11-类的命名的原则是什么" class="headerlink" title="11. 类的命名的原则是什么?"></a>11. 类的命名的原则是什么?</h4><blockquote><p><code>答案:</code></p><p>1）适合该类及其特殊类的全部对象实例</p><p>2）反映个体而不是群体</p><p>3）使用名词，或带有定语的名词 ，避免无意义的符号</p><p>4）考虑使用适当种类的语言文字对类命名。</p></blockquote><h4 id="12-什么是BCE模式"><a href="#12-什么是BCE模式" class="headerlink" title="12. 什么是BCE模式?"></a>12. 什么是BCE模式?</h4><blockquote><p><code>答案： </code></p><p>​BCE是边界（Boundary）、控制(Control)、实体(Entity)的首字母，该模式是将软件系统中的类分成边界类、控制类和实体类。边界类用来隔离系统内外，通常负责接收并响应系统内外的信息。所以，参与者对象只能跟边界对象互动，不能直接发送消息给控制对象或实体对象。控制类用来控制用例执行期间的复杂运算或者业务逻辑（business logic）。实体类对应领域概念的类，主要用来保存问题领域中的重要信息，封装了跟数据结构和数据存储有关的变化。</p></blockquote><h2 id="第六章-系统架构设计"><a href="#第六章-系统架构设计" class="headerlink" title="第六章 系统架构设计"></a>第六章 系统架构设计</h2><h3 id="选择题-4"><a href="#选择题-4" class="headerlink" title="选择题"></a>选择题</h3><h4 id="1-方法的算法设计属于"><a href="#1-方法的算法设计属于" class="headerlink" title="1. 方法的算法设计属于"></a>1. 方法的算法设计属于</h4><p>A、 架构设计 </p><p>B、 数据库设计 </p><p>C、 界面设计 </p><p><code>D、 类设计 </code></p><h4 id="2-在-NET的多层架构中-（-）是为UI层提供一个一致对外的接口-使得对于BLL的使用更加容易。"><a href="#2-在-NET的多层架构中-（-）是为UI层提供一个一致对外的接口-使得对于BLL的使用更加容易。" class="headerlink" title="2. 在.NET的多层架构中, （   ）是为UI层提供一个一致对外的接口,使得对于BLL的使用更加容易。"></a>2. 在.NET的多层架构中, （   ）是为UI层提供一个一致对外的接口,使得对于BLL的使用更加容易。</h4><p><code>A、 外观层 </code></p><p>B、 实体层 </p><p>C、 数据访问层 </p><p>D、 业务逻辑层 </p><h3 id="填空题-5"><a href="#填空题-5" class="headerlink" title="填空题"></a>填空题</h3><h4 id="3-软件系统设计包括-和-。"><a href="#3-软件系统设计包括-和-。" class="headerlink" title="3. 软件系统设计包括:____和____。"></a>3. 软件系统设计包括:____和____。</h4><blockquote><p><code>答案： 软件架构设计；软件详细设计；</code></p></blockquote><h4 id="4-RUP的“4-1-视图模型”包括-、-、-、-、-。"><a href="#4-RUP的“4-1-视图模型”包括-、-、-、-、-。" class="headerlink" title="4. RUP的“4+1 视图模型”包括:____、____、____、____、____。"></a>4. RUP的“4+1 视图模型”包括:____、____、____、____、____。</h4><blockquote><p><code>答案： 用例视图；逻辑视图；实施视图；进程视图；配置视图；</code></p></blockquote><h4 id="5-MVC指的是-、-、-。"><a href="#5-MVC指的是-、-、-。" class="headerlink" title="5. MVC指的是____、____、____。"></a>5. MVC指的是____、____、____。</h4><blockquote><p><code>答案： Model；View；Controller； </code></p></blockquote><h4 id="6-MVP-模式将-Controller-改名为-同时改变了通信方向。"><a href="#6-MVP-模式将-Controller-改名为-同时改变了通信方向。" class="headerlink" title="6.  MVP 模式将 Controller 改名为 ____,同时改变了通信方向。"></a>6.  MVP 模式将 Controller 改名为 ____,同时改变了通信方向。</h4><blockquote><p><code>答案： Presenter；</code></p></blockquote><h4 id="7-MVVM-模式将-Presenter-改名为-基本上与-MVP-模式完全一致。"><a href="#7-MVVM-模式将-Presenter-改名为-基本上与-MVP-模式完全一致。" class="headerlink" title="7. MVVM 模式将 Presenter 改名为 ____,基本上与 MVP 模式完全一致。"></a>7. MVVM 模式将 Presenter 改名为 ____,基本上与 MVP 模式完全一致。</h4><blockquote><p><code>答案： ViewModel；</code></p></blockquote><h3 id="简答题-2"><a href="#简答题-2" class="headerlink" title="简答题"></a>简答题</h3><h4 id="8-请简述软件系统设计"><a href="#8-请简述软件系统设计" class="headerlink" title="8. 请简述软件系统设计"></a>8. 请简述软件系统设计</h4><blockquote><p><code>答案： </code></p><p>​软件系统设计（Software System Design）包括软件架构设计(Software Architecture Design)和软件详细设计(Software Detail Design)。</p><p>​软件架构设计是对软件系统内的元素，及元素间关系的一种主观映射的产物。因此，不同的系统有不同的软件架构。<br>软件架构设计是软件开发中的一个关键环节，是软件系统质量的重要保证。因为软件系统所承担的交易的商业价值极高，这对于客户的商业经营和管理来说极为重要，因此，软件系统必须非常可靠和安全。</p><p>​并且，软件系统必须能够在用户的使用率、数量增加很快的情况下，保持合理的性能。同样，软件系统应该能够根据客户群的不同和市场需求的变化进行调整，对现有系统进行功能和性能的扩展。除此之外，一个好的软件架构必须使软件系统易于维护和易于使用。</p><p>​软件详细设计说明一个软件系统各个层次中的每个程序（每个模块或子程序），为程序员编码提供依据。也对软件系统所依赖于运行的硬件，包括操作系统、中间件、接口软件、可能的性能监控与分析等软件环境的描述，及配置要求进行说明和设计。软件详细设计也详细描述系统所受的内部和外部条件的约束和限制说明。包括业务和技术方面的条件与限制以及进度、管理等方面的限制。</p></blockquote><h4 id="9-试简述RUP的“4-1-视图模型”。"><a href="#9-试简述RUP的“4-1-视图模型”。" class="headerlink" title="9. 试简述RUP的“4+1 视图模型”。"></a>9. 试简述RUP的“4+1 视图模型”。</h4><blockquote><p><code>答案： </code></p><p>​在 RUP(Rational Unified Process )中，该视图集称为“4+1 视图模型”。</p><p>​用例视图：包括用例和场景，这些用例和场景包括在架构方面具有重要意义的行为、类或技术风险。它是用例模型的子集。用例视图是“4+1 视图模型”中的“1”，并且居于中心位置，说明软件架构是以需求为中心的，其它四个视图都是以用例视图为基础的。</p><p>​逻辑视图：包括最重要的设计类、从这些设计类到包和子系统的组织形式，以及从这些包和子系统到层的组织形式。它还包括一些用例实现。它是设计模型的子集。前面系统设计简介中的架构设计就属于逻辑视图，它是系统分析师和系统设计师的主要工作之一。通过逻辑视图，可以设计出具体的类。</p><p>​实施视图：包括实施模型及其从模块到包和层的组织形式的概览。同时还描述了将逻辑视图中的包和类向实施视图中的包和模块分配的情况。它是实施模型的子集。程序员可以根据逻辑视图在集成开发环境(Intergrated Development Enviorenment,IDE)中创建项目，项目的结构包括包和类都与逻辑视图一致。</p><p>​进程视图：包括所涉及任务（进程和线程）的描述，它们的交互和配置，以及将设计对象和类向任务的分配情况。只有在系统具有很高程度的并行时，才需要该视图。在 Rational Unified Process 中，它是设计模型的子集。系统集成人员在创建任务时更多地是考虑性能、可伸缩性、吞吐量等非功能性需求。</p><p>​配置视图：包括对最典型的平台配置的各种物理节点的描述以及将任务（来自进程视图）向物理节点分配的情况。只有在分布式系统中才需要该视图。它是部署模型的一个子集。构架视图记录在软件构架文档中。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 面向对象系统分析与设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 面向对象系统分析与设计 </tag>
+            
+            <tag> 总复习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vue中常用的鼠标移入移出事件</title>
       <link href="/post/8c9a2575.html"/>
       <url>/post/8c9a2575.html</url>
@@ -311,11 +338,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -382,11 +409,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -477,13 +504,13 @@
       
         <tags>
             
+            <tag> 疫情 </tag>
+            
             <tag> 大学生 </tag>
             
             <tag> 防疫 </tag>
             
             <tag> 抗议 </tag>
-            
-            <tag> 疫情 </tag>
             
         </tags>
       
@@ -508,11 +535,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -595,11 +622,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -624,11 +651,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -769,11 +796,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -798,11 +825,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -953,11 +980,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -1044,11 +1071,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -1131,9 +1158,9 @@
       
         <tags>
             
-            <tag> 疫情 </tag>
-            
             <tag> 感动 </tag>
+            
+            <tag> 疫情 </tag>
             
         </tags>
       
@@ -1193,11 +1220,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -1284,11 +1311,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -1540,11 +1567,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -1631,11 +1658,11 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
