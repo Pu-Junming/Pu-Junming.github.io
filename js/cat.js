@@ -34,7 +34,7 @@ if (document.body.clientWidth > 992) {
                 borderRadius: 5 + 'px',
                 right: 60 + 'px',
                 nekoImg: "https://bu.dusays.com/2022/07/20/62d812db74be9.png",
-                hoverMsg: "喵喵喵~",
+                hoverMsg: "点我回到顶部UP~~",
                 color: "#6f42c1",
                 during: 500,
                 blog_body: "body",
