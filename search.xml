@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Vue复习知识点（理解MVVM模式、Vue实例配置的各选项、Vue的各种内置指令....）</title>
+      <link href="/post/b5f0434a.html"/>
+      <url>/post/b5f0434a.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Vue复习知识点"><a href="#Vue复习知识点" class="headerlink" title="Vue复习知识点"></a>Vue复习知识点</h1><h3 id="一、理解MVVM模式"><a href="#一、理解MVVM模式" class="headerlink" title="一、理解MVVM模式"></a>一、理解MVVM模式</h3><blockquote><p>VVM是一种设计模式，它将应用程序分为三个部分：模型（Model）、视图（View）和视图模型（ViewModel）。它的主要目的是将应用程序的界面逻辑与业务逻辑分离，并提高代码的可维护性和可测试性。</p><p>在MVVM模式中，视图是用户界面的呈现，视图模型是视图和模型之间的中介，而模型是应用程序的数据和业务逻辑。视图模型从模型中获取数据并将其转换为视图可以使用的格式。视图模型还将用户的行为转换为模型可以使用的格式，并将其传递给模型。视图模型还可以包含命令，这些命令表示用户在视图上执行的操作。</p></blockquote><h3 id="二、Vue实例配置的各选项"><a href="#二、Vue实例配置的各选项" class="headerlink" title="二、Vue实例配置的各选项"></a>二、Vue实例配置的各选项</h3><blockquote><p>Vue实例配置的各选项包括：</p><ol><li>el：指定Vue实例挂载的DOM元素。<br>代码示例：</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">new Vue(&#123;</span><br><span class="line">  el: &#x27;#app&#x27;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><ol start="2"><li>data：定义Vue实例的数据。<br>代码示例：</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">new Vue(&#123;</span><br><span class="line">  data: &#123;</span><br><span class="line">    message: &#x27;Hello Vue!&#x27;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><ol start="3"><li>computed：定义计算属性。<br>代码示例：</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">new Vue(&#123;</span><br><span class="line">  computed: &#123;</span><br><span class="line">    reversedMessage: function () &#123;</span><br><span class="line">      return this.message.split(&#x27;&#x27;).reverse().join(&#x27;&#x27;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><ol start="4"><li>methods：定义Vue实例的方法。<br>代码示例：</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">new Vue(&#123;</span><br><span class="line">  methods: &#123;</span><br><span class="line">    greet: function (name) &#123;</span><br><span class="line">      alert(&#x27;Hello &#x27; + name + &#x27;!&#x27;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><ol start="5"><li>watch：监听数据变化。<br>代码示例：</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">new Vue(&#123;</span><br><span class="line">  data: &#123;</span><br><span class="line">    message: &#x27;Hello Vue!&#x27;</span><br><span class="line">  &#125;,</span><br><span class="line">  watch: &#123;</span><br><span class="line">    message: function (newVal, oldVal) &#123;</span><br><span class="line">      console.log(&#x27;message changed from &#x27; + oldVal + &#x27; to &#x27; + newVal)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></blockquote><h3 id="三、Vue的各种内置指令"><a href="#三、Vue的各种内置指令" class="headerlink" title="三、Vue的各种内置指令"></a>三、Vue的各种内置指令</h3><blockquote><p>Vue的各种内置指令有：</p><ol><li><p>v-bind：将一个属性绑定到表达式，可以简写为冒号（:）。例如：<code>&lt;img :src=&quot;imageUrl&quot;&gt;</code></p></li><li><p>v-if：根据表达式的值来条件性地渲染元素。例如：<code>&lt;div v-if=&quot;show&quot;&gt;显示内容&lt;/div&gt;</code></p></li><li><p>v-for：循环渲染列表。例如：<code>&lt;li v-for=&quot;item in items&quot;&gt;&#123;&#123; item &#125;&#125;&lt;/li&gt;</code></p></li><li><p>v-on：绑定事件监听器，可以简写为@。例如：<code>&lt;button @click=&quot;handleClick&quot;&gt;点击&lt;/button&gt;</code></p></li><li><p>v-model：双向绑定表单元素的值。例如：<code>&lt;input v-model=&quot;message&quot;&gt;</code></p></li><li><p>v-show：根据表达式的值来条件性地显示元素。例如：<code>&lt;div v-show=&quot;show&quot;&gt;显示内容&lt;/div&gt;</code></p></li><li><p>v-text：将元素的文本内容设置为表达式的值。例如：<code>&lt;span v-text=&quot;message&quot;&gt;&lt;/span&gt;</code></p></li><li><p>v-html：将元素的 HTML 内容设置为表达式的值。例如：<code>&lt;div v-html=&quot;htmlContent&quot;&gt;&lt;/div&gt;</code></p></li><li><p>v-cloak：在渲染未完成时隐藏元素，通常与 CSS 配合使用。例如：<code>&lt;div v-cloak&gt;&#123;&#123; message &#125;&#125;&lt;/div&gt;</code></p></li></ol></blockquote><h3 id="四、v-if和v-show的使用以及区别"><a href="#四、v-if和v-show的使用以及区别" class="headerlink" title="四、v-if和v-show的使用以及区别"></a>四、v-if和v-show的使用以及区别</h3><blockquote><p>v-if和v-show都是Vue.js中的条件渲染指令，用于根据某个条件来控制元素的显示或隐藏。</p><p>v-if的用法如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">&lt;div&gt;</span><br><span class="line"> &lt;p v-if=&quot;show&quot;&gt;这是一段需要显示的文字&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">data() &#123;</span><br><span class="line"> return &#123;</span><br><span class="line">   show: true</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>v-show的用法如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">&lt;div&gt;</span><br><span class="line"> &lt;p v-show=&quot;show&quot;&gt;这是一段需要显示的文字&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">data() &#123;</span><br><span class="line"> return &#123;</span><br><span class="line">   show: true</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>v-if和v-show的区别在于，v-if是动态地添加或删除元素，如果条件为false，元素将被从DOM中删除，如果条件为true，元素将被添加到DOM中。而v-show则是通过CSS的display属性来控制元素的显示或隐藏，如果条件为false，元素将被隐藏，如果条件为true，元素将被显示。</p><p>v-if适用于在条件不满足时，需要完全删除元素的情况，例如在复杂的表单中，根据用户的选择来动态地添加或删除表单项。而v-show适用于在条件不满足时，只需要隐藏元素的情况，例如在响应式布局中，根据屏幕大小来动态地隐藏或显示某个元素。</p></blockquote><h3 id="五、Vue选项中计算属性computed和方法methods的区别"><a href="#五、Vue选项中计算属性computed和方法methods的区别" class="headerlink" title="五、Vue选项中计算属性computed和方法methods的区别?"></a>五、Vue选项中计算属性computed和方法methods的区别?</h3><blockquote><p>Vue选项中计算属性computed和方法methods的区别在于：</p><p>计算属性computed是基于已有的数据属性进行计算得出一个新的属性值，只有在依赖的数据属性发生变化时才会重新计算；而方法methods是在需要时被调用执行的，每次调用都会重新执行。</p><p>举个例子，假设有一个数据属性a和一个计算属性b：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">a: 1</span><br><span class="line">&#125;,</span><br><span class="line">computed: &#123;</span><br><span class="line">b() &#123;</span><br><span class="line"> return this.a + 1</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>当a的值发生变化时，b会重新计算得出新的值。</p><p>而如果使用方法来实现相同的功能：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">methods: &#123;</span><br><span class="line">b() &#123;</span><br><span class="line"> return this.a + 1</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>每次调用b方法都会重新执行计算。</p></blockquote><h3 id="六、v-on的修饰符有哪些，有何作用"><a href="#六、v-on的修饰符有哪些，有何作用" class="headerlink" title="六、v-on的修饰符有哪些，有何作用?"></a>六、v-on的修饰符有哪些，有何作用?</h3><blockquote><p>v-on的修饰符有以下几种：</p><ol><li>.stop：阻止事件冒泡</li><li>.prevent：阻止默认事件</li><li>.capture：使用事件捕获模式</li><li>.self：只当事件在该元素本身触发时触发回调</li><li>.once：只触发一次回调</li><li>.passive：提高移动端滚动性能</li></ol><p>例如：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click.stop</span>=<span class="string">&quot;doSomething&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure><p>这里使用了.stop修饰符，当点击按钮时，事件不会继续向上传递，防止父元素也触发该事件。</p></blockquote><h3 id="七、props的验证方式有哪些"><a href="#七、props的验证方式有哪些" class="headerlink" title="七、props的验证方式有哪些?"></a>七、props的验证方式有哪些?</h3><blockquote><p>vue 要求任何传递给组件的数据，都要声明为 <code>props</code>。此外，它还提供了一个强大的内置机制来验证这些数据。这就像组件和消费者之间的契约一样，确保组件按预期使用。</p><ol><li>类型检查：可以通过指定props的类型来检查其是否符合预期。例如：<code>props: &#123; count: Number &#125;</code></li><li>必要性检查：可以通过设置<code>required</code>选项来确保必须传入该props。例如：<code>props: &#123; message: &#123; type: String, required: true &#125; &#125;</code></li><li>默认值：可以通过指定<code>default</code>选项来为props设置默认值。例如：<code>props: &#123; size: &#123; type: String, default: &#39;medium&#39; &#125; &#125;</code></li><li>自定义验证：可以通过指定<code>validator</code>选项来自定义验证规则。例如：<code>props: &#123; age: &#123; type: Number, validator: function (value) &#123; return value &gt;= 18 &#125; &#125; &#125;</code></li></ol><p>在使用这些验证方式时，可以通过<code>props</code>选项中的属性来进行配置。例如：<code>props: &#123; count: &#123; type: Number, default: 0, required: true, validator: function (value) &#123; return value &gt;= 0 &#125; &#125; &#125;</code></p></blockquote><h3 id="八、v-model的修饰符有哪些，有何作用"><a href="#八、v-model的修饰符有哪些，有何作用" class="headerlink" title="八、v-model的修饰符有哪些，有何作用?"></a>八、v-model的修饰符有哪些，有何作用?</h3><blockquote><p>v-model的修饰符有以下几种：</p><ol><li><p>.lazy：将input事件改为change事件，在失去焦点或按下Enter键后才更新v-model绑定的值。</p></li><li><p>.number：将输入值转为数值类型。</p></li><li><p>.trim：去除输入值的首尾空白字符。</p></li></ol><p>以下是示例代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 使用.lazy修饰符 --&gt;</span><br><span class="line">&lt;input v-model.lazy=&quot;message&quot; /&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 使用.number修饰符 --&gt;</span><br><span class="line">&lt;input v-model.number=&quot;age&quot; /&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 使用.trim修饰符 --&gt;</span><br><span class="line">&lt;input v-model.trim=&quot;username&quot; /&gt;</span><br></pre></td></tr></table></figure></blockquote><h3 id="九、transition组件6个内置的过渡类名以及作用"><a href="#九、transition组件6个内置的过渡类名以及作用" class="headerlink" title="九、transition组件6个内置的过渡类名以及作用?"></a>九、transition组件6个内置的过渡类名以及作用?</h3><blockquote><ol><li><code>v-enter</code>：进入过渡的开始状态，在元素被插入时生效，在下一帧移除。</li><li><code>v-enter-from</code>：进入过渡的开始状态，在元素被插入时生效，在下一帧移除。</li><li><code>v-enter-to</code>：进入过渡的结束状态，在元素被插入时生效，在过渡&#x2F;动画完成后移除。</li><li><code>v-leave</code>：离开过渡的开始状态，在离开过渡被触发时生效，在下一帧移除。</li><li><code>v-leave-from</code>：离开过渡的开始状态，在离开过渡被触发时生效，在下一帧移除。</li><li><code>v-leave-to</code>：离开过渡的结束状态，在离开过渡被触发时生效，在过渡&#x2F;动画完成后移除。</li></ol><p>这些类名可以用于自定义 CSS 过渡动画。当进入或离开过渡触发时，Vue 会自动在元素上添加这些类名，之后你可以利用这些类名来编写 CSS 动画效果。</p></blockquote><h3 id="十、组件之间实现通信的方式有哪些"><a href="#十、组件之间实现通信的方式有哪些" class="headerlink" title="十、组件之间实现通信的方式有哪些?"></a>十、组件之间实现通信的方式有哪些?</h3><blockquote><ol><li>通过 props 传递</li><li>通过 $emit 触发自定义事件</li><li>使用 ref</li><li>EventBus</li><li>$parent 或$root</li><li>attrs 与 listeners</li><li>Provide 与 Inject</li><li>VueX</li></ol></blockquote><h3 id="十一、vuex的配置选项有哪些"><a href="#十一、vuex的配置选项有哪些" class="headerlink" title="十一、vuex的配置选项有哪些?"></a>十一、vuex的配置选项有哪些?</h3><blockquote><p>Vuex 配置对象中的主要内容包括：</p><ul><li><code>state</code>：包含应用程序状态的对象。</li><li><code>getters</code>：类似于计算属性，用于派生状态。</li><li><code>mutations</code>：用于修改状态的函数。</li><li><code>actions</code>：类似于 mutations，但是可以包含异步操作。</li><li><code>modules</code>：允许将 store 分割成模块化的结构。</li></ul></blockquote><h3 id="十二、编程练习侧重于指令部分-编程"><a href="#十二、编程练习侧重于指令部分-编程" class="headerlink" title="十二、编程练习侧重于指令部分(编程)"></a>十二、编程练习侧重于指令部分(编程)</h3><blockquote><p><code>略过咯..........</code></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue3.0 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue3.0 </tag>
+            
+            <tag> 复习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>面向对象系统分析与设计复习资料</title>
       <link href="/post/3acbc910.html"/>
       <url>/post/3acbc910.html</url>
@@ -338,11 +365,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -409,11 +436,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -535,11 +562,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -622,11 +649,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -651,11 +678,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -796,11 +823,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -825,11 +852,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -980,11 +1007,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -1071,11 +1098,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -1220,11 +1247,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -1311,11 +1338,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -1567,11 +1594,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
@@ -1658,11 +1685,11 @@
       
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 成都东软学院(CNU) </tag>
             
             <tag> 课堂笔记 </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       
