@@ -1,0 +1,1190 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>android知识点总结 | Ming OR Fang KINESPHERE</title><meta name="keywords" content="Android"><meta name="author" content="XPAYY.PJM"><meta name="copyright" content="XPAYY.PJM"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="知识点总结 Kotlin 数据类型? var val? 函数定义 fun? Kotlin 继承? when 表达式?    Kotlin 数据类型：  基本数据类型包括：  整数类型：Byte、Short、Int、Long 浮点数类型：Float、Double 字符类型：Char 布尔类型：Boolean  引用数据类型包括：  字符串类型：String 数组类型：Array 集合类型：List、">
+<meta property="og:type" content="article">
+<meta property="og:title" content="android知识点总结">
+<meta property="og:url" content="http://mingorfang.top/post/a0551608.html">
+<meta property="og:site_name" content="Ming OR Fang KINESPHERE">
+<meta property="og:description" content="知识点总结 Kotlin 数据类型? var val? 函数定义 fun? Kotlin 继承? when 表达式?    Kotlin 数据类型：  基本数据类型包括：  整数类型：Byte、Short、Int、Long 浮点数类型：Float、Double 字符类型：Char 布尔类型：Boolean  引用数据类型包括：  字符串类型：String 数组类型：Array 集合类型：List、">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/index_img009.jpg">
+<meta property="article:published_time" content="2023-06-15T08:24:55.000Z">
+<meta property="article:modified_time" content="2023-06-15T08:27:06.654Z">
+<meta property="article:author" content="XPAYY.PJM">
+<meta property="article:tag" content="Android">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/index_img009.jpg"><link rel="shortcut icon" href="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/faioc-removebg.png"><link rel="canonical" href="http://mingorfang.top/post/a0551608"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="LrJn7M3em6OTLtfzmxkiW_gzIzAH5HCA3OqnDXAtf9w"/><meta name="baidu-site-verification" content="codeva-mzXNVjyvIT"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":1,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: XPAYY.PJM","link":"链接: ","source":"来源: Ming OR Fang KINESPHERE","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'android知识点总结',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-06-15 16:27:06'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"><script src="/js/SAO-Notify.js" async></script><link rel="stylesheet" href="/css/cat.css"><link rel="stylesheet" href="/css/custom/twikoo_beautify.css"  media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/universe.css"><link rel="stylesheet" href="/css/rightMenu.css"><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"><style type="text/css">#toggle-sidebar {bottom: 80px}</style><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiperstyle.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="wizard-scene"><div class="wizard-objects"><div class="wizard-square"></div><div class="wizard-circle"></div><div class="wizard-triangle"></div></div><div class="wizard"><div class="wizard-body"></div><div class="wizard-right-arm"><div class="wizard-right-hand"></div></div><div class="wizard-left-arm"><div class="wizard-left-hand"></div></div><div class="wizard-head"><div class="wizard-beard"></div><div class="wizard-face"><div class="wizard-adds"></div></div><div class="wizard-hat"><div class="wizard-hat-of-the-hat"></div><div class="wizard-four-point-star --first"></div><div class="wizard-four-point-star --second"></div><div class="wizard-four-point-star --third"></div></div></div></div></div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/POTO.jpg" onerror="onerror=null;src='https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">59</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">39</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">27</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home faa-float adimated"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive faa-float adimated"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags faa-float adimated"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open faa-float adimated"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list faa-float adimated"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fas fa-video faa-float adimated"></i><span> 番剧</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video faa-float adimated"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book faa-float adimated"></i><span> 书单</span></a></li><li><a class="site-page child" href="/games/"><i class="fa-fw fas fa-gamepad faa-float adimated"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-book faa-float adimated"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link faa-float adimated"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart card-announcement-animation faa-float adimateddimated"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/index_img009.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Ming OR Fang KINESPHERE</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home faa-float adimated"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive faa-float adimated"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags faa-float adimated"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open faa-float adimated"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list faa-float adimated"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fas fa-video faa-float adimated"></i><span> 番剧</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video faa-float adimated"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book faa-float adimated"></i><span> 书单</span></a></li><li><a class="site-page child" href="/games/"><i class="fa-fw fas fa-gamepad faa-float adimated"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-book faa-float adimated"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link faa-float adimated"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart card-announcement-animation faa-float adimateddimated"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">android知识点总结</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-06-15T08:24:55.000Z" title="发表于 2023-06-15 16:24:55">2023-06-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-06-15T08:27:06.654Z" title="更新于 2023-06-15 16:27:06">2023-06-15</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Android/">Android</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">11.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>37分钟</span></span><span class="post-meta-separator">|</span><span id="" data-flag-title="android知识点总结"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="twikoo_visitors"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="知识点总结"><a href="#知识点总结" class="headerlink" title="知识点总结"></a>知识点总结</h1><ol>
+<li>Kotlin 数据类型? var val? 函数定义 fun? Kotlin 继承? when 表达式?</li>
+</ol>
+<blockquote>
+<ol>
+<li><p>Kotlin 数据类型：</p>
+<blockquote>
+<p>基本数据类型包括：</p>
+<ul>
+<li>整数类型：Byte、Short、Int、Long</li>
+<li>浮点数类型：Float、Double</li>
+<li>字符类型：Char</li>
+<li>布尔类型：Boolean</li>
+</ul>
+<p>引用数据类型包括：</p>
+<ul>
+<li>字符串类型：String</li>
+<li>数组类型：Array</li>
+<li>集合类型：List、Set、Map</li>
+</ul>
+</blockquote>
+</li>
+<li><p>var val?</p>
+<blockquote>
+<p>var 为变量</p>
+<p>val 为常量</p>
+</blockquote>
+</li>
+<li><p>函数定义 fun?</p>
+<blockquote>
+<p>在 Kotlin 中，函数可以使用 <code>fun</code> 关键字进行定义。</p>
+<p>函数定义的基本语法如下：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> 函数名<span class="params">(参数列表)</span></span>: 返回值类型 &#123;</span><br><span class="line">    <span class="comment">// 函数体</span></span><br><span class="line">    <span class="keyword">return</span> 返回值</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其中，参数列表和返回值类型都可以省略。如果函数没有返回值，可以将返回值类型指定为 <code>Unit</code> 或者省略不写。</p>
+<p>以下是一个简单的例子：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">add</span><span class="params">(a: <span class="type">Int</span>, b: <span class="type">Int</span>)</span></span>: <span class="built_in">Int</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> a + b</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这个函数的名称是 <code>add</code>，接受两个整数参数 <code>a</code> 和 <code>b</code>，返回它们的和。</p>
+</blockquote>
+</li>
+<li><p>Kotlin 继承?</p>
+<blockquote>
+<p>Kotlin 支持继承，使用 <code>:</code> 符号来实现。</p>
+<p>下面是一个简单的示例，展示了如何在 Kotlin 中定义一个继承自另一个类的子类：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 父类</span></span><br><span class="line"><span class="keyword">open</span> <span class="keyword">class</span> <span class="title class_">Animal</span>(<span class="keyword">val</span> name: String) &#123;</span><br><span class="line">    <span class="function"><span class="keyword">fun</span> <span class="title">sleep</span><span class="params">()</span></span> &#123;</span><br><span class="line">        println(<span class="string">&quot;<span class="variable">$name</span> is sleeping&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 子类</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Cat</span>(name: String) : Animal(name) &#123;</span><br><span class="line">    <span class="function"><span class="keyword">fun</span> <span class="title">meow</span><span class="params">()</span></span> &#123;</span><br><span class="line">        println(<span class="string">&quot;<span class="variable">$name</span> is meowing&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在这个示例中，<code>Animal</code> 类是一个基类，它有一个名为 <code>name</code> 的属性和一个名为 <code>sleep</code> 的方法。<code>Cat</code> 类是一个子类，它继承了 <code>Animal</code> 类，并添加了一个名为 <code>meow</code> 的方法。</p>
+<p>注意，在 Kotlin 中，如果你想让一个类可以被继承，需要使用 <code>open</code> 关键字来标记该类。默认情况下，Kotlin 中的类都是不可继承的。</p>
+</blockquote>
+</li>
+<li><p>when 表达式?</p>
+<blockquote>
+<p><code>when</code>是Kotlin中的一个控制流语句，用作Java中<code>switch</code>语句的替代品。它允许您检查变量是否与多个可能的值匹配，并根据匹配的值执行不同的代码块。</p>
+<p>以下是Kotlin中<code>when</code>表达式的示例：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> x = <span class="number">2</span></span><br><span class="line"><span class="keyword">when</span> (x) &#123;</span><br><span class="line">    <span class="number">1</span> -&gt; println(<span class="string">&quot;x is 1&quot;</span>)</span><br><span class="line">    <span class="number">2</span> -&gt; println(<span class="string">&quot;x is 2&quot;</span>)</span><br><span class="line">    <span class="number">3</span> -&gt; println(<span class="string">&quot;x is 3&quot;</span>)</span><br><span class="line">    <span class="keyword">else</span> -&gt; println(<span class="string">&quot;x is not 1, 2, or 3&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在此示例中，使用<code>when</code>表达式检查了变量<code>x</code>与三个可能的值是否匹配。如果<code>x</code>匹配任何一个值，则执行相应的代码块。如果<code>x</code>不匹配任何值，则执行<code>else</code>代码块。</p>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<ol start="2">
+<li><p>Android 系统框架层分类?</p>
+<blockquote>
+<p>Android系统框架层可以分为以下几个主要类别：</p>
+<ol>
+<li>应用程序框架层：这个层次包括了应用程序开发所需的所有基础设施，例如Activity Manager、Window Manager、View System、Package Manager等。</li>
+<li>系统运行时库层：这个层次提供了Android系统的核心功能，例如Dalvik虚拟机、Android运行时库、核心库等。</li>
+<li>系统资源管理器层：这个层次提供了Android系统的资源管理器，例如资源管理器、通知管理器、位置管理器等。</li>
+<li>硬件抽象层：这个层次提供了Android系统与硬件之间的接口，例如相机、蓝牙、Wi-Fi等。</li>
+<li>内核驱动程序层：这个层次包括了Android系统的内核驱动程序，例如显示驱动程序、音频驱动程序、输入驱动程序等。</li>
+</ol>
+<p>这些层次共同构成了Android系统框架层，每个层次都提供了不同的功能和服务，以支持Android应用程序的开发和运行。</p>
+</blockquote>
+</li>
+<li><p>四大组件?</p>
+<blockquote>
+<p>Android四大组件是指Activity、Service、Broadcast Receiver和Content Provider。它们是Android应用程序开发的基本构建块，用于实现不同的应用程序功能。</p>
+<ol>
+<li>Activity：Activity是Android应用程序中用户界面的基本组件。每个Activity都代表一个屏幕，用户可以在不同的Activity之间进行切换。</li>
+<li>Service：Service是在后台运行的组件，它可以执行长时间运行的操作，例如网络操作或音乐播放。Service没有用户界面，但它可以与Activity进行通信。</li>
+<li>Broadcast Receiver：Broadcast Receiver是一种用于接收系统广播的组件。它可以接收来自系统或其他应用程序的广播消息，并执行相应的操作。</li>
+<li>Content Provider：Content Provider是一种用于管理应用程序数据的组件。它可以提供应用程序数据的访问和共享，例如联系人数据或照片库。</li>
+</ol>
+<p>这些四大组件可以结合使用，以实现不同类型的应用程序功能。例如，您可以在Activity中启动Service来执行后台操作，或使用Content Provider来共享数据。</p>
+</blockquote>
+</li>
+<li><p>Activity 生命周期?</p>
+<blockquote>
+<p>Activity生命周期是指Activity从创建到销毁的整个过程，其中包括以下几个阶段：</p>
+<ol>
+<li>onCreate()：当Activity第一次创建时调用，用于执行一些初始化操作，例如设置布局和变量。</li>
+<li>onStart()：当Activity已经可见但还无法与用户进行交互时调用，例如Activity被另一个Activity部分遮挡时。</li>
+<li>onResume()：当Activity已经可见并且可以与用户进行交互时调用，例如Activity从后台返回前台时。</li>
+<li>onPause()：当Activity失去焦点但仍然可见时调用，例如另一个Activity部分遮挡了当前Activity。</li>
+<li>onStop()：当Activity不再可见时调用，例如用户打开了另一个应用程序或返回到主屏幕。</li>
+<li>onRestart()：当Activity从停止状态重新开始时调用，例如用户返回到应用程序后。</li>
+<li>onDestroy()：当Activity被销毁时调用，例如用户按下返回按钮或系统内存不足时。</li>
+</ol>
+<p>在Activity生命周期中，开发人员可以根据需要执行一些操作，例如保存和恢复状态、释放资源等。</p>
+</blockquote>
+</li>
+<li><p>Intent: 理解显示与隐式的区别、隐式 Intent-filter 三部分?</p>
+<blockquote>
+<p>Intent是Android系统中的一种消息传递机制，用于在不同组件之间传递数据或启动组件。</p>
+<p>Intent分为显示Intent和隐式Intent两种类型：</p>
+<ol>
+<li><p>显示Intent：指明了要启动的组件的类名，例如启动一个Activity。</p>
+</li>
+<li><p>隐式Intent：没有指明要启动的组件的类名，而是指定了一些操作和数据，让系统去查找合适的组件来处理。</p>
+</li>
+</ol>
+<p>隐式Intent包括三个主要部分：</p>
+<ol>
+<li><p>Action：指定了要执行的操作，例如ACTION_VIEW表示查看数据。</p>
+</li>
+<li><p>Category：指定了Intent所属的类别，例如CATEGORY_DEFAULT表示默认类别。</p>
+</li>
+<li><p>Data：指定了Intent要处理的数据，例如URI和MIME类型。</p>
+</li>
+</ol>
+<p>通过这三个部分，隐式Intent可以让系统查找合适的组件来处理特定的操作和数据，从而实现组件之间的通信。</p>
+</blockquote>
+</li>
+<li><p>Android Activity 四种启动模式?</p>
+<blockquote>
+<p>Android Activity有四种启动模式，分别是：</p>
+<ol>
+<li>standard：标准模式，每次启动Activity都会创建一个新的实例，并放入任务栈中。</li>
+<li>singleTop：栈顶复用模式，如果要启动的Activity已经位于任务栈的栈顶，则不会创建新的实例，而是直接使用位于栈顶的实例。</li>
+<li>singleTask：单例模式，如果要启动的Activity已经存在于任务栈中，则会直接调用该Activity的onNewIntent()方法，同时将该Activity以上的所有Activity弹出栈。</li>
+<li>singleInstance：单独实例模式，该模式下的Activity只能存在于任务栈中的一个实例，系统会为其创建一个新的任务栈，并且该任务栈只包含该Activity。</li>
+</ol>
+<p>不同的启动模式可以为应用程序提供不同的功能和体验，但需要注意合理使用，以避免出现意外情况。</p>
+</blockquote>
+</li>
+<li><p>Android 布局方式，控件居中?</p>
+<blockquote>
+<p>Android中常用的布局方式有LinearLayout、RelativeLayout、FrameLayout、ConstraintLayout等。</p>
+<p>要实现控件居中，可以使用以下两种方式：</p>
+<ol>
+<li>在布局中使用gravity属性，例如：</li>
+</ol>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;LinearLayout</span><br><span class="line">    android:layout_width=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">    android:layout_height=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">    android:gravity=<span class="string">&quot;center&quot;</span>&gt;</span><br><span class="line"></span><br><span class="line">    &lt;TextView</span><br><span class="line">        android:layout_width=<span class="string">&quot;wrap_content&quot;</span></span><br><span class="line">        android:layout_height=<span class="string">&quot;wrap_content&quot;</span></span><br><span class="line">        android:text=<span class="string">&quot;Hello World!&quot;</span> /&gt;</span><br><span class="line"></span><br><span class="line">&lt;/LinearLayout&gt;</span><br></pre></td></tr></table></figure>
+
+<p>这样可以使TextView在LinearLayout中居中。</p>
+<ol start="2">
+<li>在布局中使用layout_gravity属性，例如：</li>
+</ol>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;FrameLayout</span><br><span class="line">    android:layout_width=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">    android:layout_height=<span class="string">&quot;match_parent&quot;</span>&gt;</span><br><span class="line"></span><br><span class="line">    &lt;TextView</span><br><span class="line">        android:layout_width=<span class="string">&quot;wrap_content&quot;</span></span><br><span class="line">        android:layout_height=<span class="string">&quot;wrap_content&quot;</span></span><br><span class="line">        android:text=<span class="string">&quot;Hello World!&quot;</span></span><br><span class="line">        android:layout_gravity=<span class="string">&quot;center&quot;</span> /&gt;</span><br><span class="line"></span><br><span class="line">&lt;/FrameLayout&gt;</span><br></pre></td></tr></table></figure>
+
+<p>这样可以使TextView在FrameLayout中居中。</p>
+</blockquote>
+</li>
+<li><p>Fragment:生命周期?</p>
+<blockquote>
+<p>Fragment生命周期包括以下几个阶段：</p>
+<ol>
+<li><p>onAttach()：当Fragment与Activity关联时调用，可以通过该方法获取到对应的Activity实例。</p>
+</li>
+<li><p>onCreate()：当Fragment第一次创建时调用，用于执行一些初始化操作，例如设置变量和加载布局。</p>
+</li>
+<li><p>onCreateView()：当Fragment要显示UI时调用，用于加载布局和初始化UI控件。</p>
+</li>
+<li><p>onActivityCreated()：当Fragment所属的Activity完成onCreate()方法时调用，表示Activity和Fragment的View已经创建完成。</p>
+</li>
+<li><p>onStart()：当Fragment可见但还无法与用户进行交互时调用，例如Fragment被另一个Fragment部分遮挡时。</p>
+</li>
+<li><p>onResume()：当Fragment已经可见并且可以与用户进行交互时调用，例如Fragment从后台返回前台时。</p>
+</li>
+<li><p>onPause()：当Fragment失去焦点但仍然可见时调用，例如另一个Fragment部分遮挡了当前Fragment。</p>
+</li>
+<li><p>onStop()：当Fragment不再可见时调用，例如用户打开了另一个应用程序或返回到主屏幕。</p>
+</li>
+<li><p>onDestroyView()：当Fragment的UI被销毁时调用。</p>
+</li>
+<li><p>onDestroy()：当Fragment被销毁时调用。</p>
+</li>
+<li><p>onDetach()：当Fragment与Activity解除关联时调用。</p>
+</li>
+</ol>
+</blockquote>
+</li>
+<li><p>Activity 中的常用方法: setContentView，R.layout.XXX?</p>
+<blockquote>
+<p>Activity中的常用方法包括：</p>
+<ol>
+<li>setContentView()：用于设置Activity的布局文件，例如：</li>
+</ol>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setContentView(R.layout.activity_main);</span><br></pre></td></tr></table></figure>
+
+<p>这样就可以将activity_main.xml布局文件设置为当前Activity的界面。</p>
+<ol start="2">
+<li>findViewById()：用于获取布局文件中的控件实例，例如：</li>
+</ol>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TextView textView = findViewById(R.id.text_view);</span><br></pre></td></tr></table></figure>
+
+<p>这样就可以获取布局文件中id为text_view的TextView控件实例。</p>
+<ol start="3">
+<li>startActivity()：用于启动另一个Activity，例如：</li>
+</ol>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = new Intent(MainActivity.<span class="keyword">this</span>, SecondActivity.<span class="keyword">class</span>);</span><br><span class="line">startActivity(intent);</span><br></pre></td></tr></table></figure>
+
+<p>这样就可以启动SecondActivity。</p>
+<ol start="4">
+<li>startActivityForResult()：用于启动另一个Activity，并获取返回的结果，例如：</li>
+</ol>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = new Intent(MainActivity.<span class="keyword">this</span>, SecondActivity.<span class="keyword">class</span>);</span><br><span class="line">startActivityForResult(intent, REQUEST_CODE);</span><br></pre></td></tr></table></figure>
+
+<p>这样就可以启动SecondActivity，并在该Activity返回结果时接收到回调。</p>
+<ol start="5">
+<li>onBackPressed()：用于处理返回键事件，例如：</li>
+</ol>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> void onBackPressed() &#123;</span><br><span class="line">    <span class="comment">// 处理返回键事件</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这样就可以在用户按下返回键时执行相应的操作。</p>
+</blockquote>
+</li>
+<li><p>Android 尺寸单位 px，dp，sp，资源ID:新加 id 和引用已经存在的id?</p>
+<blockquote>
+<p>在Android中，有几种常用的尺寸单位：px（像素）、dp（设备独立像素）、sp（缩放独立像素）。</p>
+<ol>
+<li>px（像素）：最基本的尺寸单位，它表示屏幕上的一个像素点。px单位是绝对单位，不会根据屏幕的密度进行缩放。在编写布局文件时，可以使用px作为宽度、高度等属性的单位。</li>
+<li>dp（设备独立像素）：dp是一种相对单位，它会根据屏幕的密度进行缩放，以适应不同密度的屏幕。在编写布局文件时，推荐使用dp作为宽度、高度等属性的单位，以确保布局在不同设备上的一致性。</li>
+<li>sp（缩放独立像素）：sp也是一种相对单位，它会根据用户的字体大小偏好进行缩放。通常用于文本大小的设置，以确保文本在不同设备上的可读性。</li>
+</ol>
+<p>在Android中，还有一个重要的概念是资源ID。资源ID是一个唯一标识符，用于引用Android应用程序中的各种资源，如布局文件、字符串、图像等。每个资源都有一个独特的资源ID，可以通过在代码中使用R类来引用这些资源。</p>
+<p>如果要新加一个资源ID，可以在res目录下的相应文件夹中添加对应的资源文件，然后在代码中使用R类引用该资源ID。如果要引用已经存在的资源ID，可以直接在代码中使用R类引用该资源ID。</p>
+</blockquote>
+</li>
+<li><p>常用控件如 webview、checkbox 的属性 isChecked、Snackbar?</p>
+<blockquote>
+<p>常用控件如 WebView、CheckBox具有一些常用的属性和方法，下面是其中几个常见的属性和方法：</p>
+<ol>
+<li>WebView：</li>
+</ol>
+<ul>
+<li>loadUrl(String url)：加载指定的URL网页。</li>
+<li>loadData(String data, String mimeType, String encoding)：加载指定的数据，可以是HTML字符串或者本地文件的内容。</li>
+<li>setWebViewClient(WebViewClient client)：设置WebView的客户端，用于处理页面加载事件。</li>
+<li>setWebChromeClient(WebChromeClient client)：设置WebView的Chrome客户端，用于处理页面加载进度、JavaScript对话框等事件。</li>
+</ul>
+<ol start="2">
+<li>CheckBox：</li>
+</ol>
+<ul>
+<li>isChecked()：返回CheckBox的选中状态，返回值为boolean类型。</li>
+<li>setChecked(boolean checked)：设置CheckBox的选中状态。</li>
+<li>setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener listener)：设置CheckBox的选中状态改变监听器，用于监听CheckBox的选中状态改变事件。</li>
+</ul>
+<ol start="3">
+<li>Snackbar：</li>
+</ol>
+<ul>
+<li>make(View view, CharSequence text, int duration)：创建一个Snackbar实例。</li>
+<li>setText(CharSequence text)：设置Snackbar的文本内容。</li>
+<li>setAction(CharSequence text, View.OnClickListener listener)：设置Snackbar的操作按钮及其点击事件。</li>
+<li>setDuration(int duration)：设置Snackbar显示的持续时间。</li>
+<li>show()：显示Snackbar。</li>
+</ul>
+<p>这些属性和方法可以根据具体的需求来使用，以实现相应的功能。</p>
+</blockquote>
+</li>
+<li><p>Android Log 日志级别: Verbose (Log.v) 、Debug(Log.d)、Info(Log.i)、Warning(Log.w)、Error(Log.e)?</p>
+<blockquote>
+<p>在Android中，有几个常用的日志级别，可以用于在代码中输出日志信息，方便调试和查看程序运行时的状态。以下是常用的日志级别及其对应的方法：</p>
+<ol>
+<li><p>Verbose (Log.v)：用于输出详细的日志信息，通常用于调试和追踪代码的执行流程。</p>
+<ul>
+<li>Log.v(String tag, String msg)：输出Verbose级别的日志信息。</li>
+</ul>
+</li>
+<li><p>Debug (Log.d)：用于输出调试信息，通常用于在开发阶段调试程序。</p>
+<ul>
+<li>Log.d(String tag, String msg)：输出Debug级别的日志信息。</li>
+</ul>
+</li>
+<li><p>Info (Log.i)：用于输出一般的信息性日志，例如程序的运行状态、操作结果等。</p>
+<ul>
+<li>Log.i(String tag, String msg)：输出Info级别的日志信息。</li>
+</ul>
+</li>
+<li><p>Warning (Log.w)：用于输出警告信息，表示程序可能出现潜在的问题，但不会导致程序崩溃。</p>
+<ul>
+<li>Log.w(String tag, String msg)：输出Warning级别的日志信息。</li>
+</ul>
+</li>
+<li><p>Error (Log.e)：用于输出错误信息，表示程序发生了错误或异常。</p>
+<ul>
+<li>Log.e(String tag, String msg)：输出Error级别的日志信息。</li>
+</ul>
+</li>
+</ol>
+<p>这些日志级别可以根据需要选择合适的级别，在代码中使用对应的方法输出日志信息。在发布正式版本时，建议将日志级别设置为适当的级别，避免不必要的日志输出。</p>
+</blockquote>
+</li>
+<li><p>Android Home 键或者返回键对 Activity 的影响?</p>
+<blockquote>
+<p>Android的Home键和返回键对Activity有不同的影响：</p>
+<ol>
+<li>Home键：按下Home键会使当前Activity进入后台，返回到桌面。此时，当前Activity会触发onPause()、onStop()和onSaveInstanceState()等生命周期方法。当用户再次打开应用程序时，会重新调用onRestart()、onStart()和onResume()等生命周期方法来恢复Activity的状态。</li>
+<li>返回键：按下返回键会销毁当前Activity，并返回到上一个Activity。此时，当前Activity会触发onPause()和onStop()等生命周期方法，然后被销毁，最后上一个Activity会调用onRestart()、onStart()和onResume()等生命周期方法来恢复。</li>
+</ol>
+<p>需要注意的是，返回键的行为可以通过重写Activity的onBackPressed()方法来自定义。可以在该方法中实现自定义的返回逻辑，例如弹出对话框确认是否退出应用程序。</p>
+<p>另外，需要注意的是，当Activity进入后台或被销毁时，系统可能会回收其资源以释放内存。因此，开发者需要在适当的生命周期方法中保存和恢复Activity的状态，以确保用户体验的连续性。</p>
+</blockquote>
+</li>
+<li><p>MediaPlayer 的用法?</p>
+<blockquote>
+<p>MediaPlayer是Android提供的用于播放音频和视频的类。以下是使用MediaPlayer的基本步骤：</p>
+<ol>
+<li><p>创建MediaPlayer对象：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">MediaPlayer</span> <span class="variable">mediaPlayer</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MediaPlayer</span>();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置数据源：</p>
+<ul>
+<li>从本地文件中设置数据源：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mediaPlayer.setDataSource(filePath);</span><br></pre></td></tr></table></figure></li>
+<li>从网络URL中设置数据源：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mediaPlayer.setDataSource(url);</span><br></pre></td></tr></table></figure></li>
+<li>从资源文件中设置数据源：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mediaPlayer.setDataSource(context, resId);</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>准备MediaPlayer：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mediaPlayer.prepare();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置监听器（可选）：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mediaPlayer.setOnPreparedListener(listener); <span class="comment">// 准备完成监听器</span></span><br><span class="line">mediaPlayer.setOnCompletionListener(listener); <span class="comment">// 播放完成监听器</span></span><br><span class="line">mediaPlayer.setOnErrorListener(listener); <span class="comment">// 错误监听器</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>开始播放：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mediaPlayer.start();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>暂停播放：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mediaPlayer.pause();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>停止播放：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mediaPlayer.stop();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>释放资源：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mediaPlayer.release();</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>需要注意的是，MediaPlayer的操作涉及到IO操作和耗时操作，建议在子线程中执行，以避免阻塞主线程。另外，还可以使用MediaPlayer的其他方法来控制音频的音量、进度等。详细的用法可以参考Android官方文档。</p>
+</blockquote>
+</li>
+<li><p>菜单分类: 0ptionsMenu、 ContextMenu，PopupMenu?</p>
+<blockquote>
+<p>在Android中，有三种常见的菜单分类：OptionsMenu、ContextMenu和PopupMenu。</p>
+<ol>
+<li>OptionsMenu（选项菜单）： OptionsMenu是位于Activity的顶部工具栏（ActionBar）上的菜单，通常包含应用程序的常用操作。OptionsMenu可以通过重写Activity的onCreateOptionsMenu()方法来创建，并通过调用invalidateOptionsMenu()方法来更新菜单项。用户可以通过按下设备的菜单键（Menu键）或者在工具栏上点击菜单按钮来显示OptionsMenu。</li>
+<li>ContextMenu（上下文菜单）： ContextMenu是在View上长按时弹出的菜单，通常包含与该View相关的操作。ContextMenu可以通过重写View的onCreateContextMenu()方法来创建，并通过调用registerForContextMenu()方法将View注册为上下文菜单的触发器。用户长按View时，会弹出ContextMenu供用户选择操作。</li>
+<li>PopupMenu（弹出菜单）： PopupMenu是一个弹出式的菜单，可以在任意位置显示。PopupMenu可以通过创建PopupMenu对象，并通过调用PopupMenu的inflate()方法来创建菜单项。然后，可以使用show()方法将PopupMenu显示在指定的位置上。PopupMenu通常用于在特定的触发事件（例如按钮点击）后显示菜单。</li>
+</ol>
+<p>这三种菜单分类在功能和使用场景上有所区别，开发者可以根据需求选择合适的菜单类型来实现相应的功能。</p>
+</blockquote>
+</li>
+<li><p>Service 启动方式，生命周期，之间的区别?</p>
+<blockquote>
+<p>在Android中，Service是一种在后台执行长时间运行操作的组件。Service可以通过两种方式启动：启动式启动（Started）和绑定式启动（Bound）。</p>
+<ol>
+<li><p>启动式启动（Started）：</p>
+<ul>
+<li>启动Service：通过调用Context的startService()方法来启动Service。启动Service后，Service会在后台独立运行，即使启动Service的组件（如Activity）被销毁，Service仍会继续运行。</li>
+<li>停止Service：通过调用Context的stopService()方法或Service内部调用自身的stopSelf()方法来停止Service。停止Service后，Service会被销毁并停止运行。</li>
+</ul>
+</li>
+<li><p>绑定式启动（Bound）：</p>
+<ul>
+<li>绑定Service：通过调用Context的bindService()方法来绑定Service。绑定Service后，组件（如Activity）可以与Service进行交互，通过IBinder对象获取Service的实例。</li>
+<li>解绑Service：通过调用Context的unbindService()方法来解绑Service。解绑Service后，Service会根据是否还有其他组件绑定而决定是否销毁。</li>
+</ul>
+</li>
+</ol>
+<p>Service的生命周期包括以下几个方法：</p>
+<ul>
+<li>onCreate()：在Service创建时调用，用于进行一次性的初始化操作。</li>
+<li>onStartCommand()：在Service启动时调用，用于处理启动Service的请求。</li>
+<li>onBind()：在Service绑定时调用，用于返回一个IBinder对象，供组件与Service进行交互。</li>
+<li>onUnbind()：在Service解绑时调用，用于清理绑定相关的资源。</li>
+<li>onDestroy()：在Service销毁时调用，用于释放资源和进行清理操作。</li>
+</ul>
+<p>启动式启动和绑定式启动的区别如下：</p>
+<ul>
+<li>启动方式：启动式启动通过startService()方法启动，绑定式启动通过bindService()方法启动。</li>
+<li>生命周期：启动式启动的Service会一直运行，直到调用stopService()或stopSelf()方法停止；绑定式启动的Service会在所有绑定的组件解绑后销毁。</li>
+<li>交互性：启动式启动的Service不能直接与组件进行交互，只能通过Intent传递数据；绑定式启动的Service可以通过IBinder对象与组件进行交互。</li>
+<li>生命周期管理：启动式启动的Service不依赖于启动它的组件的生命周期，可以独立运行；绑定式启动的Service依赖于绑定它的组件的生命周期，当绑定的组件销毁时，Service也会被销毁。</li>
+</ul>
+<p>根据实际需求，开发者可以选择适合的启动方式来实现不同的功能。</p>
+</blockquote>
+</li>
+<li><p>Android 数据存储方式: 文件存储 FileInputStream(append)、getSharedPreferences ,MODE PRIVATE、sqlite?</p>
+<blockquote>
+<p>在Android中，有多种方式可以进行数据存储，包括文件存储、SharedPreferences和SQLite数据库。</p>
+<ol>
+<li>文件存储（File Storage）：<ul>
+<li>使用FileInputStream和FileOutputStream类可以进行文件的读写操作。可以使用FileInputStream来读取文件内容，使用FileOutputStream来写入文件内容。</li>
+<li>若要在现有文件的末尾追加内容，可以使用FileOutputStream的构造函数中的第二个参数来指定为true，表示追加模式。</li>
+<li>文件存储适用于存储较小的数据量，如配置文件、日志文件等。</li>
+</ul>
+</li>
+<li>SharedPreferences：<ul>
+<li>SharedPreferences是Android提供的一种轻量级的存储方式，用于存储简单的键值对数据。</li>
+<li>使用getSharedPreferences()方法获取SharedPreferences对象，可以指定一个名称和一个访问模式（如MODE_PRIVATE）。</li>
+<li>使用SharedPreferences对象的edit()方法获取一个Editor对象，通过Editor对象的putXxx()方法存储数据，如putString()、putInt()等。</li>
+<li>使用Editor对象的commit()方法或apply()方法提交数据的修改。</li>
+</ul>
+</li>
+<li>SQLite数据库：<ul>
+<li>SQLite是一种轻量级的关系型数据库，适用于存储结构化数据。</li>
+<li>使用SQLiteOpenHelper类来创建和管理数据库。可以继承SQLiteOpenHelper类，并重写onCreate()和onUpgrade()方法。</li>
+<li>使用SQLiteDatabase类进行数据库的增删改查操作。可以使用execSQL()方法执行SQL语句，或使用insert()、update()、delete()、query()等方法进行数据操作。</li>
+</ul>
+</li>
+</ol>
+<p>这些存储方式各有特点，适用于不同的数据存储需求。文件存储适用于存储简单的文本数据或二进制数据；SharedPreferences适用于存储简单的键值对数据；SQLite数据库适用于存储结构化数据或大量的数据。开发者可以根据具体的需求选择合适的存储方式。</p>
+</blockquote>
+</li>
+<li><p>SqliteOpenHelper，SqliteDatabase 的用法?</p>
+<blockquote>
+<p>SQLiteOpenHelper和SQLiteDatabase是Android中用于操作SQLite数据库的两个重要类。</p>
+<ol>
+<li><p>SQLiteOpenHelper：</p>
+<ul>
+<li>SQLiteOpenHelper是一个抽象类，用于创建和管理SQLite数据库。</li>
+<li>需要继承SQLiteOpenHelper类，并重写onCreate()和onUpgrade()方法。</li>
+<li>onCreate()方法在数据库第一次创建时调用，用于创建数据库表和初始化数据。</li>
+<li>onUpgrade()方法在数据库版本更新时调用，用于更新数据库结构或数据迁移。</li>
+<li>在子类中，可以通过调用getWritableDatabase()或getReadableDatabase()方法来获取一个可读写或只读的SQLiteDatabase对象。</li>
+</ul>
+</li>
+<li><p>SQLiteDatabase：</p>
+<ul>
+<li>SQLiteDatabase是用于执行SQL语句和操作数据库的类。</li>
+<li>可以使用execSQL()方法执行SQL语句，如创建表、插入数据、更新数据、删除数据等。</li>
+<li>可以使用insert()方法插入数据，update()方法更新数据，delete()方法删除数据。</li>
+<li>可以使用query()方法查询数据，通过传入表名、列名、条件等参数来进行查询。查询结果以Cursor对象返回。</li>
+<li>可以使用beginTransaction()、setTransactionSuccessful()和endTransaction()方法进行事务管理，保证数据的一致性和完整性。</li>
+</ul>
+</li>
+</ol>
+<p>使用SQLiteOpenHelper和SQLiteDatabase可以方便地进行数据库的创建、升级和操作。在创建SQLiteOpenHelper的子类时，需要指定数据库的名称、版本号和其他相关参数。在操作数据库时，可以使用SQLiteDatabase的方法来执行SQL语句和操作数据。开发者可以根据具体的需求，使用相应的方法来实现对数据库的操作。</p>
+</blockquote>
+</li>
+<li><p>Android 广播: 静态和动态注册，有序和无序(优先级)?</p>
+<blockquote>
+<p>在Android中，广播是一种用于应用程序之间或应用程序内部进行通信的机制。广播可以分为静态注册和动态注册，以及有序广播和无序广播。</p>
+<ol>
+<li>静态注册（Static Registration）：<ul>
+<li>静态注册是在AndroidManifest.xml文件中声明广播接收器（BroadcastReceiver）的方式。</li>
+<li>静态注册的广播接收器在应用程序安装时就会被注册，并且可以在应用程序未运行的情况下接收广播。</li>
+<li>静态注册的广播接收器可以接收系统级别的广播，如网络状态变化、电池电量变化等。</li>
+<li>静态注册的广播接收器在应用程序被卸载时会被自动取消注册。</li>
+</ul>
+</li>
+<li>动态注册（Dynamic Registration）：<ul>
+<li>动态注册是在代码中通过调用registerReceiver()方法注册广播接收器的方式。</li>
+<li>动态注册的广播接收器在应用程序运行时注册，并且只能在应用程序运行期间接收广播。</li>
+<li>动态注册的广播接收器可以接收应用程序级别的广播，如自定义的广播等。</li>
+<li>动态注册的广播接收器需要在不需要接收广播时调用unregisterReceiver()方法进行取消注册。</li>
+</ul>
+</li>
+<li>有序广播（Ordered Broadcast）：<ul>
+<li>有序广播是一种按照优先级顺序依次传递给广播接收器的广播。</li>
+<li>广播接收器可以通过设置优先级来指定自己的接收顺序，优先级越高的接收器会先收到广播。</li>
+<li>在接收器中可以通过调用abortBroadcast()方法来中断广播的传递，后续的接收器将无法收到该广播。</li>
+</ul>
+</li>
+<li>无序广播（Normal Broadcast）：<ul>
+<li>无序广播是一种同时传递给所有广播接收器的广播，没有固定的接收顺序。</li>
+<li>广播接收器无法控制接收广播的顺序，也无法中断广播的传递。</li>
+</ul>
+</li>
+</ol>
+<p>开发者可以根据实际需求选择静态注册或动态注册的方式来接收广播，并可以根据需要选择有序广播或无序广播。有序广播适用于需要按照优先级顺序处理广播的场景，而无序广播适用于同时通知多个接收器的场景。</p>
+</blockquote>
+</li>
+<li><p>HttpUrlConnection 用法，配置读取和写入的 timeout?</p>
+<blockquote>
+<p>HttpUrlConnection是Android中用于进行HTTP通信的类。下面是HttpUrlConnection的基本用法以及如何配置读取和写入的timeout。</p>
+<ol>
+<li><p>创建HttpUrlConnection对象：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">URL url = new URL(<span class="string">&quot;http://www.example.com&quot;</span>);</span><br><span class="line">HttpURLConnection connection = (HttpURLConnection) url.openConnection();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置请求方法和其他属性：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">connection.setRequestMethod(<span class="string">&quot;GET&quot;</span>); <span class="comment">// 设置请求方法，如GET、POST等</span></span><br><span class="line">connection.setConnectTimeout(<span class="number">5000</span>); <span class="comment">// 设置连接超时时间，单位为毫秒</span></span><br><span class="line">connection.setReadTimeout(<span class="number">5000</span>); <span class="comment">// 设置读取超时时间，单位为毫秒</span></span><br><span class="line">connection.setDoInput(<span class="literal">true</span>); <span class="comment">// 设置是否允许输入流，默认为true</span></span><br><span class="line">connection.setDoOutput(<span class="literal">true</span>); <span class="comment">// 设置是否允许输出流，默认为false</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>发起HTTP请求：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">connection.connect(); <span class="comment">// 连接服务器</span></span><br><span class="line">int responseCode = connection.getResponseCode(); <span class="comment">// 获取服务器响应码</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>读取服务器响应：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">InputStream inputStream = connection.getInputStream(); <span class="comment">// 获取输入流</span></span><br><span class="line">BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));</span><br><span class="line">StringBuilder response = new StringBuilder();</span><br><span class="line">String line;</span><br><span class="line"><span class="keyword">while</span> ((line = reader.readLine()) != <span class="literal">null</span>) &#123;</span><br><span class="line">    response.append(line);</span><br><span class="line">&#125;</span><br><span class="line">reader.close();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>关闭连接：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">connection.disconnect();</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>配置读取和写入的timeout：</p>
+<ul>
+<li>setConnectTimeout(int timeout)：设置连接超时时间，即连接服务器的时间。如果在指定的时间内未能建立连接，将会抛出SocketTimeoutException。</li>
+<li>setReadTimeout(int timeout)：设置读取超时时间，即从服务器读取数据的时间。如果在指定的时间内未能读取完数据，将会抛出SocketTimeoutException。</li>
+</ul>
+<p>例如，以下代码将连接超时时间设置为5秒，读取超时时间设置为10秒：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">connection.setConnectTimeout(<span class="number">5000</span>);</span><br><span class="line">connection.setReadTimeout(<span class="number">10000</span>);</span><br></pre></td></tr></table></figure>
+
+<p>通过合理设置连接超时和读取超时时间，可以提高网络请求的稳定性和响应速度。</p>
+</blockquote>
+</li>
+<li><p>权限配置AndroidManifest.xml 中的<uses-permission>、标签内容属性?</p>
+<blockquote>
+<p>在AndroidManifest.xml文件中使用<uses-permission>标签来配置应用程序所需的权限。这些权限用于控制应用程序对设备功能和资源的访问权限。以下是<uses-permission>标签的常见属性：</p>
+<ol>
+<li>android:name：指定权限的名称，例如android.permission.CAMERA表示相机权限。</li>
+<li>android:maxSdkVersion：指定权限的最大SDK版本。可以使用这个属性来限制权限在特定版本的Android上可用。</li>
+<li>android:minSdkVersion：指定权限的最小SDK版本。可以使用这个属性来限制权限仅在特定版本的Android上可用。</li>
+<li>android:required：指定权限是否是必需的。如果设置为true，表示应用程序必须拥有此权限才能安装和运行。如果设置为false，表示应用程序可以运行，但可能无法访问相关功能。</li>
+<li>android:protectionLevel：指定权限的保护级别。常见的保护级别包括：<ul>
+<li>normal：普通权限，不涉及敏感信息或危险操作。</li>
+<li>dangerous：危险权限，可能涉及用户隐私或对设备功能的敏感操作，如读取联系人、发送短信等。</li>
+<li>signature：只有在应用程序与请求权限的应用程序具有相同的签名时，才能获得此权限。</li>
+<li>signatureOrSystem：只有在应用程序与请求权限的应用程序具有相同的签名，或者是系统应用程序时，才能获得此权限。</li>
+</ul>
+</li>
+</ol>
+<p>示例：<uses-permission android:name="android.permission.CAMERA" android:required="true" android:protectionLevel="dangerous" /></p>
+<p>注意：在AndroidManifest.xml中配置权限时，需要确保权限的使用是合理和必要的，以保护用户的隐私和设备的安全。不要滥用权限，只请求应用程序所需的权限。</p>
+</blockquote>
+</li>
+<li><p>Json:如何表达数组?</p>
+<blockquote>
+<p>在Android中，使用JSON表示数组的方式与标准JSON格式一致。可以使用JSONArray类来创建和操作JSON数组。以下是几种在Android中表示数组的方式：</p>
+<ol>
+<li><p>字符串数组：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">JSONArray</span> <span class="variable">jsonArray</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">JSONArray</span>();</span><br><span class="line">jsonArray.put(<span class="string">&quot;apple&quot;</span>);</span><br><span class="line">jsonArray.put(<span class="string">&quot;banana&quot;</span>);</span><br><span class="line">jsonArray.put(<span class="string">&quot;orange&quot;</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>数字数组：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">JSONArray</span> <span class="variable">jsonArray</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">JSONArray</span>();</span><br><span class="line">jsonArray.put(<span class="number">1</span>);</span><br><span class="line">jsonArray.put(<span class="number">2</span>);</span><br><span class="line">jsonArray.put(<span class="number">3</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>布尔值数组：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">JSONArray</span> <span class="variable">jsonArray</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">JSONArray</span>();</span><br><span class="line">jsonArray.put(<span class="literal">true</span>);</span><br><span class="line">jsonArray.put(<span class="literal">false</span>);</span><br><span class="line">jsonArray.put(<span class="literal">true</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>对象数组：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">JSONArray</span> <span class="variable">jsonArray</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">JSONArray</span>();</span><br><span class="line"><span class="type">JSONObject</span> <span class="variable">jsonObject1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">JSONObject</span>();</span><br><span class="line">jsonObject1.put(<span class="string">&quot;name&quot;</span>, <span class="string">&quot;John&quot;</span>);</span><br><span class="line">jsonObject1.put(<span class="string">&quot;age&quot;</span>, <span class="number">25</span>);</span><br><span class="line">jsonArray.put(jsonObject1);</span><br><span class="line"></span><br><span class="line"><span class="type">JSONObject</span> <span class="variable">jsonObject2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">JSONObject</span>();</span><br><span class="line">jsonObject2.put(<span class="string">&quot;name&quot;</span>, <span class="string">&quot;Jane&quot;</span>);</span><br><span class="line">jsonObject2.put(<span class="string">&quot;age&quot;</span>, <span class="number">30</span>);</span><br><span class="line">jsonArray.put(jsonObject2);</span><br><span class="line"></span><br><span class="line"><span class="type">JSONObject</span> <span class="variable">jsonObject3</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">JSONObject</span>();</span><br><span class="line">jsonObject3.put(<span class="string">&quot;name&quot;</span>, <span class="string">&quot;Tom&quot;</span>);</span><br><span class="line">jsonObject3.put(<span class="string">&quot;age&quot;</span>, <span class="number">35</span>);</span><br><span class="line">jsonArray.put(jsonObject3);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>嵌套数组：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">JSONArray</span> <span class="variable">jsonArray</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">JSONArray</span>();</span><br><span class="line"><span class="type">JSONArray</span> <span class="variable">innerArray1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">JSONArray</span>();</span><br><span class="line">innerArray1.put(<span class="number">1</span>);</span><br><span class="line">innerArray1.put(<span class="number">2</span>);</span><br><span class="line">innerArray1.put(<span class="number">3</span>);</span><br><span class="line">jsonArray.put(innerArray1);</span><br><span class="line"></span><br><span class="line"><span class="type">JSONArray</span> <span class="variable">innerArray2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">JSONArray</span>();</span><br><span class="line">innerArray2.put(<span class="number">4</span>);</span><br><span class="line">innerArray2.put(<span class="number">5</span>);</span><br><span class="line">innerArray2.put(<span class="number">6</span>);</span><br><span class="line">jsonArray.put(innerArray2);</span><br><span class="line"></span><br><span class="line"><span class="type">JSONArray</span> <span class="variable">innerArray3</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">JSONArray</span>();</span><br><span class="line">innerArray3.put(<span class="number">7</span>);</span><br><span class="line">innerArray3.put(<span class="number">8</span>);</span><br><span class="line">innerArray3.put(<span class="number">9</span>);</span><br><span class="line">jsonArray.put(innerArray3);</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>在Android中，可以使用JSONArray的get()方法和length()方法来访问和遍历数组中的元素。例如，对于上述的字符串数组，可以使用以下代码来访问其中的元素：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">firstElement</span> <span class="operator">=</span> jsonArray.getString(<span class="number">0</span>); <span class="comment">// &quot;apple&quot;</span></span><br><span class="line"><span class="type">String</span> <span class="variable">secondElement</span> <span class="operator">=</span> jsonArray.getString(<span class="number">1</span>); <span class="comment">// &quot;banana&quot;</span></span><br><span class="line"><span class="type">String</span> <span class="variable">thirdElement</span> <span class="operator">=</span> jsonArray.getString(<span class="number">2</span>); <span class="comment">// &quot;orange&quot;</span></span><br><span class="line"><span class="type">int</span> <span class="variable">arrayLength</span> <span class="operator">=</span> jsonArray.length(); <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
+
+<p>注意：在Android中，使用JSON表示数组时，需要确保数组的元素类型正确，并使用相应的方法来获取和操作数组中的元素。</p>
+</blockquote>
+</li>
+<li><p>列表控件 ListView,RecyclerView,Adapter 用法?</p>
+<blockquote>
+<p>ListView、RecyclerView和Adapter是Android中常用的列表控件和适配器。它们的用法如下：</p>
+<ol>
+<li><p>ListView：</p>
+<ul>
+<li><p>在布局文件中添加ListView控件：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;ListView</span><br><span class="line">    android:id=<span class="string">&quot;@+id/list_view&quot;</span></span><br><span class="line">    android:layout_width=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">    android:layout_height=<span class="string">&quot;match_parent&quot;</span> /&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在代码中获取ListView控件的引用：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ListView listView = findViewById(R.id.list_view);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建一个适配器（Adapter）并设置给ListView：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ArrayAdapter&lt;String&gt; adapter = new ArrayAdapter&lt;&gt;(<span class="keyword">this</span>, android.R.layout.simple_list_item_1, <span class="keyword">data</span>);</span><br><span class="line">listView.setAdapter(adapter);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置ListView的点击事件监听器：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">listView.setOnItemClickListener(new AdapterView.OnItemClickListener() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> void onItemClick(AdapterView&lt;?&gt; parent, View view, int position, long id) &#123;</span><br><span class="line">        <span class="comment">// 处理点击事件</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>RecyclerView：</p>
+<ul>
+<li><p>在布局文件中添加RecyclerView控件：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;androidx.recyclerview.widget.RecyclerView</span><br><span class="line">    android:id=<span class="string">&quot;@+id/recycler_view&quot;</span></span><br><span class="line">    android:layout_width=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">    android:layout_height=<span class="string">&quot;match_parent&quot;</span> /&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在代码中获取RecyclerView控件的引用：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RecyclerView recyclerView = findViewById(R.id.recycler_view);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建一个布局管理器（LayoutManager）并设置给RecyclerView：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(<span class="keyword">this</span>);</span><br><span class="line">recyclerView.setLayoutManager(layoutManager);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建一个适配器（Adapter）并设置给RecyclerView：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">MyAdapter adapter = new MyAdapter(<span class="keyword">data</span>);</span><br><span class="line">recyclerView.setAdapter(adapter);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建一个自定义的ViewHolder类，继承自RecyclerView.ViewHolder，并在适配器中实现ViewHolder的创建和数据绑定逻辑。</p>
+</li>
+<li><p>设置RecyclerView的点击事件监听器：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">recyclerView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> boolean onInterceptTouchEvent(<span class="meta">@NonNull</span> RecyclerView rv, <span class="meta">@NonNull</span> MotionEvent e) &#123;</span><br><span class="line">        <span class="comment">// 处理点击事件</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> void onTouchEvent(<span class="meta">@NonNull</span> RecyclerView rv, <span class="meta">@NonNull</span> MotionEvent e) &#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) &#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>Adapter：</p>
+<ul>
+<li>创建一个继承自BaseAdapter或RecyclerView.Adapter的适配器类，并实现必要的方法，如getItemCount()、getView()（对于BaseAdapter）或onCreateViewHolder()、onBindViewHolder()（对于RecyclerView.Adapter）。</li>
+<li>在适配器中定义数据集合，并提供方法用于更新数据。</li>
+<li>在getView()或onBindViewHolder()方法中，根据位置获取数据，并将数据绑定到列表项的视图上。</li>
+<li>在需要更新数据时，调用适配器的相应方法（如notifyDataSetChanged()）来刷新列表。</li>
+</ul>
+</li>
+</ol>
+<p>通过ListView、RecyclerView和Adapter的组合使用，可以实现灵活和高效的列表展示和交互功能。具体的用法可以根据实际需求进行调整和扩展。</p>
+</blockquote>
+</li>
+<li><p>Handler、Message、Looper 机制，消息发送和接收处理的方法?</p>
+<blockquote>
+<p>在Android中，Handler、Message和Looper是用于实现线程间通信的机制。它们的工作原理如下：</p>
+<ol>
+<li><p>Handler：</p>
+<ul>
+<li>Handler是Android中的一个类，用于发送和处理消息。</li>
+<li>在主线程中创建一个Handler对象，可以将其与主线程的Looper关联起来，从而使得Handler可以接收并处理消息。</li>
+<li>Handler可以通过sendMessage()方法发送消息，也可以通过post()方法发送Runnable对象。</li>
+<li>Handler还可以通过postDelayed()方法发送延时消息。</li>
+</ul>
+</li>
+<li><p>Message：</p>
+<ul>
+<li>Message是Handler中的一个内部类，用于封装消息的内容。</li>
+<li>每个Message对象都有一个what字段和一个obj字段，可以分别用于传递消息的标识和数据。</li>
+<li>可以通过obtainMessage()方法获取一个Message对象，并设置其what和obj字段的值。</li>
+</ul>
+</li>
+<li><p>Looper：</p>
+<ul>
+<li>Looper是Android中的一个类，用于创建一个消息循环。</li>
+<li>在主线程中，Android会自动创建一个Looper对象，并将其与主线程绑定。</li>
+<li>Looper通过调用loop()方法来启动消息循环，该方法会不断地从消息队列中取出消息，并将其分发给Handler进行处理。</li>
+</ul>
+</li>
+</ol>
+<p>消息发送和接收处理的方法如下：</p>
+<ol>
+<li><p>发送消息：</p>
+<ul>
+<li>使用Handler的sendMessage()方法发送消息，可以创建一个Message对象并设置其what和obj字段的值，然后调用sendMessage()方法发送消息。</li>
+<li>使用Handler的post()方法发送Runnable对象，可以直接将Runnable对象作为参数传递给post()方法。</li>
+</ul>
+</li>
+<li><p>接收和处理消息：</p>
+<ul>
+<li>在主线程中创建一个Handler对象，并重写其handleMessage()方法来处理消息。</li>
+<li>在handleMessage()方法中，根据接收到的消息的what字段来判断消息的类型，并根据需要进行相应的处理操作。</li>
+</ul>
+</li>
+</ol>
+<p>以下是一个示例代码，演示了如何使用Handler、Message和Looper来发送和接收消息：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 在主线程中创建一个Handler对象</span></span><br><span class="line"><span class="type">Handler</span> <span class="variable">handler</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Handler</span>() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">handleMessage</span><span class="params">(Message msg)</span> &#123;</span><br><span class="line">        <span class="keyword">switch</span> (msg.what) &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">                <span class="comment">// 处理消息类型为1的消息</span></span><br><span class="line">                <span class="type">String</span> <span class="variable">data</span> <span class="operator">=</span> (String) msg.obj;</span><br><span class="line">                <span class="comment">// 执行相应的操作</span></span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">                <span class="comment">// 处理消息类型为2的消息</span></span><br><span class="line">                <span class="comment">// 执行相应的操作</span></span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="comment">// 其他消息类型的处理...</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 在子线程中发送消息</span></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Thread</span>(<span class="keyword">new</span> <span class="title class_">Runnable</span>() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">run</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 创建一个Message对象，并设置其what和obj字段的值</span></span><br><span class="line">        <span class="type">Message</span> <span class="variable">message</span> <span class="operator">=</span> Message.obtain();</span><br><span class="line">        message.what = <span class="number">1</span>;</span><br><span class="line">        message.obj = <span class="string">&quot;Hello&quot;</span>;</span><br><span class="line">        <span class="comment">// 发送消息</span></span><br><span class="line">        handler.sendMessage(message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;).start();</span><br></pre></td></tr></table></figure>
+
+<p>通过Handler、Message和Looper机制，可以实现线程间的消息传递和处理，从而实现线程间的通信和协作。在实际开发中，可以根据具体的需求和场景，灵活地使用这些机制来实现各种功能。</p>
+</blockquote>
+</li>
+<li><p>AsyncTask 内部实现的方法?</p>
+<blockquote>
+<p>AsyncTask是Android中用于在后台线程执行异步任务并在主线程更新UI的一个便捷类。它封装了线程的创建和管理，使得开发者可以更方便地进行异步操作。AsyncTask类内部实现了以下几个方法：</p>
+<ol>
+<li><p>onPreExecute()：</p>
+<ul>
+<li>在执行异步任务之前调用。</li>
+<li>运行在主线程中，可以在这里进行一些准备工作，如显示进度条等。</li>
+</ul>
+</li>
+<li><p>doInBackground(Params…)：</p>
+<ul>
+<li>在后台线程中执行耗时操作的方法。</li>
+<li>运行在后台线程中，不能在这里进行UI操作。</li>
+<li>在这个方法中可以通过调用publishProgress(Progress…)方法来发布进度信息。</li>
+</ul>
+</li>
+<li><p>onProgressUpdate(Progress…)：</p>
+<ul>
+<li>在调用publishProgress(Progress…)方法后，在主线程中执行的方法。</li>
+<li>运行在主线程中，可以在这里更新UI，如更新进度条的进度。</li>
+</ul>
+</li>
+<li><p>onPostExecute(Result)：</p>
+<ul>
+<li>在后台任务执行完毕后调用。</li>
+<li>运行在主线程中，可以在这里进行一些收尾工作，如隐藏进度条等。</li>
+<li>doInBackground()方法的返回值会作为参数传递给这个方法。</li>
+</ul>
+</li>
+<li><p>onCancelled()：</p>
+<ul>
+<li>在任务被取消时调用。</li>
+<li>运行在主线程中，可以在这里进行一些清理工作。</li>
+</ul>
+</li>
+</ol>
+<p>AsyncTask的使用方法如下：</p>
+<ol>
+<li><p>创建一个继承自AsyncTask的子类，并指定三个泛型参数：Params、Progress和Result，分别表示输入参数、进度信息和返回结果的类型。</p>
+</li>
+<li><p>在子类中实现doInBackground()方法，用于执行后台任务。</p>
+</li>
+<li><p>在doInBackground()方法中，通过调用publishProgress(Progress…)方法来发布进度信息。</p>
+</li>
+<li><p>在子类中实现onProgressUpdate()方法，用于在主线程中更新UI。</p>
+</li>
+<li><p>在子类中实现onPostExecute()方法，用于在主线程中处理任务执行结果。</p>
+</li>
+<li><p>在需要执行异步任务的地方，创建子类的实例，并调用execute(Params…)方法来启动任务。</p>
+</li>
+</ol>
+<p>以下是一个示例代码，演示了如何使用AsyncTask来执行异步任务并更新UI：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">MyTask</span> <span class="keyword">extends</span> <span class="title class_">AsyncTask</span>&lt;Void, Integer, String&gt; &#123;</span><br><span class="line">    <span class="comment">// 在后台线程中执行耗时操作</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> String <span class="title function_">doInBackground</span><span class="params">(Void... params)</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">100</span>; i++) &#123;</span><br><span class="line">            <span class="comment">// 模拟耗时操作</span></span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                Thread.sleep(<span class="number">100</span>);</span><br><span class="line">            &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 发布进度信息</span></span><br><span class="line">            publishProgress(i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 返回结果</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Task finished&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 在主线程中更新进度条</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onProgressUpdate</span><span class="params">(Integer... values)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">progress</span> <span class="operator">=</span> values[<span class="number">0</span>];</span><br><span class="line">        <span class="comment">// 更新进度条的进度</span></span><br><span class="line">        progressBar.setProgress(progress);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 在主线程中处理任务执行结果</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onPostExecute</span><span class="params">(String result)</span> &#123;</span><br><span class="line">        <span class="comment">// 显示任务执行结果</span></span><br><span class="line">        textView.setText(result);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 创建任务实例并启动任务</span></span><br><span class="line"><span class="type">MyTask</span> <span class="variable">task</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyTask</span>();</span><br><span class="line">task.execute();</span><br></pre></td></tr></table></figure>
+
+<p>通过AsyncTask类的内部实现，我们可以方便地在后台线程执行耗时操作，并在主线程中更新UI，从而实现异步任务的执行和UI的更新。它简化了线程的管理和通信，使得开发者可以更专注于业务逻辑的实现。</p>
+</blockquote>
+</li>
+<li><p>HarmonyOS Ability: FA、PA?</p>
+<blockquote>
+<p>在HarmonyOS中，FA和PA是两种不同类型的Ability。</p>
+<ol>
+<li><p>FA（Form Ability）：</p>
+<ul>
+<li>FA是一种界面能力，用于提供用户界面和用户交互。</li>
+<li>它可以包含多个PA（Page Ability）。</li>
+<li>FA可以接收用户输入事件，并根据事件触发相应的逻辑处理。</li>
+<li>FA可以通过startAbilityForResult()方法启动其他Ability，并接收返回的结果。</li>
+</ul>
+</li>
+<li><p>PA（Page Ability）：</p>
+<ul>
+<li>PA是一种页面能力，用于展示具体的页面内容。</li>
+<li>一个FA可以包含多个PA，通过切换PA来实现不同的页面展示。</li>
+<li>PA可以接收来自FA的数据传递，并展示相应的内容。</li>
+<li>PA可以发送事件给FA，以触发相应的逻辑处理。</li>
+</ul>
+</li>
+</ol>
+<p>FA和PA之间通过AbilitySliceManager进行管理和通信。AbilitySliceManager是一个管理Ability Slice的类，它负责Ability Slice的创建、销毁和切换。Ability Slice是一个页面切片，可以理解为一个子页面，用于展示具体的内容。一个Ability可以包含多个Ability Slice，通过切换Ability Slice来实现不同的页面展示。</p>
+<p>通过FA和PA的组合，可以实现复杂的界面和交互逻辑。FA负责整体的界面和交互管理，而PA负责具体的页面展示。这种能力分离的设计，使得界面和逻辑更加清晰，方便开发和维护。同时，FA和PA之间的通信也更加灵活，可以实现不同Ability之间的数据传递和事件触发。</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h3><ol>
+<li><p>定义数组Array[]</p>
+</li>
+<li><p>定义无返回值函数 — unit</p>
+</li>
+<li><p>非空类的基类是—Any —避免空指针类型 </p>
+</li>
+<li><p>所有类的子类 Nothing</p>
+</li>
+<li><p>&#x3D;&#x3D; 判断内容  &#x3D;&#x3D;&#x3D; 判断对象的地址</p>
+</li>
+<li><p>定义类class  类默认为不可继承的 加open关键字后才能被继承</p>
+</li>
+<li><p>次级构造函数 直接写constructor 些public是可以被省略，如果写的事private 就不可被省略</p>
+</li>
+<li><p>定义属性定义在类声明的地方、例如：（var name ：String &#x3D; “”）去掉var就还是传递的一个参数</p>
+</li>
+<li><p>field 幕后字段 考点 每一个属性都会定义到一个幕后字段，不复写就不定义幕后字段</p>
+</li>
+<li><p>方法前面不加open关键字那么这个方法是不可以呗复写的，加上open就可以被复写</p>
+</li>
+<li><p>参数的默认值：override  overlord</p>
+</li>
+<li><p>密封类：sealed 限制类无限制的扩大</p>
+</li>
+<li><p>嵌套类，内部类之间的关系 什么都没加的交嵌套类（静态）inner 表示的就是内部类</p>
+</li>
+<li><p>局部内部类指方法体中或语句块中的类</p>
+</li>
+<li><p>匿名内部类 object： 差不多是一种没有名字的类，还可以实现一些抽象的接口</p>
+</li>
+<li><p>abstract 抽象类定义</p>
+</li>
+<li><p>定义函数首先要加上fun 可有可无的返回值</p>
+</li>
+<li><p>高阶函数 —-？ 函数的定义时一个郎木达的形式定义 </p>
+</li>
+<li><p>数据的容器 可分为可变和不可变的</p>
+</li>
+<li><p>在Kotlin中，object关键字有两种用法：</p>
+<ol>
+<li>单例 可以使用object关键字创建一个单例对象，这个对象只会被创建一次，可以直接使用它的成员变量和成员方法。这种方式不需要使用class关键字来定义类，也不需要使用构造函数来创建对象。</li>
+</ol>
+<p>下面是一个单例对象的示例代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">kotlin复制object Singleton &#123;</span><br><span class="line">    var count = 0</span><br><span class="line">    fun increment() &#123;</span><br><span class="line">        count++</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在这个示例中，我们使用object关键字创建了一个名为Singleton的单例对象，它有一个成员变量count和一个成员方法increment。</p>
+<ol>
+<li>匿名内部类 在Kotlin中，可以使用object关键字创建一个匿名内部类，这个类可以继承某个类或实现某个接口，并且可以重写它们的方法。这种方式通常用于创建回调函数或事件处理程序。</li>
+</ol>
+<p>下面是一个匿名内部类的示例代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">button.setOnClickListener(object : View.OnClickListener &#123;</span><br><span class="line">    override fun onClick(v: View?) &#123;</span><br><span class="line">        // 处理点击事件</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>在这个示例中，我们使用object关键字创建了一个匿名内部类，并实现了View.OnClickListener接口的onClick方法，用于处理按钮的点击事件。</p>
+</li>
+<li><p>复写的重要性 </p>
+<blockquote>
+<p>在Android开发中，重写（Override）是一种常见的技术手段，用于在子类中覆盖父类的方法或者接口的方法，以实现自定义的逻辑。重写的重要性体现在以下几个方面：</p>
+<ol>
+<li><p>实现多态性：重写是实现多态性的关键机制之一。通过重写父类的方法，子类可以根据自身的需求来重新定义方法的行为。这样，在程序运行时，可以根据对象的实际类型来调用相应的方法，实现不同对象的不同行为。</p>
+</li>
+<li><p>扩展功能：通过重写，可以在子类中扩展父类的功能。子类可以在重写的方法中添加新的逻辑，或者修改父类方法的实现细节，从而实现更加灵活和丰富的功能。</p>
+</li>
+<li><p>实现回调机制：在Android开发中，常常使用回调机制来实现异步操作或者事件的处理。通过重写回调方法，可以在适当的时机执行自定义的逻辑，以响应异步操作或者事件的发生。</p>
+</li>
+<li><p>实现接口规范：在实现接口时，需要重写接口中定义的所有方法。通过重写这些方法，可以确保子类符合接口的规范，从而实现接口的完整性和一致性。</p>
+</li>
+<li><p>提高代码的可读性和可维护性：通过重写，可以将相关的逻辑集中在一处，使得代码更加清晰和易于理解。同时，当需要修改某个功能时，只需要修改重写的方法，而不需要修改其他地方的代码，从而提高了代码的可维护性。</p>
+</li>
+</ol>
+<p>重写是面向对象编程中的重要概念，它允许子类根据自身的需求来重新定义父类的方法。通过合理地使用重写，可以实现更加灵活、可扩展和可维护的代码。</p>
+</blockquote>
+</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://mingorfang.top">XPAYY.PJM</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://mingorfang.top/post/a0551608.html">http://mingorfang.top/post/a0551608.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://mingorfang.top" target="_blank">Ming OR Fang KINESPHERE</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Android/">Android</a></div><div class="post_share"><div class="social-share" data-image="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/index_img009.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/POTO.jpg" onerror="this.onerror=null;this.src='https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">XPAYY.PJM</div><div class="author-info__description">有志者，事竟成，破釜沉舟百二秦关终属楚，苦心人，天不负，卧薪尝胆，三千越甲可吞吴。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">59</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">39</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">27</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Pu-Junming"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Pu-Junming" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:pu_junming_1007@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">如果阅读过程中遇到了问题，请及时评论或者留言，看到了会在第一时间给出回复.若未收到回复，可以发电子邮件.请注意规范上网！！！</div></div><div class="xpand" style="height:200px;"><canvas class="illo" width="800" height="800" style="max-width: 200px; max-height: 200px; touch-action: none; width: 640px; height: 640px;"></canvas></div><script src="https://fastly.jsdelivr.net/gh/xiaopengand/blogCdn@latest/xzxr/twopeople1.js"></script><script src="https://fastly.jsdelivr.net/gh/xiaopengand/blogCdn@latest/xzxr/zdog.dist.js"></script><script id="rendered-js" src="https://fastly.jsdelivr.net/gh/xiaopengand/blogCdn@latest/xzxr/twopeople.js"></script><style>.card-widget.card-announcement {
+margin: 0;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+canvas {
+display: block;
+margin: 0 auto;
+cursor: move;
+}</style><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93"><span class="toc-number">1.</span> <span class="toc-text">知识点总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%93%E5%B1%95"><span class="toc-number">1.0.1.</span> <span class="toc-text">拓展</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/post/a0551608.html" title="android知识点总结"><img src="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/index_img009.jpg" onerror="this.onerror=null;this.src='https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/404.jpg'" alt="android知识点总结"/></a><div class="content"><a class="title" href="/post/a0551608.html" title="android知识点总结">android知识点总结</a><time datetime="2023-06-15T08:24:55.000Z" title="发表于 2023-06-15 16:24:55">2023-06-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/b5f0434a.html" title="Vue复习知识点（理解MVVM模式、Vue实例配置的各选项、Vue的各种内置指令....）"><img src="https://vuejs.org/images/logo.png" onerror="this.onerror=null;this.src='https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/404.jpg'" alt="Vue复习知识点（理解MVVM模式、Vue实例配置的各选项、Vue的各种内置指令....）"/></a><div class="content"><a class="title" href="/post/b5f0434a.html" title="Vue复习知识点（理解MVVM模式、Vue实例配置的各选项、Vue的各种内置指令....）">Vue复习知识点（理解MVVM模式、Vue实例配置的各选项、Vue的各种内置指令....）</a><time datetime="2023-06-14T09:17:17.000Z" title="发表于 2023-06-14 17:17:17">2023-06-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/3acbc910.html" title="面向对象系统分析与设计复习资料"><img src="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/index_img009.jpg" onerror="this.onerror=null;this.src='https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/404.jpg'" alt="面向对象系统分析与设计复习资料"/></a><div class="content"><a class="title" href="/post/3acbc910.html" title="面向对象系统分析与设计复习资料">面向对象系统分析与设计复习资料</a><time datetime="2023-06-06T01:38:01.000Z" title="发表于 2023-06-06 09:38:01">2023-06-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/8c9a2575.html" title="Vue中常用的鼠标移入移出事件"><img src="https://vuejs.org/images/logo.png" onerror="this.onerror=null;this.src='https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/404.jpg'" alt="Vue中常用的鼠标移入移出事件"/></a><div class="content"><a class="title" href="/post/8c9a2575.html" title="Vue中常用的鼠标移入移出事件">Vue中常用的鼠标移入移出事件</a><time datetime="2023-05-12T12:45:15.000Z" title="发表于 2023-05-12 20:45:15">2023-05-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/7a26b129.html" title="学生成绩计算页面(Vue3.0)"><img src="https://vuejs.org/images/logo.png" onerror="this.onerror=null;this.src='https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/404.jpg'" alt="学生成绩计算页面(Vue3.0)"/></a><div class="content"><a class="title" href="/post/7a26b129.html" title="学生成绩计算页面(Vue3.0)">学生成绩计算页面(Vue3.0)</a><time datetime="2023-04-20T13:04:13.000Z" title="发表于 2023-04-20 21:04:13">2023-04-20</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/foot.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023  <i id="heartbeat" class="fa fas fa-heartbeat"></i> XPAYY.PJM</div><div class="footer_custom_text">有志者，事竟成!!! <p><a target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为Hexo"></a>&nbsp;<a target="_blank" href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用butterfly"></a>&nbsp;<a target="_blank" href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用JsDelivr为静态资源提供CDN加速"></a> &nbsp;<a target="_blank" href="https://vercel.com/ "><img src="https://img.shields.io/badge/Hosted-Vervel-brightgreen?style=flat&logo=Vercel" title="本站采用双线部署，默认线路托管于Vercel"></a>&nbsp;<a target="_blank" href="https://beian.miit.gov.cn/"><img src="https://img.shields.io/badge/%E8%9C%80ICP%E5%A4%87-2023007646%E5%8F%B7--1-e1d492?style=flat&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAACNlJREFUSInF1mmMVeUdx/Hv2e+5+519mJWBYQZkGxZZxLKJqBXGoLS1iXWrmihotFXaJiTWWlsbl6q1aetWd5u0VkKjNG4YEJSlOCibDLMwM8x679z9nnPP1jcVJUxf+7z6J8+LT37/Z4VvaQhfFS8+sBXbctCDGrVTKlBUH4mxAbI9Hfj0IJLsp6paJ5/tmn20N/D0wKDRMq9F/c3M2U1/V0vDfWMFh+tv/Ig1zYPMabDImPJ52OaXO87W580KggCiiOsJOJ6I3wcNFaaeNKxrt72f2fLGu4FpJ/sDQABRzD22fH7/Yze069vGc6mrDLNIJCDik10sxz2by3VdPM87xzkP9jwPTZFRVI1YUJKH+oy7n3tbvv/P2wW/UQxRWe6w4ZJRptYLHDoCuz8v5cP92XbI762O+h6UVWHnUFbPpU0fEb2A60mMJ7MUi9b/b7UgKhiZMaIxm8YLplLMDPz8hl/EH+rs8TNlUpFf32uyZJGLPDwCiTGUyTWodTN49eUCdz2YwXb9NNcObp1X98WDoufynzMVCEKGn27ayPTWBi5ad8P5iQUkJEnFLjqM9Z+hrVX0vfDe6K2dPRWsW2bwyp9EUifSJB84gdxrkR0eRgv1o/3I4fbbprJ6scqamzVO9pffec1S5ZWY2Nfz5qEy/FqOC2Y3s3j53HMSi18VRjFPwSwg+1RfVbl115vvJrsfej7UGIsYPPGgQ7JXoO+Xx5B3dHEomyJ9x1qiQozkr95h5937aFnVyouPlgJK+Ss7Fxz64OTSxSX+LHYxT2IsRW5kbGI4oHcR0jqoqTjV9se3I7/f8rS/ClS23GxSXhph6L5d9Akm7qqZhHWBQGUJ+CWGFzcg7e7m6D3/ZuW1Ea5YKdA3EojuONi813TqNi+YPYOKUhXDtCeGL26/hakLLiEcdsaHRkRAoLRc4fJrmhnekyF0apgZowWSwwkaa+rw3f8WA1GZZsPP5JEChX8dhZTN6iU6kAcs5s+dHd183SJ0VVKL57pfw6YdRQw23aeWTns47DPTALWlRTR7kMLew6hGgYqUhWXYFFUdPZ6lUBahLA8hVcOftckfi7No7VRAAQqsX1dybfvG1qwriM9mM5mJ4e4jO5Cc01dPqixbr8tWGBQUL4vjGigEEShi+xUmZ2RiR/sJ1pbS8NkgZrKAGw0TsgQsQyFaF/nfYTGprAlMFysbA1pI3mhkR6snhGsaymYGvPyFEb9IdbUE2AzFFTwpRqCtBY0wmdER+hZW4j63gcJj38V+/ErSUZXsYBfjIZHIRW0c2Z8BskCAqN+CbBJBFnyyKjR+Ez57nBxLqpfMUeSISElMBFz6x2Q6OxzWrYjyxWVzEewioU3LCS5vQY6nMUrLwNaxXvoQ59IloFSx54PPAZtQLExVZZDxsVE8J4dn6v4JYatgbSjk0owPw7RGH2ADMo88Z7L20ip8f7gC7fAo0q4+0rt7kEQDvaghVZbiPHUHcyeXcfLjT3jmpR7AYsnSScya3UR8bARVMck7Y/cB75/X6rDf3Fg2dw2jKZm5dXGm1LuAzO5DCo9v6aT0ibco5kzOvLOP+NGTFJtDpPYeZKijk/Rn3QxsfZV7txwhX7ABiZUXBsGvIvguQApNQQva9RMmTvZ2dpVUls+tX/UD7GN/Y8Ws05w6rQF+9vyzg1vZjbvMRJhXiRSU8DpTFFe0QE8S6SfPkOkZoktrB2oAhZWrwljxOPmchiSMYOWNoxNuruFU5vWeXdsojiUon345113dBBQBmTYlTimgdB8nfPo4WjaNFgN9OMEkJ02dnadVt5ki54Esqy+bzKJltVhSPbI3iN2zCyMTeXNCuG7Omm2Zok7PR2+R7jvD8ouruHhmCrB5jVZeYxLdrTP4sr4Vtd9g4MA4qc4c+6cu5NPamfw4P59t2WrA4YdXKkASf7SFivo6PDdEPmf1fRM++zp1bH/0r4I1dD1ODtOWaW4IsvPjL7nqXhloQiSPwjjgMYkMASyGEBkjhISCQwkwzve/18AbT+pk8pVY4UacQi9y+gyZ0eRAw4qHa89LXEx1LXMSPfhDJYRb59BtlLKg2WPT2l6qYl1svtGkrLYckyA1S+t5+2ATm37WCui0LSynsckDNH5zTxAchbQtkx08hDHYiW6NgC0enHBzEZ102UDH8QORdEckjEzZrNWkRydzyx17uGnDXqbUnGZ6dRPjSY91q2TqwjFuvTxLo5Zn5Qo/pumRSFcTLQtybEhGE0fQrDhhJ0VvH2lTnnHPhGtsmWan469apERjI2MH3qN7+7MEfH6ql29CbV7PvsMG32k6yU2XDhEKyZw66eJaRdrXR7CzCcqUNC3zwgymPJRCH4KRRLINimpL14A5Y4GDeOqbsPRVcfuN7Xj44pav/hFfrNT2kr2rsqf2Ibp5pEA14ZIImUyW3t5REkkTXRGQ/DGGhtLginhqCWknQDE5hKf5UFSF9Lj020Q2ul5V1AR2hr+8vuP8Vlc2zMPRxoSjnx7XBC14sDoydahSGq7KdO/HFyrBchxCVfX4fDKp4T7SCQejYODZLrYgIqgKFsNIgQqEYob8mW6yiUyb7Z64LVK/+B85xznnJ3AWzqTzuIX46mr5wLs+UUTyIriBCjRNxguHMJIFDLEEvXEOVRWnSJ0+jCd4CJoGjoedM1CLcXQziW3nMV2TSMBeOx7vWZvPt1r+cMPzE8KunaUkFn0vNrvtqXj34c1W6gzxlEQ6naIoBahtnkMwoFMwIVzSRNguMt53Aj2s4nkSlgPoGqLkICsRNF0gl8rYWuP8+11/w/OOJDEhHPKLCIpOXmi+M9AgP+maiesLifF2T1Rn5ZNj5Lo/Qc/GcPMmhdoqlEgIGzCK4PiCmJKK68p4KfF3qYGuF0qCRUkJTzleUbvQyWRTuE5xYthxQbBs7EISAbkzUFG3VfXXbK2YFi3X/eryfKKnqVBItNjJxDzH8erddC4SqWwcN5WyTtlyO1RP/Lh3eHD76MB40swmiDVJyDLYRhpc5+ub6tse/wWKbvSQEAw1awAAAABJRU5ErkJggg==" title="工信部ICP备案"></a>&nbsp;<a target="_blank" href="https://vercel.com/ "><img src="https://img.shields.io/badge/Hosted-Coding-0cedbe?style=flat&logo=Codio" title="本站采用双线部署，联通线路托管于Coding"></a>&nbsp;<a target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由Gtihub托管"></a>&nbsp;<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换"><svg width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="fa-solid fa-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="fa-solid fa-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="fa-solid fa-arrow-rotate-right"></i></div><div class="rightMenu-item" id="menu-home"><i class="fa-solid fa-house"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" href="/archives/"><i class="fa-solid fa-archive"></i><span>文章归档</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="fa-solid fa-folder-open"></i><span>文章分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="fa-solid fa-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuNormal"><a class="rightMenu-item" id="menu-translate"><i class="fa-solid fa-earth-asia"></i><span>繁简切换</span></a><div class="rightMenu-item" id="menu-darkmode"><i class="fa-solid fa-moon"></i><span>切换模式</span></div><div class="rightMenu-item" id="menu-print"><i class="fa-solid fa-print fa-fw"></i><span>打印页面</span></div></div></div><div id="rightmenu-mask"></div><div id="myscoll"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><script async="async">var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.mingorfang.top/',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.mingorfang.top/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><canvas id="universe"></canvas><script defer src="/js/universe.js"></script><div class="aplayer no-destroy" data-id="7397462989" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-lrctype="1" data-preload="none" data-autoplay="true" muted></div><script defer src="/js/custom.js"></script><script src="/js/sun_moon.js" async></script><script defer data-pjax src="/js/cat.js"></script><script defer data-pjax src="/js/rightMenu.js"></script><script data-pjax defer src="https://npm.elemecdn.com/tzy-blog/lib/js/theme/chocolate.js"></script><script async src="//at.alicdn.com/t/font_2264842_3izu8i5eoc2.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script>window.$crisp = [];
+window.CRISP_WEBSITE_ID = "e73e4e58-b0ba-493a-b6bb-e9d1d08d9da8";
+(function () {
+  d = document;
+  s = d.createElement("script");
+  s.src = "https://client.crisp.chat/l.js";
+  s.async = 1;
+  d.getElementsByTagName("head")[0].appendChild(s);
+})();
+$crisp.push(["safe", true])
+
+if (false) {
+  $crisp.push(["do", "chat:hide"])
+  $crisp.push(["on", "chat:closed", function() {
+    $crisp.push(["do", "chat:hide"])
+  }])
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      $crisp.push(["do", "chat:show"])
+      $crisp.push(["do", "chat:open"])
+
+    });
+  }
+  chatBtnFn()
+} else {
+  if (false) {
+    function chatBtnHide () {
+      $crisp.push(["do", "chat:hide"])
+    }
+    function chatBtnShow () {
+      $crisp.push(["do", "chat:show"])
+    }
+  }
+}</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && location.pathname =='/'){
+    
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/index_img006.jpg" alt="https://picgo-pu-1307892539.cos.ap-chengdu.myqcloud.com/index_img006.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-10-29</span><a class="blog-slider__title" href="post/8a78f35d.html">小小的故事</a><div class="blog-slider__text">感人小故事</div><a class="blog-slider__button" href="post/8a78f35d.html">详情</a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载swiper')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script>
+<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.js"></script>
+<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper@0.18/swiper/swiperindex.js"></script>
+<style></style><script data-pjax>function history_calendar_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>';
+                console.log('已挂载history_calendar')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
+
+            history_calendar_injector_config()
+        } </script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script><script data-pjax>
+  function butterfly_clock_anzhiyu_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock_anzhiyu')
+    if(parent_div_git) {
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var qweather_key = 'b16a1fa0e63c46a4b8f28abfb06ae3fe';
+  var gaud_map_key = 'e2b04289e870b005374ee030148d64fd&s=rsv3';
+  var baidu_ak_key = 'undefined';
+  var flag = 0;
+  var clock_rectangle = '112.982279,28.19409';
+  var clock_default_rectangle_enable = 'false';
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><script data-pjax src="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
+  function gitcalendar_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<div class="recent-post-item" id="gitcalendarBar" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 280px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      console.log('已挂载gitcalendar')
+      }
+
+    if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+        gitcalendar_injector_config()
+        GitCalendarInit("https://gitcalendar.mingorfang.top/api?Pu-Junming",['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f'],'Pu-Junming')
+    }
+  </script><!-- hexo injector body_end end --></body></html>
